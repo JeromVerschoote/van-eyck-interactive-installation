@@ -1,0 +1,153 @@
+/*
+ * Copyright 2019 Jerom Verschoote & Justine Vanderplancke
+ */
+
+@font-face {
+  font-family: 'Blackwood Castle Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/blackwoodCastleRegular/blackwoodCastleRegular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Blackwood Castle Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/blackwoodCastleRegular/blackwoodCastleRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Blackwood Castle Shadow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/blackwoodCastleShadow/blackwoodCastleShadow.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Blackwood Castle Shadow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/blackwoodCastleShadow/blackwoodCastleShadow.woff') format('woff');
+}
+
+:root{
+  /* LOGO'S */
+  --logo: url('../assets/img/logo.svg');
+  --logo-custom: url('../assets/img/logo--custom.svg');
+
+  /* COLORS */
+  --color-white: #EBDCBE;
+  --color-brown: #503330;
+  --color-orangeDark: #AA4D26;
+  --color-orangeLight: #CB7936;
+  --color-green: #30674B;
+  --color-blue: #32696F;
+  --color-red: #81252A;
+  --color-gold: #9F7B2E;
+
+  /* TYPOGRAPHY */
+  --font-display--primairy: Blackwood Castle Regular;
+  --font-display--secundairy: Blackwood Castle Shadow;
+}
+
+._main{
+  background-color: var(--color-white);
+}
+
+._h1{
+  font-family: var(--font-display--primairy);
+  font-size: 7.2rem;
+  margin-bottom: 2rem;
+}
+
+._h2{
+  font-family: var(--font-display--primairy);
+  font-size: 6rem;
+  margin-bottom: 1.8rem;
+}
+
+._h3{
+  font-family: var(--font-display--primairy);
+  font-size: 4.8rem;
+  margin-bottom: 1.6rem;
+}
+
+._h4{
+  font-family: var(--font-display--primairy);
+  font-size: 3.6rem;
+  margin-bottom: 1.4rem;
+}
+
+._h5{
+  font-family: var(--font-display--primairy);
+  font-size: 3rem;
+  margin-bottom: 1.2;
+}
+
+._h6{
+  font-family: var(--font-display--primairy);
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+._logo{
+  content: '';
+  width: 10rem;
+  height: 10rem;
+  background-image: var(--logo);
+  background-repeat: no-repeat;
+}
+
+
+/* VARIATIONS */
+
+.--color-brown{
+  color: var(--color-brown);
+}
+
+.--color-orangeDark{
+  color: var(--color-orangeDark);
+}
+
+.--color-orangeLight{
+  color: var(--color-orangeLight);
+}
+
+.--color-green{
+  color: var(--color-green);
+}
+
+.--color-blue{
+  color: var(--color-blue);
+}
+
+.--color-red{
+  color: var(--color-red);
+}
+
+.--color-gold{
+  color: var(--color-gold);
+}
+
+.--font-shadow{
+  font-family: var(--font-display--secundairy);
+}
+
+.--logo-custom{
+  background-image: var(--logo-custom);
+}
+
+.--logo-tiny{
+  width: 2rem;
+  height: 2rem;
+}
+
+.--logo-small{
+  width: 5rem;
+  height: 5rem;
+}
+
+.--logo-big{
+  width: 15rem;
+  height: 15rem;
+}

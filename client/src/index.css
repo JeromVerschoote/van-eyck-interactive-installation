@@ -1,0 +1,57 @@
+@import './css/reset.css';
+@import './css/styleguide_vanEyck.css';
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: helvetica;
+}
+
+*, *:before, *:after { /* stylelint-disable-line */
+  box-sizing: inherit;
+}
+
+main {
+  margin: 0 auto;
+}
+
+body{
+  overflow: hidden;
+}
+
+.book{
+	content: '';
+	position: absolute;
+	width: 167.9rem;
+	height: 97.2rem;
+	background-image: url('./assets/img/book.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.pages section {
+	background: url('./assets/img/paper.png') no-repeat;
+	display: block;
+	width: 83.9rem;
+	height: 97.2rem;
+	position: absolute;
+	left: 83.9rem;
+	overflow: hidden;
+}
+
+.pages section>div {
+	display: block;
+	width: 40rem;
+	height: 25rem;
+	font-size: 1.2rem;
+}
+
+.pageflip-canvas {
+	position: absolute;
+	z-index: 100;
+}
+
+h1, h2, h3, h4, h5, h6{
+	padding: 5rem;
+}
