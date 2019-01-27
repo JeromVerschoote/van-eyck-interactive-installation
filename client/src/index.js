@@ -9,7 +9,9 @@ import Canvas from './js/classes/Canvas';
 
 import {enableLocalKeys} from './js/debugTools.js';
 
-const api = new Api('http://localhost:9090');
+const arduino = new Api('http://localhost:9090');
+const kinect = new Api('http://localhost:8080');
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 let canvas, $canvas, $book;
@@ -29,7 +31,8 @@ const render = () =>{
     canvas.render();
 }
 
-api.socket.on('keyPressed', key => {
+arduino.socket.on('keyPressed', key => {
+    console.log(key);
 
         if(key === `arrowLeft` && canvas.book.currentPage - 1 >= 0){
             canvas.book.flips[canvas.book.currentPage - 1].dragging = true;
@@ -41,7 +44,8 @@ api.socket.on('keyPressed', key => {
     }
 );
 
-api.socket.on(`keyReleased`, key => {
+arduino.socket.on(`keyReleased`, key => {
+    console.log(key);
 
     canvas.book.flips.forEach(flip => {
         if(flip.dragging){
@@ -58,7 +62,11 @@ api.socket.on(`keyReleased`, key => {
         }
         flip.dragging = false;
     });
-})
+});
+
+kinect.socket.on(`bodyFrame`, frame => {
+    console.log(frame);
+});
 
 init();
 
