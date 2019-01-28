@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import Api from './js/api.js';
 import Canvas from './js/classes/Canvas';
 
-import {enableLocalKeys} from './js/debugTools.js';
+import {enableLocalKeys} from './js/tools/debug.js';
 
 const arduino = new Api('http://localhost:9090');
 const kinect = new Api('http://localhost:8080');
