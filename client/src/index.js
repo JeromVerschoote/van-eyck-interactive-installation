@@ -21,7 +21,7 @@ const init = () => {
     $book = document.getElementById('book');
     canvas = new Canvas($canvas, 1679, 972, 0, $book);
 
-    //enableLocalKeys(canvas);
+    enableLocalKeys(canvas);
 
     render();
 }
@@ -32,7 +32,7 @@ const render = () =>{
 }
 
 arduino.socket.on('keyPressed', key => {
-    console.log(key);
+    console.log(`Key detected: ${key}`);
 
         if(key === `arrowLeft` && canvas.book.currentPage - 1 >= 0){
             canvas.book.flips[canvas.book.currentPage - 1].dragging = true;
@@ -45,7 +45,7 @@ arduino.socket.on('keyPressed', key => {
 );
 
 arduino.socket.on(`keyReleased`, key => {
-    console.log(key);
+    console.log(`Key detected: ${key}`);
 
     canvas.book.flips.forEach(flip => {
         if(flip.dragging){
@@ -64,8 +64,40 @@ arduino.socket.on(`keyReleased`, key => {
     });
 });
 
-kinect.socket.on(`bodyFrame`, frame => {
-    console.log(frame);
+kinect.socket.on(`gesture`, gesture => {
+    console.log(`Gesture detected: ${gesture}`);
+    
+    /*
+    if(gesture === `swipeRight`){
+
+        if(canvas.book.currentPage - 1 >= 0){
+            canvas.book.flips[canvas.book.currentPage - 1].dragging = true;
+
+            canvas.book.flips.forEach(flip => {
+                if(flip.dragging){
+                    flip.target = 1;
+                    canvas.book.currentPage = Math.max(canvas.book.currentPage - 1, 0);
+                }
+                flip.dragging = false;
+            });
+        }
+    }
+    */
+
+    if(gesture === `swipeLeft`){
+
+        if(canvas.book.currentPage + 2 <= canvas.book.flips.length){
+            canvas.book.flips[canvas.book.currentPage].dragging = true;
+
+            canvas.book.flips.forEach(flip => {
+                if(flip.dragging){
+                    flip.target = -1;
+                    canvas.book.currentPage = Math.min(canvas.book.currentPage + 1, canvas.book.flips.length);
+                }
+                flip.dragging = false;
+            });
+        }
+    }
 });
 
 init();

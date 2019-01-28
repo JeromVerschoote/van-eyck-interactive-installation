@@ -20,8 +20,12 @@ if(kinect.open()){
         console.log('Connection');
 
         kinect.on('bodyFrame', frame => {
-            console.log(frame);
             io.sockets.emit('bodyFrame', frame);
+        });
+
+        socket.on(`gesture`, gesture => {
+            console.log(`Gesture detected: ${gesture}`);
+            io.sockets.emit(`gesture`, gesture);
         });
  
          kinect.openBodyReader();
