@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
 
 import Api from './js/api.js';
@@ -12,7 +13,7 @@ import {enableLocalKeys} from './js/tools/debug.js';
 const arduino = new Api('http://localhost:9090');
 const kinect = new Api('http://localhost:8080');
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 
 let canvas, $canvas, $book;
 
