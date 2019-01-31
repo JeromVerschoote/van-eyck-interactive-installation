@@ -20,19 +20,23 @@ class SkeletonJoint{
         }
     }
 
-    addSwipeLeftListener(skeletonPart){
+    addSwipeLeftListener(skeletonPart, socket){
         if(this._getRelativeSpeed().x < -GESTURE_SENSITIVITY){
             const gesture = `swipeLeft`;
             console.log(`Gesture detected: ${gesture} (${skeletonPart})`);
+
+            socket.emit(`gesture`, gesture);
 
             this.tempRelativeSpeed = this.relativePosition;
         }
     }
 
-    addSwipeRightListener(skeletonPart){
+    addSwipeRightListener(skeletonPart, socket){
         if(this._getRelativeSpeed().x > GESTURE_SENSITIVITY){
             const gesture = `swipeRight`;
             console.log(`Gesture detected: ${gesture} (${skeletonPart})`);
+
+            socket.emit(`gesture`, gesture);
 
             this.tempRelativeSpeed = this.relativePosition;
         }

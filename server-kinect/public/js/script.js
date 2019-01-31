@@ -37,8 +37,8 @@ const addGestureListeners = () => {
 
     setInterval(() => {
         Object.keys(skeleton).forEach(key => {
-            skeleton[key].addSwipeLeftListener(key);
-            skeleton[key].addSwipeRightListener(key);
+            skeleton[key].addSwipeLeftListener(key, socket);
+            skeleton[key].addSwipeRightListener(key, socket);
         });
     }, INTERVAL_RATE);
 }
