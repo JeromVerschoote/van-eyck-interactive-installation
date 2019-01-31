@@ -2,18 +2,12 @@ const GESTURE_SENSITIVITY = 0.34;
 
 class SkeletonJoint{
     constructor(){
-        this.joint;
         this.position = {};
-        this.skeletonCenter;
     }
 
-    /* METHODS */
-
     update(joint, skeletonCenter){
-        this.joint = joint;
-        //
-        this.position.x = this.joint.depthX;
-        this.position.y = this.joint.depthY;
+        this.position.x = joint.depthX;
+        this.position.y = joint.depthY;
 
         if(skeletonCenter){
             this.skeletonCenter = skeletonCenter;
@@ -41,8 +35,6 @@ class SkeletonJoint{
             this.tempRelativeSpeed = this.relativePosition;
         }
     }
-
-    /* PRIVATE FUNCTIONS  */
 
     _getRelativePosition(){
         let relativePosition = {};
