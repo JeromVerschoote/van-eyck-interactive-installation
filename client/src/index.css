@@ -30,14 +30,17 @@ body {
   background-repeat: no-repeat;
 }
 
-.pages section {
+.section {
   background: url('./assets/img/paper.png') no-repeat;
   display: block;
   width: 83.9rem;
   height: 97.2rem;
   position: absolute;
-  left: 83.9rem;
   overflow: hidden;
+}
+
+.right {
+  left: 83.9rem;
 }
 
 .pageflip-canvas {
