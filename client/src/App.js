@@ -6,9 +6,9 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1><Link to="/leefwereld">Leefwereld</Link></h1>
-        <h1><Link to="/creatieproces">Creatieproces</Link></h1>
-        <h1><Link to="/levensloop">Levensloop</Link></h1>
+        <p><Link to="/leefwereld">Leefwereld</Link></p>
+        <p><Link to="/creatieproces">Creatieproces</Link></p>
+        <p><Link to="/levensloop">Levensloop</Link></p>
         <Switch>
           <Route path='/leefwereld' exact render={() => <Leefwereld/>} />
         </Switch>
