@@ -12,7 +12,7 @@ const Leefwereld = () => {
           <img src={Logo} alt="Dit is het logo van MSK Gent." width="400" height="400" />
           <h1 className="_h1 --color-blue">van eyck: een optische revolutie</h1>
           <h2>leefwereld</h2>
-          <div>taalkeuze</div>
+          <div><hr/><button>nl</button><button>fr</button><button>de</button><button>en</button><button>it</button><button>es</button><hr/></div>
           </header>
           <article>
            <p><span>W</span>elkom in het land van onderdrukkende armoede, dodelijke ziektes en keiharde ambacht, maar ook van absolute rijkdom, feestelijke eetfestijnen en bovennatuurlijke schoonheid. Welkom in de Bourgondische Nederlanden. Welkom in Vlaanderen.</p>
@@ -20,6 +20,9 @@ const Leefwereld = () => {
           </article>
         </section>
         <section>
+          <div>
+            <hr/><a href="#">RESTART... OTHER NAME</a><hr/>
+          </div>
           <article>
             <header>
                <h3><span>C</span>ultuur</h3>
@@ -29,7 +32,7 @@ const Leefwereld = () => {
           </article>
         </section>
         <section>
-          <div>taalkeuze</div>
+          <div><hr/><button>nl</button><button>fr</button><button>de</button><button>en</button><button>it</button><button>es</button><hr/></div>
           <article>
             <header>
                <h3><span>R</span>elgie</h3>
@@ -39,6 +42,9 @@ const Leefwereld = () => {
           </article>
         </section>
         <section>
+          <div>
+            <hr/><a href="#">RESTART... OTHER NAME</a><hr/>
+          </div>
           <article>
             <header>
                <h3><span>S</span>ociaal</h3>
@@ -48,7 +54,7 @@ const Leefwereld = () => {
           </article>
         </section>
         <section>
-          <div>taalkeuze</div>
+        <div><hr/><button>nl</button><button>fr</button><button>de</button><button>en</button><button>it</button><button>es</button><hr/></div>
           <article>
             <header>
                <h3><span>K</span>unst</h3>
@@ -59,6 +65,9 @@ const Leefwereld = () => {
         </section>
         <section>
           <h6 className="_h6">Einde</h6>
+          <div>
+            <hr/><a href="#">RESTART... OTHER NAME</a><hr/>
+          </div>
         </section>
       </div>
     </div>
