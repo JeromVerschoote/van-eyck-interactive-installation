@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
+import Logo from'../assets/img/logo.svg';
 
 const Leefwereld = () => {
     return (
@@ -8,6 +9,7 @@ const Leefwereld = () => {
       <div className='pages' id="pages">
         <section> 
           <header>
+          <img src={Logo} alt="Dit is het logo van MSK Gent." width="400" height="400" />
           <h1 className="_h1 --color-blue">van eyck: een optische revolutie</h1>
           <h2>leefwereld</h2>
           <div>taalkeuze</div>
