@@ -16,36 +16,35 @@ main {
   margin: 0 auto;
 }
 
-body{
+body {
   overflow: hidden;
 }
 
-.book{
-	content: '';
-	position: absolute;
-	width: 167.9rem;
-	height: 97.2rem;
-	background-image: url('./assets/img/book.png');
-	background-size: contain;
-	background-repeat: no-repeat;
+.book {
+  content: '';
+  position: absolute;
+  width: 167.9rem;
+  height: 97.2rem;
+  background-image: url(`./assets/img/book.png`);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .pages section {
-	background: url('./assets/img/paper.png') no-repeat;
-	display: block;
-	width: 83.9rem;
-	height: 97.2rem;
-	position: absolute;
-	left: 83.9rem;
-	overflow: hidden;
+  background: url(`./assets/img/paper.png`) no-repeat;
+  display: block;
+  width: 83.9rem;
+  height: 97.2rem;
+  position: absolute;
+  left: 83.9rem;
+  overflow: hidden;
 }
-
 
 .pageflip-canvas {
-	position: absolute;
-	z-index: 100;
+  position: absolute;
+  z-index: 100;
 }
 
-h1, h2, h3, h4, h5, h6{
-	padding: 5rem;
+h1, h2, h3, h4, h5, h6 {
+  padding: 5rem;
 }
