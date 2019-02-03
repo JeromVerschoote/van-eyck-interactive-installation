@@ -25,13 +25,13 @@ body {
   position: absolute;
   width: 167.9rem;
   height: 97.2rem;
-  background-image: url(`./assets/img/book.png`);
+  background-image: url('./assets/img/book.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .pages section {
-  background: url(`./assets/img/paper.png`) no-repeat;
+  background: url('./assets/img/paper.png') no-repeat;
   display: block;
   width: 83.9rem;
   height: 97.2rem;
