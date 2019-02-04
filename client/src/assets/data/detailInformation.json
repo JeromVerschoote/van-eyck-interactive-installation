@@ -1,0 +1,82 @@
+{
+   "leefwereld": [{
+        "cultuur": [
+            {
+                "title": "Sinaasappelen",
+                "detail": "Sinaasappelen staan symbool voor vruchtbaarheid maar tonen ook aan dat er voldoende geld was voor exotisch vruchten. Giovanni Arnofini was waarschijnlijk een welgesteld man."
+            },
+            {
+                "title": "Bont",
+                "detail": "Giovanni Arnofini draagt een met bont afgezette mantel, dit is een teken van welgesteldheid."
+            },
+            {
+                "title": "Dikheid",
+                "detail": "Dikheid was een modeverschijnsel. Het gaf aan dat je genoeg geld had om je meer dan nodig te voeden."
+            }
+        ],
+        "religie": [
+            {
+                "title": "Heilig kruis",
+                "detail": "Het heilige kruis waarin een splinter zit uit het kruis van Christus wordt bekeken door Van der Paele. “Christus is tussen ons."
+            },
+            {
+                "title": "Jezuskind",
+                "detail": "Het Jezuskind is als een volwassene afgebeeld omdat de goddelijke aard de kunstenaar ervan heeft weerhouden om het realistisch weer te geven."
+            },
+            {
+                "title": "Beeldjes troon",
+                "detail": "De gebeeldhouwde figuurtjes op de troon van Maria beelden passages uit vertolkt vanuit het Oude Testament."
+            }
+        ],
+        "sociaal": [
+            {
+                "title": "Man te paard",
+                "detail": "Er zijn ook rijk uitgedoste mannen te paard die het contrast tussen rijk en arm duidelijk accentueren."
+            },
+            {
+                "title": "Bouwplaats",
+                "detail": "Op de bouwplaats bij de toren zijn bouwlieden ijverig aan het werk. Het toont aan dat er hard gewerkt moest worden."
+            },
+            {
+                "title": "Werklieden",
+                "detail": "Het zijn vooral gewoon burgers die zich uit de naad werken en die grootste schilderijen niet konden permitteren."
+            }
+        ],
+        "kunst": [
+            {
+                "title": "Stof uit buitenland",
+                "detail": "Er zijn veel invloeden die wijzen op invloed van het buitenland. Zoals de details in klederdracht, tapijten, architectuur."
+            },
+            {
+                "title": "Jeruzalem",
+                "detail": "De stad op de achtergrond moet Jeruzalem voorstellen. Dus Van Eyck was in de ban door religieuze steden."
+            },
+            {
+                "title": "Dom van Utrecht",
+                "detail": "Een van de torens is gebaseerd op die van de Dom van Utrecht waarop wijst dat er communicatie was tussen steden."
+            }
+        ]
+        }],
+        "levensloop": [
+            {
+                "title": "1432",
+                "explanation": "Het schilderij wordt officieel ingewijd in de toenmalig Sint-Janskerk in Gent.",
+                "details": [
+                    {
+                        "location": "Gent",
+                        "detail": "Het Lam Gods krijgt een plek in de kapel van de Sint-Janskerk."
+                    }
+                ]
+            },
+            {
+                "title": "1566",
+                "explanation": "Tijdens de Beeldenstorm worden religieuze beelden en kunstwerken in katholieke kerken verwoest.",
+                "details": [
+                    {
+                        "location": "Gent",
+                        "detail": "Het werkt wordt in de toren van de Sint-Janskerk verborgen gehouden."
+                    }
+                ]
+            }
+        ]
+}
