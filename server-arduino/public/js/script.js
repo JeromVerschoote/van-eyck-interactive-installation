@@ -11,11 +11,11 @@ const init = () => {
 };
 
 const handleKeyDown = e => {
-    socket ? socket.emit(`keyPressed`, getKeyFromKeyCode(e.keyCode)) : null;
+    socket ? socket.emit(`touch`, getKeyFromKeyCode(e.keyCode)) : null;
 }
 
 const handleKeyUp = e => {
-    socket ? socket.emit(`keyReleased`, getKeyFromKeyCode(e.keyCode)) : null;
+    socket ? socket.emit(`touchReleased`, getKeyFromKeyCode(e.keyCode)) : null;
 }
 
 const getKeyFromKeyCode = keyCode => {

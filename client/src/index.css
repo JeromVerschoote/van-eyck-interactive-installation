@@ -32,62 +32,6 @@ body {
   margin-top: -100vh;
 }
 
-/*
-.page--odd{
-  margin-left: 50vw;
-  margin-top: -100vh;
-  background: rgb(243, 243, 237);
-}
-*/
-
 .content{
   padding: 2rem;
 }
-
-
-
-/*
-.book {
-  content: '';
-  position: absolute;
-  width: 167.9rem;
-  height: 97.2rem;
-  background-image: url('./assets/img/book.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.section {
-  background: url('./assets/img/paper.png') no-repeat;
-  display: block;
-  width: 83.9rem;
-  width: 167.8rem;
-  position: absolute;
-  overflow: hidden;
-}
-
-.section-leftSide{
-  width: 83.9rem;
-  height: 97.2rem;
-  background: white;
-}
-
-.section-rightSide{
-  width: 83.9rem;
-  left: 83.9rem;
-  height: 97.2rem;
-  margin-left: 83.9rem;
-  margin-top: -98rem;
-  background: white;
-}
-
-.section--left{
-  left: 0;
-}
-
-.pageflip-canvas {
-  position: absolute;
-  z-index: 100;
-}
-
-*/

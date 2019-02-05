@@ -13,13 +13,13 @@ console.log(`Server listening on port ${port}!`);
 io.on('connection', socket => {
     console.log(`Connection`);
     
-    socket.on(`keyPressed`, key => {
-        console.log(`Key pressed: ${key}`);
-        io.sockets.emit(`keyPressed`, key);
+    socket.on(`touch`, touch => {
+        console.log(`Touch detected: ${touch}`);
+        io.sockets.emit(`touch`, touch);
     });
 
-    socket.on(`keyReleased`, key => {
-        console.log(`Key released: ${key}`);
-        io.sockets.emit(`keyReleased`, key);
+    socket.on(`touchReleased`, touch => {
+        console.log(`Key released: ${touch}`);
+        io.sockets.emit(`keyReleased`, touch);
     });
 });

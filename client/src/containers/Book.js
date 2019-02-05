@@ -18,9 +18,8 @@ class Book extends Component {
     }
 
     document.addEventListener('keydown', this.handleKeyDown);
-    document.addEventListener('keyup', this.handleKeyUp);
 
-    arduino.socket.on((`keyPressed`, key => this.handKeyPressed(key)));
+    arduino.socket.on(`touch`, touch => this.handleTouch(touch));
     kinect.socket.on(`gesture`, gesture => this.handleGesture(gesture));
   }
 
@@ -35,22 +34,18 @@ class Book extends Component {
     }
   }
 
-  handleKeyUp = e => {
-
-  }
-
-  handleKeyPressed = key => {
-    console.log(`Key detected: ${key}`);
+  handleTouch = key => {
+    console.log(`Touch detected: ${key}`);
   }
 
   handleGesture = gesture => {
     console.log(`Gesture detected: ${gesture}`);
 
-    if(gesture === `swipeLeft` &&  (this.state.currentPage >= 2)){
-      this.setState({currentPage: this.state.currentPage - 2});
+    if(gesture === `swipeRight` &&  (this.state.currentPage >= 2)){
+      //this.setState({currentPage: this.state.currentPage - 2});
     }
 
-    if(gesture === `swipeRight` && (this.state.currentPage < this.pageCount - 2)){
+    if(gesture === `swipeLeft` && (this.state.currentPage < this.pageCount - 2)){
       this.setState({currentPage: this.state.currentPage + 2});
     }
   }
