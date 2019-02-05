@@ -3,31 +3,24 @@
  */
 
 @font-face {
-  font-family: 'Blackwood Castle Regular';
+  font-family: 'Kodex Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/blackwoodCastleRegular/blackwoodCastleRegular.woff2') format('woff2');
+  src: url('../assets/fonts/kodexRegular/kodexRegular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Blackwood Castle Regular';
+  font-family: 'Montserrat Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/blackwoodCastleRegular/blackwoodCastleRegular.woff') format('woff');
+  src: url('../assets/fonts/montserratRegular/montserratRegular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Blackwood Castle Shadow';
+  font-family: 'Montserrat Bold';
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/blackwoodCastleShadow/blackwoodCastleShadow.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Blackwood Castle Shadow';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/blackwoodCastleShadow/blackwoodCastleShadow.woff') format('woff');
+  src: url('../assets/fonts/montserratBold/montserratBold.woff2') format('woff2');
 }
 
 :root{
@@ -37,60 +30,69 @@
 
   /* COLORS */
   --color-white: #EBDCBE;
-  --color-brown: #503330;
-  --color-orangeDark: #AA4D26;
-  --color-orangeLight: #CB7936;
-  --color-green: #30674B;
-  --color-blue: #32696F;
-  --color-red: #81252A;
-  --color-gold: #9F7B2E;
+  --color-red: #BC0000;
 
   /* TYPOGRAPHY */
-  --font-display--primairy: Blackwood Castle Regular;
-  --font-display--secundairy: Blackwood Castle Shadow;
+  --font-display--primairy: Kodex Regular;
+  --font-display--secundairy: Montserrat Bold;
+  --font-text: Montserrat Regular;
 }
 
-._main{
+.main{
   background-color: var(--color-white);
 }
 
-._h1{
+.h1{
   font-family: var(--font-display--primairy);
-  font-size: 7.2rem;
-  margin-bottom: 2rem;
+  font-size: 9.6rem;
 }
 
-._h2{
+.h2{
   font-family: var(--font-display--primairy);
-  font-size: 6rem;
+  font-size: 4.8rem;
   margin-bottom: 1.8rem;
 }
 
-._h3{
-  font-family: var(--font-display--primairy);
-  font-size: 4.8rem;
+.h3{
+  font-family: var(--font-display--secundairy);
+  font-size: 2.2rem;
+  text-transform: uppercase;
   margin-bottom: 1.6rem;
+  color: var(--color-red);
 }
 
-._h4{
+.h4{
   font-family: var(--font-display--primairy);
   font-size: 3.6rem;
   margin-bottom: 1.4rem;
 }
 
-._h5{
+.h5{
   font-family: var(--font-display--primairy);
   font-size: 3rem;
   margin-bottom: 1.2;
 }
 
-._h6{
+.h6{
   font-family: var(--font-display--primairy);
   font-size: 2.6rem;
   margin-bottom: 1rem;
 }
 
-._logo{
+.subtitle{
+  font-family: var(--font-display--secundairy);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
+.paragraph{
+  font-family: var(--font-text);
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.logo{
   content: '';
   width: 10rem;
   height: 10rem;
@@ -98,6 +100,18 @@
   background-repeat: no-repeat;
 }
 
+.button{
+  border: none;
+  padding: 1rem;
+  font-family: var(--font-display--secundairy);
+  text-transform: uppercase;
+  color: var(--color-red);
+  background: none;
+}
+
+.button--active{
+  color: black;
+}
 
 /* VARIATIONS */
 

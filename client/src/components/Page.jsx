@@ -5,18 +5,20 @@ class Page extends Component {
 
   renderMenu(type){
     if(type === 'even'){
-      return (
-        <button>Restart Story</button>
+      return(
+        <div className='buttons centered'>
+          <button className='button'>Restart Story</button>
+        </div>
       )
     }else if(type === 'odd'){
-      return (
-        <div>
-              <button>nl</button>
-              <button>fr</button>
-              <button>de</button>
-              <button>en</button>
-              <button>it</button>
-              <button>es</button>
+      return(
+        <div className='buttons centered'>
+              <button className='button button--active'>nl</button>
+              <button className='button'>fr</button>
+              <button className='button'>de</button>
+              <button className='button'>en</button>
+              <button className='button'>it</button>
+              <button className='button'>es</button>
           </div>
       )
     }
@@ -30,9 +32,9 @@ class Page extends Component {
         <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
         <div className='content'>
             {this.renderMenu(type)}
-            <h1>{title}</h1>
-            <p>{subtitle}</p>
-            <p>{text}</p>
+            <h1 className='h1'>{title}</h1>
+            <p className='subtitle'>{subtitle}</p>
+            <p className='paragraph'>{text}</p>
         </div>
       </section>
     )

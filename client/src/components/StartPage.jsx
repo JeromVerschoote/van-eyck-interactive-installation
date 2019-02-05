@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from "react-router-dom";
 
-import Logo from'../assets/img/logo.svg';
+import logo from'../assets/img/logo.svg';
 
 class StartPage extends Component {
   render() {
@@ -9,20 +9,20 @@ class StartPage extends Component {
     const {type} = this.props;
 
     return (
-        <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
+        <section className={type === 'odd' ? 'page page--odd page--start' :  'page page--even page--start'}>
         <div className='content'>
-          <img src={Logo} alt="Dit is het logo van MSK Gent." width="400" height="400" />
-          <h1>Van Eyck: Een Optische Revolutie</h1>
-          <h2>{title}</h2>
-          <div>
-              <button>nl</button>
-              <button>fr</button>
-              <button>de</button>
-              <button>en</button>
-              <button>it</button>
-              <button>es</button>
+          <img src={logo} alt="Dit is het logo van MSK Gent." width="300" height="300" />
+          <h1 className='h2'>Van Eyck: Een Optische Revolutie</h1>
+          <h2 className='h3'>{title}</h2>
+          <div className='buttons'>
+              <button className='button button--active'>nl</button>
+              <button className='button'>fr</button>
+              <button className='button'>de</button>
+              <button className='button'>en</button>
+              <button className='button'>it</button>
+              <button className='button'>es</button>
           </div>
-          <p>{text}</p>
+          <p className='paragraph'>{text}</p>
         </div>
       </section>
     )

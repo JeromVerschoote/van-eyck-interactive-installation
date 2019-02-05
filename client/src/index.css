@@ -27,6 +27,12 @@ body {
   padding: 5rem;
 }
 
+.page--start .content{
+  display: flex;
+  flex-flow: column;
+ align-items: center;
+}
+
 .page--even{
   margin-left: 50vw;
   margin-top: -100vh;
@@ -34,4 +40,15 @@ body {
 
 .content{
   padding: 2rem;
+}
+
+.buttons{
+  padding: 3rem;
+}
+
+/* flags */
+
+.centered{
+  display: flex;
+  justify-content: center;
 }
