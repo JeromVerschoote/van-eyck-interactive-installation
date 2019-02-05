@@ -20,7 +20,11 @@ let canvas, $canvas, $book;
 const init = () => {
     $canvas = document.getElementById('pageflip-canvas');
     $book = document.getElementById('book');
-    canvas = new Canvas($canvas, 1679, 972, 0, $book);
+
+    if($canvas && $book){
+        console.log('canvas created');
+        canvas = new Canvas($canvas, 1679, 972, 0, $book);
+    }
 
     enableLocalKeys(canvas);
 
@@ -29,7 +33,10 @@ const init = () => {
 
 const render = () =>{
     requestAnimationFrame(render);
-    canvas.render();
+
+    if($canvas){
+        canvas.render();
+    }
 }
 
 arduino.socket.on('keyPressed', key => {
