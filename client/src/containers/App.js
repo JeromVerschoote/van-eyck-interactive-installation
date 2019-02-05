@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
-import Leefwereld from './models/Leefwereld.jsx';
-import Creatieproces from './models/Creatieproces.jsx';
-import Levensloop from './models/Levensloop.jsx';
+
+import data from '../assets/data/data.json';
+
+import Book from './Book.js';
 
 class App extends Component {
   render() {
+    const {leefwereld, creatieproces, levensloop} = data;
+
     return (
       <React.Fragment>
         <p><Link to="/leefwereld">Leefwereld</Link></p>
         <p><Link to="/creatieproces">Creatieproces</Link></p>
         <p><Link to="/levensloop">Levensloop</Link></p>
         <Switch>
-          <Route path='/leefwereld' exact render={() => <Leefwereld/>} />
-          <Route path='/creatieproces' exact render={() => <Creatieproces/>} />
-          <Route path='/levensloop' exact render={() => <Levensloop/>} />
+          <Route path='/leefwereld' exact render={() => <Book data={leefwereld}/>} />
+          <Route path='/creatieproces' exact render={() => <Book data={creatieproces}/>} />
+          <Route path='/levensloop' exact render={() => <Book data={levensloop}/>} />
         </Switch>
       </React.Fragment>
     );
