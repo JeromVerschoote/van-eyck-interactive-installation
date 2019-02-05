@@ -57,6 +57,52 @@
             }
         ]
         }],
+        "creatieproces": [
+            {
+                "title": "Opbouw",
+                "explanation": "Om te schilderen is er een oppervlakte nodig. het Lam Gods is opgebouwd uit panelen van Baltische eik.",
+                "details": [
+                    {
+                        "subtitle": "Baltische eik",
+                        "detail": "Het hout is van hoge kwaliteit en zorgvuldig geselecteerd zodat het zo min mogelijk gaat uitzetten of krimpen."
+                    }
+                ]
+            },
+            {
+                "title": "Voorbereiding",
+                "explanation": "Op de panelen werd dan verschillende preparatie lagen aangebracht bestaande uit mengsel van natuurkrijt (calciumcarbonaat) en lijm van dierlijke oorsprong. Wanneer deze droog waren schuurde hij de panelen glad. Hierop bracht hij een gedetailleerde tekening aan met penseel en vloeibaar zwart medium.",
+                "details": [
+                    {
+                        "subtitle": "Natuurkrijt & lijm",
+                        "detail": "Deze witte achtergrond zorgt dat het schilderij het effect heeft van weerkaatsing en inwendige glans."
+                    }
+                ]
+            },
+            {
+                "title": "Origineel",
+                "explanation": "Wanneer de ondertekening klaar was kon hij beginnen met schilderen. De verf bestond uit olie met pigment. Om het droogproces te versnellen gebruikte hij waarschijnlijk siccatieven. Om kleur te geven gebruikte hij pigmenten naargelang het kleur dat hij wou verkrijgen. Een herkenbare techniek van Van Eyck is het gebruik van glacis. De pigmenten werden verdund in een grote hoeveelheid bindmiddel en zo werden de kleuren heel doorschijnend, door verschillende lagen hiervan aan te brengen konden kleuren optisch worden vermengd.",
+                "details": [
+                    {
+                        "subtitle": "Oog voor detail",
+                        "detail": "Er is een heel gedetailleerde weergave van onderdelen. De teksten en tekens in het boek worden duidelijk en realistisch weergegeven en is oog voor detail en perspectief die je in het boek terugvindt."
+                    },
+                    {
+                        "subtitle": "Landschap",
+                        "detail": "Eenvoudige en veelvuldige puntjes die met even dunnen als korte verf streepjes worden gecombineerd. Met deze pantheïstische streepjes laat het gebeuren vibreren."
+                    }
+                ]
+            },
+            {
+                "title": "Overschildering",
+                "explanation": "Je zou veronderstellen dat een overschildering werd aangebracht om kleine slijtage van de originele verf te verbergen maar bij oudere overschilderingen is dit niet het geval. De figuren kregen soms een nieuwe afwerking in de 16de eeuw, begin 17de eeuw.",
+                "details": [
+                    {
+                        "subtitle": "Het Lam",
+                        "detail": "Zo wouden ze het Lam Gods een hedendaagse ‘look’ geven waarin de humanisering van het lam centraal stond en de waardigheid van de goddelijk figuren naar voor kwamen en het dus aanvaardbaar was voor de katholieke kerk."
+                    }
+                ]
+            }
+        ],
         "levensloop": [
             {
                 "title": "1432",
