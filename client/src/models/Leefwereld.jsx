@@ -1,6 +1,12 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
+
+//IMPORT IMAGES 
 import Logo from'../assets/img/logo.svg';
+import LeefwereldCultuur from'../assets/img/LeefwereldCultuur.png';
+import LeefwereldReligie from'../assets/img/LeefwereldReligie.png';
+import LeefwereldSociaal from'../assets/img/LeefwereldSociaal.png';
+import LeefwereldKunst from'../assets/img/LeefwereldKunst.png';
 
 const Leefwereld = () => {
     return (
@@ -29,6 +35,7 @@ const Leefwereld = () => {
                 <p>Vlaanderen was in die tijd het centrum van Bourgondische Hofcultuur.</p>
             </header>
             <p>Die mensen omringen zich met pracht en praal, en overtroffen hiermee zelfs het Franse Koninklijke Hof. De verschillende kunstwerken uit die tijd illustreren de onlosmakelijke verbondenheid met macht, hebzucht en prestige.</p>
+            <img src={LeefwereldCultuur} alt="Dit is afbeelding die de cultuur in de middeleeuwen weerspiegelt." width="815" height="541" />
           </article>
         </section>
         <section className='section'>
@@ -39,6 +46,7 @@ const Leefwereld = () => {
                 <p>Ook religie speelde een prominente rol in de gebroeders’ leefwereld.</p>
             </header>
             <p>De clerus was immers oppermachtig en nog veel gebeurtenissen zoals o.a. de Pest, werden verklaard door de hand van God. Bij veel kunstwerken wordt het geestelijk afgebeeld en wordt verwezen naar bovennatuurlijke schoonheid. Het drieluik van het Lam Gods werd enkel geopend bij feestdagen. Andere dagen was het gesloten.</p>
+            <img src={LeefwereldReligie} alt="Dit is afbeelding die de religie weerspiegelt." width="830" height="530" />
           </article>
         </section>
         <section className='section right'>
@@ -51,6 +59,7 @@ const Leefwereld = () => {
                 <p>Ook armoede was niet weg te denken uit de leefwereld van de broeders.</p>
             </header>
             <p>Velen gingen kunstopleidingen studeren om hun bierschulden af te lossen met schilderijen. Anderen in de hoop te worden aangesteld bij een vorst, om zo een vast inkomen te bekomen. Zo was Jan van Eyck hofschilder bij Jan van Beiere en Filips de Goede. Vele kunstwerken kwamen terecht bij afnemers, een soort van adellijke curators waarbij het gewone volk de werken mocht komen bekijken.</p>
+            <img src={LeefwereldSociaal} alt="Dit is afbeelding die de sociale maatschappij weerspiegelt." width="830" height="530" />
           </article>
         </section>
         <section className='section'>
@@ -61,6 +70,7 @@ const Leefwereld = () => {
                 <p>Het was een harde wereld voor kunstenaars in die tijd toch was er verandering op komst.</p>
             </header>
             <p>De schilderkunst in de 15e eeuw kende ongeziene vooruitgang door de vereniging van kustenaars, het ontstaan van curators onder de vorm van rondreizende vorstenhuizen en de economie in kunsthandel. Ook de Van Eycks genoten hier van en werden op die manier wereldberoemd.</p>
+            <img src={LeefwereldKunst} alt="Dit is afbeelding die de kunst in de middeleeuwen weerspiegelt." width="830" height="550" />
           </article>
         </section>
         <section className='section right'>
