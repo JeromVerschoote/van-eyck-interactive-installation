@@ -2,6 +2,9 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 import Logo from'../assets/img/logo.svg';
 
+//IMPORT IMAGE
+import LevensloopImg from'../assets/img/Levensloop.png';
+
 const Levensloop = () => {
     return (
       <div className='book' id='book'>
@@ -28,6 +31,7 @@ const Levensloop = () => {
                 <p>Het Lam Gods is een kunstwerk die een rijke geschiedenis achter de rug heeft.</p>
             </header>
             <p>Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.</p>
+            <img src={LevensloopImg} alt="Dit is een afbeelding van het begin van het creatieproces." width="812" height="513" />
           </article>
         </section>
       </div>

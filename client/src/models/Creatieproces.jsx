@@ -2,6 +2,9 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 import Logo from'../assets/img/logo.svg';
 
+//IMPORT IMAGE
+import CreatieprocesImg from'../assets/img/Creatieproces.png';
+
 const Creatieproces = () => {
     return (
       <div className='book' id='book'>
@@ -28,6 +31,7 @@ const Creatieproces = () => {
                 <p>Olieverf kunst bestaat uit een heel proces die zorgvuldig moet worden doorlopen.</p>
             </header>
             <p>De kunstenaar moet geduldig verscheidene stappen doornemen die het schilderij vormgeven. Elke stap is een belangrijke factor om tot het eindresultaat te komen. Neem een kijkje achter het grootste werk van de gebroeder Van Eyck: het Lam Gods.</p>
+            <img src={CreatieprocesImg} alt="Dit is een afbeelding van het begin van het creatieproces." width="814" height="532" />
           </article>
         </section>
       </div>
