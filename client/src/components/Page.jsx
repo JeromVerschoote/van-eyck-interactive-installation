@@ -25,7 +25,7 @@ class Page extends Component {
   }
 
   render() {
-    const {title, subtitle, text, img} = this.props.data;
+    const {title, subtitle, text, img, link} = this.props.data;
     const {type} = this.props;
 
     return (
@@ -35,7 +35,7 @@ class Page extends Component {
             <h1 className='h1'>{title}</h1>
             <p className='subtitle'>{subtitle}</p>
             <p className='paragraph'>{text}</p>
-            <button className='button link'>Dieper in pagina duiken</button>
+            <button className='button link'><p dangerouslySetInnerHTML={{__html: link}} /></button>
         </div>
         <img src={require(`../assets/img/${img.src}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={img.width} height={img.height} className='image'/>
       </section>
