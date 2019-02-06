@@ -56,6 +56,64 @@
         "endPage": {
             "title": "Gedaaan",
             "text": "Wandel een eindje verder en ontdek  hoe de kunstwerken van de gebroeders van Eyck tot stand kwamen"
+        },
+        "details": {
+            "cultuur": [
+                {
+                    "title": "Sinaasappelen",
+                    "detail": "Sinaasappelen staan symbool voor vruchtbaarheid maar tonen ook aan dat er voldoende geld was voor exotisch vruchten. Giovanni Arnofini was waarschijnlijk een welgesteld man."
+                },
+                {
+                    "tile": "Bont",
+                    "detail": "Giovanni Arnofini draagt een met bont afgezette mantel, dit is een teken van welgesteldheid."
+                },
+                {
+                    "title": "Dikheid",
+                    "detail": "Dikheid was een modeverschijnsel. Het gaf aan dat je genoeg geld had om je meer dan nodig te voeden."
+                }
+            ],
+            "religie": [
+                {
+                    "title": "Heilig kruis",
+                    "detail": "Het heilige kruis waarin een splinter zit uit het kruis van Christus wordt bekeken door Van der Paele. “Christus is tussen ons."
+                },
+                {
+                    "title": "Jezuskind",
+                    "detail": "Het Jezuskind is als een volwassene afgebeeld omdat de goddelijke aard de kunstenaar ervan heeft weerhouden om het realistisch weer te geven."
+                },
+                {
+                    "title": "Beeldjes troon",
+                    "detail": "De gebeeldhouwde figuurtjes op de troon van Maria beelden passages uit vertolkt vanuit het Oude Testament."
+                }
+            ],
+            "sociaal": [
+                {
+                    "title": "Man te paard",
+                    "detail": "Er zijn ook rijk uitgedoste mannen te paard die het contrast tussen rijk en arm duidelijk accentueren."
+                },
+                {
+                    "title": "Bouwplaats",
+                    "detail": "Op de bouwplaats bij de toren zijn bouwlieden ijverig aan het werk. Het toont aan dat er hard gewerkt moest worden."
+                },
+                {
+                    "title": "Werklieden",
+                    "detail": "Het zijn vooral gewoon burgers die zich uit de naad werken en die grootste schilderijen niet konden permitteren."
+                }
+            ],
+            "kunst": [
+                {
+                    "title": "Stof uit buitenland",
+                    "detail": "Er zijn veel invloeden die wijzen op invloed van het buitenland. Zoals de details in klederdracht, tapijten, architectuur."
+                },
+                {
+                    "title": "Jeruzalem",
+                    "detail": "De stad op de achtergrond moet Jeruzalem voorstellen. Dus Van Eyck was in de ban door religieuze steden."
+                },
+                {
+                    "title": "Dom van Utrecht",
+                    "detail": "Een van de torens is gebaseerd op die van de Dom van Utrecht waarop wijst dat er communicatie was tussen steden."
+                }
+            ]
         } 
     },
     "creatieproces": {
@@ -92,7 +150,46 @@
         "endPage": {
             "title": "Gedaaan",
             "text": "Ontdek verder de tentoonstelling en leg de geschiedenis van het Lam Gods bloot."
-        } 
+        },
+        "details": {
+            "Opbouw":{
+                "title": "Opbouw",
+                "explanation": "Om te schilderen is er een oppervlakte nodig. het Lam Gods is opgebouwd uit panelen van Baltische eik.",
+                "details": 
+                    {
+                        "subtitle": "Baltische eik",
+                        "detail": "Het hout is van hoge kwaliteit en zorgvuldig geselecteerd zodat het zo min mogelijk gaat uitzetten of krimpen."
+                    }
+            },
+            "Voorbereiding":{
+                "title": "Voorbereiding",
+                "explanation": "Op de panelen werd dan verschillende preparatie lagen aangebracht bestaande uit mengsel van natuurkrijt (calciumcarbonaat) en lijm van dierlijke oorsprong. Wanneer deze droog waren schuurde hij de panelen glad. Hierop bracht hij een gedetailleerde tekening aan met penseel en vloeibaar zwart medium.",
+                "details": 
+                    {
+                        "subtitle": "Natuurkrijt & lijm",
+                        "detail": "Deze witte achtergrond zorgt dat het schilderij het effect heeft van weerkaatsing en inwendige glans."
+                    }
+            },
+            "Origineel":{
+                "title": "Origineel",
+                "explanation": "Wanneer de ondertekening klaar was kon hij beginnen met schilderen. De verf bestond uit olie met pigment. Om het droogproces te versnellen gebruikte hij waarschijnlijk siccatieven. Om kleur te geven gebruikte hij pigmenten naargelang het kleur dat hij wou verkrijgen. Een herkenbare techniek van Van Eyck is het gebruik van glacis. De pigmenten werden verdund in een grote hoeveelheid bindmiddel en zo werden de kleuren heel doorschijnend, door verschillende lagen hiervan aan te brengen konden kleuren optisch worden vermengd.",
+                "details": 
+                    {
+                        "subtitle": "Oog voor detail",
+                        "detail": "Er is een heel gedetailleerde weergave van onderdelen. De teksten en tekens in het boek worden duidelijk en realistisch weergegeven en is oog voor detail en perspectief die je in het boek terugvindt."
+                    }
+            },
+            "Overschildering":{
+                "title": "Overschildering",
+                "explanation": "Je zou veronderstellen dat een overschildering werd aangebracht om kleine slijtage van de originele verf te verbergen maar bij oudere overschilderingen is dit niet het geval. De figuren kregen soms een nieuwe afwerking in de 16de eeuw, begin 17de eeuw.",
+                "details": 
+                    {
+                        "subtitle": "Het Lam",
+                        "detail": "Zo wouden ze het Lam Gods een hedendaagse ‘look’ geven waarin de humanisering van het lam centraal stond en de waardigheid van de goddelijk figuren naar voor kwamen en het dus aanvaardbaar was voor de katholieke kerk."
+                    }
+                
+            }
+        }
     },
     "levensloop": {
         "startPage": {
@@ -127,6 +224,28 @@
         "endPage": {
             "title": "Gedaaan",
             "text": "Nu is het kunstwerk origineel hier te bewonderen."
-        } 
+        },
+        "details":[
+            {
+                "title": "1432",
+                "explanation": "Het schilderij wordt officieel ingewijd in de toenmalig Sint-Janskerk in Gent.",
+                "details": [
+                    {
+                        "location": "Gent",
+                        "detail": "Het Lam Gods krijgt een plek in de kapel van de Sint-Janskerk."
+                    }
+                ]
+            },
+            {
+                "title": "1566",
+                "explanation": "Tijdens de Beeldenstorm worden religieuze beelden en kunstwerken in katholieke kerken verwoest.",
+                "details": [
+                    {
+                        "location": "Gent",
+                        "detail": "Het werkt wordt in de toren van de Sint-Janskerk verborgen gehouden."
+                    }
+                ]
+            }
+        ]
     }   
 }
