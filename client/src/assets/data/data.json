@@ -10,27 +10,35 @@
                 "title": "Cultuur",
                 "subtitle": "Vlaanderen was in tijd het centrum van de Bourgondische Hofcultuur.",
                 "text": "De mensen omringed zich met pracht en praal, en overtroffen hiermee zelfs het Franse Koninklijke Hof. De verschillende kunstwerken uit die tijd illustreren de onsmakelijke verbondenheid met macht, hebzucht en prestige.",
-                "img": "LeefwereldCultuur.png"
+                "img": "LeefwereldCultuur.png",
+                "imgWidth": "814",
+                "imgHeight": "541"
             },
             {
                 "id": "02",
                 "title": "Religie",
                 "subtitle": "Ook religie speelde een prominente rol in de gebroeders’ leefwereld.",
                 "text": "De clerus was immers oppermachtig en nog veel gebeurtenissen zoals o.a. de Pest, werden verklaard door de hand van God. Bij veel kunstwerken wordt het geestelijk afgebeeld en wordt verwezen naar bovennatuurlijke schoonheid. Het drieluik van het Lam Gods werd enkel geopend bij feestdagen. Andere dagen was het gesloten.",
-                "img": "LeefwereldReligie.png"
+                "img": "LeefwereldReligie.png",
+                "imgWidth": "830",
+                "imgHeight": "530"
             },
             {
                 "id": "03",
                 "title": "Sociaal",
                 "subtitle": "Ook armoede was niet weg te denken uit de leefwereld van de broeders.",
                 "text": "Velen gingen kunstopleidingen studeren om hun bierschulden af te lossen met schilderijen. Anderen in de hoop te worden aangesteld bij een vorst, om zo een vast inkomen te bekomen. Zo was Jan van Eyck hofschilder bij Jan van Beiere en Filips de Goede. Vele kunstwerken kwamen terecht bij afnemers, een soort van adellijke curators waarbij het gewone volk de werken mocht komen bekijken.",
-                "img": "LeefwereldSociaal.png"
+                "img": "LeefwereldSociaal.png",
+                "imgWidth": "830",
+                "imgHeight": "530"
             },{
                 "id": "04",
                 "title": "Kunst",
                 "subtitle": "Het was een harde wereld voor kunstenaars in die tijd toch was er verandering op komst.",
                 "text": "De schilderkunst in de 15e eeuw kende ongeziene vooruitgang door de vereniging van kustenaars, het ontstaan van curators onder de vorm van rondreizende vorstenhuizen en de economie in kunsthandel. Ook de Van Eycks genoten hier van en werden op die manier wereldberoemd.",
-                "img": "LeefwereldKunst.png"
+                "img": "LeefwereldKunst.png",
+                "imgWidth": "830",
+                "imgHeight": "550"
             }
         ],
         "endPage": {

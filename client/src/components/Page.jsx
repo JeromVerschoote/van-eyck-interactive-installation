@@ -25,9 +25,9 @@ class Page extends Component {
   }
 
   render() {
-    const {title, subtitle, text, img} = this.props.data;
+    const {title, subtitle, text, img, imgWidth, imgHeight} = this.props.data;
     const {type} = this.props;
-    
+
     return (
         <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
         <div className='content'>
@@ -35,7 +35,7 @@ class Page extends Component {
             <h1 className='h1'>{title}</h1>
             <p className='subtitle'>{subtitle}</p>
             <p className='paragraph'>{text}</p>
-            <img src={require(`../assets/img/${img}`)} width="300" height="300" />
+            <img src={require(`../assets/img/${img}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={imgWidth} height={imgHeight} />
         </div>
       </section>
     )
