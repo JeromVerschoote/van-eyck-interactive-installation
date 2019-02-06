@@ -35,6 +35,9 @@ class Page extends Component {
             <h1 className='h1'>{title}</h1>
             <p className='subtitle'>{subtitle}</p>
             <p className='paragraph'>{text}</p>
+            <div className='buttons centered'>
+              <button className='button'>Dieper in pagina duiken</button>
+            </div>
             <img src={require(`../assets/img/${img}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={imgWidth} height={imgHeight} />
         </div>
       </section>
