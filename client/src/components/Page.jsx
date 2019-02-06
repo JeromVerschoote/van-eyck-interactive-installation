@@ -25,7 +25,7 @@ class Page extends Component {
   }
 
   render() {
-    const {title, subtitle, text, img, imgWidth, imgHeight} = this.props.data;
+    const {title, subtitle, text, img} = this.props.data;
     const {type} = this.props;
 
     return (
@@ -35,11 +35,9 @@ class Page extends Component {
             <h1 className='h1'>{title}</h1>
             <p className='subtitle'>{subtitle}</p>
             <p className='paragraph'>{text}</p>
-            <div className='buttons centered'>
-              <button className='button'>Dieper in pagina duiken</button>
-            </div>
-            <img src={require(`../assets/img/${img}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={imgWidth} height={imgHeight} />
+            <button className='button link'>Dieper in pagina duiken</button>
         </div>
+        <img src={require(`../assets/img/${img.src}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={img.width} height={img.height} className='image'/>
       </section>
     )
   }

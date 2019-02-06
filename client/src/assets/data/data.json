@@ -10,35 +10,43 @@
                 "title": "Cultuur",
                 "subtitle": "Vlaanderen was in tijd het centrum van de Bourgondische Hofcultuur.",
                 "text": "De mensen omringed zich met pracht en praal, en overtroffen hiermee zelfs het Franse Koninklijke Hof. De verschillende kunstwerken uit die tijd illustreren de onsmakelijke verbondenheid met macht, hebzucht en prestige.",
-                "img": "LeefwereldCultuur.png",
-                "imgWidth": "814",
-                "imgHeight": "541"
+                "img": {
+                    "src": "leefwereldCultuur.png",
+                    "width": "814",
+                    "height": "541"
+                }
             },
             {
                 "id": "02",
                 "title": "Religie",
                 "subtitle": "Ook religie speelde een prominente rol in de gebroeders’ leefwereld.",
                 "text": "De clerus was immers oppermachtig en nog veel gebeurtenissen zoals o.a. de Pest, werden verklaard door de hand van God. Bij veel kunstwerken wordt het geestelijk afgebeeld en wordt verwezen naar bovennatuurlijke schoonheid. Het drieluik van het Lam Gods werd enkel geopend bij feestdagen. Andere dagen was het gesloten.",
-                "img": "LeefwereldReligie.png",
-                "imgWidth": "830",
-                "imgHeight": "530"
+                "img": {
+                    "src": "leefwereldReligie.png",
+                    "width": "830",
+                    "height": "530"
+                }
             },
             {
                 "id": "03",
                 "title": "Sociaal",
                 "subtitle": "Ook armoede was niet weg te denken uit de leefwereld van de broeders.",
                 "text": "Velen gingen kunstopleidingen studeren om hun bierschulden af te lossen met schilderijen. Anderen in de hoop te worden aangesteld bij een vorst, om zo een vast inkomen te bekomen. Zo was Jan van Eyck hofschilder bij Jan van Beiere en Filips de Goede. Vele kunstwerken kwamen terecht bij afnemers, een soort van adellijke curators waarbij het gewone volk de werken mocht komen bekijken.",
-                "img": "LeefwereldSociaal.png",
-                "imgWidth": "830",
-                "imgHeight": "530"
+                "img": {
+                    "src": "leefwereldSociaal.png",
+                    "width": "830",
+                    "height": "530"
+                }
             },{
                 "id": "04",
                 "title": "Kunst",
                 "subtitle": "Het was een harde wereld voor kunstenaars in die tijd toch was er verandering op komst.",
                 "text": "De schilderkunst in de 15e eeuw kende ongeziene vooruitgang door de vereniging van kustenaars, het ontstaan van curators onder de vorm van rondreizende vorstenhuizen en de economie in kunsthandel. Ook de Van Eycks genoten hier van en werden op die manier wereldberoemd.",
-                "img": "LeefwereldKunst.png",
-                "imgWidth": "830",
-                "imgHeight": "550"
+                "img": {
+                    "src": "leefwereldKunst.png",
+                    "width": "830",
+                    "height": "530"
+                }
             }
         ],
         "endPage": {
@@ -57,18 +65,22 @@
                 "title": "Olieverfkunst",
                 "subtitle": "Olieverf kunst bestaat uit een heel proces die zorgvuldig moet worden doorlopen.",
                 "text": "De kunstenaar moet geduldig verscheidene stappen doornemen die het schilderij vormgeven. Elke stap is een belangrijke factor om tot het eindresultaat te komen. Neem een kijkje achter het grootste werk van de gebroeder Van Eyck: het Lam Gods.",
-                "img": "Creatieproces.png",
-                "imgWidth": "814",
-                "imgHeight": "532"
+                "img": {
+                    "src": "creatieproces.png",
+                    "width": "814",
+                    "height": "532"
+                }
             },
             {
                 "id": "02",
                 "title": "Olieverfkunst",
                 "subtitle": "Olieverf kunst bestaat uit een heel proces die zorgvuldig moet worden doorlopen.",
                 "text": "De kunstenaar moet geduldig verscheidene stappen doornemen die het schilderij vormgeven. Elke stap is een belangrijke factor om tot het eindresultaat te komen. Neem een kijkje achter het grootste werk van de gebroeder Van Eyck: het Lam Gods.",
-                "img": "Creatieproces.png",
-                "imgWidth": "814",
-                "imgHeight": "532"
+                "img": {
+                    "src": "creatieproces.png",
+                    "width": "814",
+                    "height": "532"
+                }
             }
         ],
         "endPage": {
@@ -87,18 +99,22 @@
                 "title": "Lam Gods",
                 "subtitle": "Het Lam Gods is een kunstwerk die een rijke geschiedenis achter de rug heeft.",
                 "text": "Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.",
-                "img": "Levensloop.png",
-                "imgWidth": "812",
-                "imgHeight": "513"
+                "img": {
+                    "src": "levensloop.png",
+                    "width": "812",
+                    "height": "513"
+                }
             },
             {
                 "id": "02",
                 "title": "Lam Gods",
                 "subtitle": "Het Lam Gods is een kunstwerk die een rijke geschiedenis achter de rug heeft.",
                 "text": "Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.",
-                "img": "Levensloop.png",
-                "imgWidth": "812",
-                "imgHeight": "513"
+                "img": {
+                    "src": "levensloop.png",
+                    "width": "812",
+                    "height": "513"
+                }
             }
         ],
         "endPage": {
