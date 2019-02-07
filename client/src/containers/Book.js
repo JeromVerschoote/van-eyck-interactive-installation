@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from "react-router-dom";
+import { withRouter, BrowserRouter } from "react-router-dom";
 
 import StartPage from '../components/StartPage.jsx';
 import Page from '../components/Page.jsx'
@@ -58,21 +58,21 @@ class Book extends Component {
       return (
         <React.Fragment>
           <StartPage data={startPage}  type={'odd'}/>
-          <Page data={pages[this.state.currentPage]} key={pages[this.state.currentPage].id} type={'even'}/>
+          <BrowserRouter><Page data={pages[this.state.currentPage]} key={pages[this.state.currentPage].id} type={'even'} parent={startPage.title.toLowerCase()}/></BrowserRouter>
         </React.Fragment>
       );
     }else if(this.state.currentPage === this.pageCount - 2){
       return(
         <React.Fragment>
-          <Page data={pages[this.state.currentPage - 1]} key={pages[this.state.currentPage - 1].id}  type={'odd'}/>
+         <BrowserRouter><Page data={pages[this.state.currentPage - 1]} key={pages[this.state.currentPage - 1].id}  type={'odd'} parent={startPage.title.toLowerCase()}/></BrowserRouter>
           <EndPage data={endPage} type={'even'}/>
         </React.Fragment>
       )
     }else{
       return(
         <React.Fragment>
-          <Page data={pages[this.state.currentPage -1 ]} key={pages[this.state.currentPage - 1].id}  type={'odd'}/>
-          <Page data={pages[this.state.currentPage]} key={pages[this.state.currentPage].id} type={'even'}/>
+          <BrowserRouter><Page data={pages[this.state.currentPage -1 ]} key={pages[this.state.currentPage - 1].id}  type={'odd'} parent={startPage.title.toLowerCase()}/></BrowserRouter>
+          <BrowserRouter><Page data={pages[this.state.currentPage]} key={pages[this.state.currentPage].id} type={'even'} parent={startPage.title.toLowerCase()}/></BrowserRouter>
         </React.Fragment>
       )
     }

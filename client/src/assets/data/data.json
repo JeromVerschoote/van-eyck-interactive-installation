@@ -15,7 +15,78 @@
                     "width": "814",
                     "height": "541"
                 },
-                "link": "Een duik <br/> in de  <br/> middeleeuwse <br/> <span>hofcultuur</span>"
+                "link": {
+                    "text": "Een duik in de middeleeuwse hofcultuur",
+                    "url": ""
+                },
+                "details": [
+                    {
+                        "title": "Sinaasappelen",
+                        "text": "Sinaasappelen staan symbool voor vruchtbaarheid maar tonen ook aan dat er voldoende geld was voor exotisch vruchten. Giovanni Arnofini was waarschijnlijk een welgesteld man.",
+                        "position": {
+                            "x": 145,
+                            "y": 934
+                        },
+                        "img":{
+                            "src": "",
+                            "width": 320,
+                            "height": 300
+                        },
+                        "dimensions": {
+                            "width": 250,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": false,
+                            "pointedTo": "lowerLeft"
+                        }
+                    },
+                    {
+                        "title": "Bont",
+                        "text": "Giovanni Arnofini draagt een met bont afgezette mantel, dit is een teken van welgesteldheid.",
+                        "position": {
+                            "x": 793,
+                            "y": 741
+                        },
+                        "img":{
+                            "src": "",
+                            "width": 260,
+                            "height": 230
+                        },
+                        "dimensions": {
+                            "width": 250,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "lowerRight"
+                        }
+                    },
+                    {
+                        "title": "Dikheid",
+                        "text": "Dikheid was een modeverschijnsel. Het gaf aan dat je genoeg geld had om je meer dan nodig te voeden.",
+                        "position": {
+                            "x": 1400,
+                            "y": 706
+                        },
+                        "img":{
+                            "src": "",
+                            "width": 240,
+                            "height": 240
+                        },
+                        "dimensions": {
+                            "width": 250,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": false,
+                            "pointedTo": "lowerRight"
+                        }
+                    }
+                ]
             },
             {
                 "id": "02",
@@ -27,7 +98,24 @@
                     "width": "830",
                     "height": "530"
                 },
-                "link": "Een duik <br/> in de  <br/> middeleeuwse <br/> <span>geloof</span>"
+                "link": {
+                    "text": "Een duik in de middeleeuwse geloof",
+                    "url": ""
+                },
+                "details":  [
+                    {
+                        "title": "Heilig kruis",
+                        "text": "Het heilige kruis waarin een splinter zit uit het kruis van Christus wordt bekeken door Van der Paele. “Christus is tussen ons."
+                    },
+                    {
+                        "title": "Jezuskind",
+                        "text": "Het Jezuskind is als een volwassene afgebeeld omdat de goddelijke aard de kunstenaar ervan heeft weerhouden om het realistisch weer te geven."
+                    },
+                    {
+                        "title": "Beeldjes troon",
+                        "text": "De gebeeldhouwde figuurtjes op de troon van Maria beelden passages uit vertolkt vanuit het Oude Testament."
+                    }
+                ]
             },
             {
                 "id": "03",
@@ -39,7 +127,24 @@
                     "width": "830",
                     "height": "530"
                 },
-                "link": "Een duik <br/> in de  <br/> middeleeuwse <br/> <span>sociale omgang</span>"
+                "link": {
+                    "text": "Een duik in de middeleeuwse sociale omgang",
+                    "url": ""
+                },
+                "details":  [
+                    {
+                        "title": "Man te paard",
+                        "text": "Er zijn ook rijk uitgedoste mannen te paard die het contrast tussen rijk en arm duidelijk accentueren."
+                    },
+                    {
+                        "title": "Bouwplaats",
+                        "text": "Op de bouwplaats bij de toren zijn bouwlieden ijverig aan het werk. Het toont aan dat er hard gewerkt moest worden."
+                    },
+                    {
+                        "title": "Werklieden",
+                        "text": "Het zijn vooral gewoon burgers die zich uit de naad werken en die grootste schilderijen niet konden permitteren."
+                    }
+                ]
             },{
                 "id": "04",
                 "title": "Kunst",
@@ -50,71 +155,30 @@
                     "width": "830",
                     "height": "530"
                 },
-                "link": "Een duik <br/> in de  <br/> middeleeuws <br/> <span>buitenland</span>"
+                "link": {
+                    "text": "Een duik in de middeleeuws buitenland",
+                    "url": ""
+                },
+                "details": [
+                    {
+                        "title": "Stof uit buitenland",
+                        "text": "Er zijn veel invloeden die wijzen op invloed van het buitenland. Zoals de details in klederdracht, tapijten, architectuur."
+                    },
+                    {
+                        "title": "Jeruzalem",
+                        "text": "De stad op de achtergrond moet Jeruzalem voorstellen. Dus Van Eyck was in de ban door religieuze steden."
+                    },
+                    {
+                        "title": "Dom van Utrecht",
+                        "text": "Een van de torens is gebaseerd op die van de Dom van Utrecht waarop wijst dat er communicatie was tussen steden."
+                    }
+                ]
             }
         ],
         "endPage": {
             "title": "Gedaaan",
             "text": "Wandel een eindje verder en ontdek  hoe de kunstwerken van de gebroeders van Eyck tot stand kwamen"
-        },
-        "details": {
-            "cultuur": [
-                {
-                    "title": "Sinaasappelen",
-                    "detail": "Sinaasappelen staan symbool voor vruchtbaarheid maar tonen ook aan dat er voldoende geld was voor exotisch vruchten. Giovanni Arnofini was waarschijnlijk een welgesteld man."
-                },
-                {
-                    "tile": "Bont",
-                    "detail": "Giovanni Arnofini draagt een met bont afgezette mantel, dit is een teken van welgesteldheid."
-                },
-                {
-                    "title": "Dikheid",
-                    "detail": "Dikheid was een modeverschijnsel. Het gaf aan dat je genoeg geld had om je meer dan nodig te voeden."
-                }
-            ],
-            "religie": [
-                {
-                    "title": "Heilig kruis",
-                    "detail": "Het heilige kruis waarin een splinter zit uit het kruis van Christus wordt bekeken door Van der Paele. “Christus is tussen ons."
-                },
-                {
-                    "title": "Jezuskind",
-                    "detail": "Het Jezuskind is als een volwassene afgebeeld omdat de goddelijke aard de kunstenaar ervan heeft weerhouden om het realistisch weer te geven."
-                },
-                {
-                    "title": "Beeldjes troon",
-                    "detail": "De gebeeldhouwde figuurtjes op de troon van Maria beelden passages uit vertolkt vanuit het Oude Testament."
-                }
-            ],
-            "sociaal": [
-                {
-                    "title": "Man te paard",
-                    "detail": "Er zijn ook rijk uitgedoste mannen te paard die het contrast tussen rijk en arm duidelijk accentueren."
-                },
-                {
-                    "title": "Bouwplaats",
-                    "detail": "Op de bouwplaats bij de toren zijn bouwlieden ijverig aan het werk. Het toont aan dat er hard gewerkt moest worden."
-                },
-                {
-                    "title": "Werklieden",
-                    "detail": "Het zijn vooral gewoon burgers die zich uit de naad werken en die grootste schilderijen niet konden permitteren."
-                }
-            ],
-            "kunst": [
-                {
-                    "title": "Stof uit buitenland",
-                    "detail": "Er zijn veel invloeden die wijzen op invloed van het buitenland. Zoals de details in klederdracht, tapijten, architectuur."
-                },
-                {
-                    "title": "Jeruzalem",
-                    "detail": "De stad op de achtergrond moet Jeruzalem voorstellen. Dus Van Eyck was in de ban door religieuze steden."
-                },
-                {
-                    "title": "Dom van Utrecht",
-                    "detail": "Een van de torens is gebaseerd op die van de Dom van Utrecht waarop wijst dat er communicatie was tussen steden."
-                }
-            ]
-        } 
+        }
     },
     "creatieproces": {
         "startPage": {
@@ -132,7 +196,10 @@
                     "width": "814",
                     "height": "532"
                 },
-                "link": "Een kijk <br/> achter het<br/> creatieproces <br/> <span>van het lam gods</span>"
+                "link": {
+                    "text": "Een kijk achter het creatieproces van het lam gods",
+                    "url": ""
+                }
             },
             {
                 "id": "02",
@@ -144,7 +211,10 @@
                     "width": "814",
                     "height": "532"
                 },
-                "link": "Een kijk <br/> achter het <br/>creatieproces <br/> <span>van het lam gods</span>"
+                "link": {
+                    "text": "Een kijk achter het creatieproces van het lam gods",
+                    "url": ""
+                }
             }
         ],
         "endPage": {
@@ -207,7 +277,10 @@
                     "width": "812",
                     "height": "513"
                 },
-                "link": "Een duik <br/> in de <br/> het creatieproces <br/> <span>van het lam gods</span>"
+                "link": {
+                    "text": "Een duik in de het creatieproces van het lam gods",
+                    "url": ""
+                }
             },
             {
                 "id": "02",

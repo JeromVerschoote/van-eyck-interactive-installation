@@ -70,6 +70,7 @@ body {
 
 .page--even .link{
   margin-left: 35rem;
+  text-transform: l
 }
 
 .page--odd .link{
@@ -81,4 +82,14 @@ body {
 .centered{
   display: flex;
   justify-content: center;
+}
+
+.canvas{
+  background-image: url(./assets/img/leefwereldCultuurDetail.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 90vw;
+  height: 100vh;
 }

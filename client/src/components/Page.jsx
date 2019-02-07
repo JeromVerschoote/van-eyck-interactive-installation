@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from "react-router-dom";
+import { Route, Link } from 'react-router-dom';
+
+import Canvas from './Canvas';
 
 class Page extends Component {
 
@@ -25,8 +28,8 @@ class Page extends Component {
   }
 
   render() {
-    const {title, subtitle, text, img, link} = this.props.data;
-    const {type} = this.props;
+    const {title, subtitle, text, img, link, details} = this.props.data;
+    const {type, parent} = this.props;
 
     return (
         <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
@@ -35,8 +38,9 @@ class Page extends Component {
             <h1 className='h1'>{title}</h1>
             <p className='subtitle'>{subtitle}</p>
             <p className='paragraph'>{text}</p>
-            <button className='button link'><p dangerouslySetInnerHTML={{__html: link}} /></button>
+            <button className='button link'><Link to={title.toLowerCase() + '/app'}>{link.text}</Link></button>
         </div>
+        <Route path={'/' + title.toLowerCase() + '/app'} exact render={() => <Canvas data={details} parent={parent}/>} />
         <img src={require(`../assets/img/${img.src}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={img.width} height={img.height} className='image'/>
       </section>
     )
