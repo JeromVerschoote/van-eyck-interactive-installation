@@ -38,7 +38,7 @@ class Page extends Component {
             <h1 className='h1'>{title}</h1>
             <p className='subtitle'>{subtitle}</p>
             <p className='paragraph'>{text}</p>
-            <button className='button link'><Link to={title.toLowerCase() + '/app'}>{link.text}</Link></button>
+            <button className='button link'><Link to={title.toLowerCase() + '/app'}><p dangerouslySetInnerHTML={{__html: link.text}}></p></Link></button>
         </div>
         <Route path={'/' + title.toLowerCase() + '/app'} exact render={() => <Canvas data={details} parent={parent}/>} />
         <img src={require(`../assets/img/${img.src}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={img.width} height={img.height} className='image'/>

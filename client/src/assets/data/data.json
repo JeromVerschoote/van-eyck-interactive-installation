@@ -16,7 +16,7 @@
                     "height": "541"
                 },
                 "link": {
-                    "text": "Een duik in de middeleeuwse hofcultuur",
+                    "text": "Een duik <br/> in de <br/> middeleeuwse <br/> <span class=\"link-highlighted\"> hofcultuur </span>",
                     "url": ""
                 },
                 "details": [
@@ -99,7 +99,7 @@
                     "height": "530"
                 },
                 "link": {
-                    "text": "Een duik in de middeleeuwse geloof",
+                    "text": "Een duik <br/> in de <br/> middeleeuwse <br/> <span class=\"link-highlighted\"> geloof </span>",
                     "url": ""
                 },
                 "details":  [
@@ -128,7 +128,7 @@
                     "height": "530"
                 },
                 "link": {
-                    "text": "Een duik in de middeleeuwse sociale omgang",
+                    "text": "Een duik <br/> in de <br/> middeleeuwse <br/> <span class=\"link-highlighted\"> sociale omgang</span>",
                     "url": ""
                 },
                 "details":  [
@@ -156,7 +156,7 @@
                     "height": "530"
                 },
                 "link": {
-                    "text": "Een duik in de middeleeuws buitenland",
+                    "text": "Een duik <br/> in de <br/> middeleeuwse <br/> <span class=\"link-highlighted\"> buitenland </span>",
                     "url": ""
                 },
                 "details": [
