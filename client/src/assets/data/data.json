@@ -28,13 +28,13 @@
                             "y": 934
                         },
                         "img":{
-                            "src": "leefwereldDetail1.jpg",
+                            "src": "leefwereldCultuur1",
                             "width": 320,
                             "height": 300
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 320,
+                            "height": 465
                         },
                         "options": {
                             "orientation": "vertical",
@@ -50,13 +50,13 @@
                             "y": 741
                         },
                         "img":{
-                            "src": "leefwereldDetail2.jpg",
+                            "src": "leefwereldCultuur2",
                             "width": 260,
                             "height": 230
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 260,
+                            "height": 400
                         },
                         "options": {
                             "orientation": "vertical",
@@ -72,13 +72,13 @@
                             "y": 706
                         },
                         "img":{
-                            "src": "leefwereldDetail3.jpg",
+                            "src": "leefwereldCultuur3",
                             "width": 240,
                             "height": 240
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 240,
+                            "height": 430
                         },
                         "options": {
                             "orientation": "vertical",
@@ -111,13 +111,13 @@
                             "y": 260
                         },
                         "img":{
-                            "src": "",
+                            "src": "leefwereldReligie1",
                             "width": 280,
                             "height": 270
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 280,
+                            "height": 420
                         },
                         "options": {
                             "orientation": "vertical",
@@ -133,13 +133,13 @@
                             "y": 491
                         },
                         "img":{
-                            "src": "",
+                            "src": "leefwereldReligie2",
                             "width": 280,
                             "height": 230
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 280,
+                            "height": 420
                         },
                         "options": {
                             "orientation": "vertical",
@@ -155,13 +155,13 @@
                             "y": 506
                         },
                         "img":{
-                            "src": "",
+                            "src": "leefwereldReligie3",
                             "width": 280,
                             "height": 210
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 280,
+                            "height": 380
                         },
                         "options": {
                             "orientation": "vertical",
@@ -194,13 +194,13 @@
                             "y": 560
                         },
                         "img":{
-                            "src": "",
-                            "width": 250,
+                            "src": "leefwereldSociaal1",
+                            "width": 260,
                             "height": 250
                         },
                         "dimensions": {
                             "width": 250,
-                            "height": 500
+                            "height": 390
                         },
                         "options": {
                             "orientation": "horizontal",
@@ -216,13 +216,13 @@
                             "y": 891
                         },
                         "img":{
-                            "src": "",
+                            "src": "leefwereldSociaal2",
                             "width": 340,
                             "height": 150
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 340,
+                            "height": 325
                         },
                         "options": {
                             "orientation": "vertical",
@@ -238,13 +238,13 @@
                             "y": 776
                         },
                         "img":{
-                            "src": "",
+                            "src": "leefwereldSociaal3",
                             "width": 270,
                             "height": 250
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 270,
+                            "height": 420
                         },
                         "options": {
                             "orientation": "vertical",
@@ -276,13 +276,13 @@
                             "y": 560
                         },
                         "img":{
-                            "src": "",
+                            "src": "leefwereldKunst1",
                             "width": 300,
                             "height": 250
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 300,
+                            "height": 400
                         },
                         "options": {
                             "orientation": "horizontal",
@@ -298,13 +298,13 @@
                             "y": 430
                         },
                         "img":{
-                            "src": "",
+                            "src": "leefwereldKunst2",
                             "width": 280,
                             "height": 240
                         },
                         "dimensions": {
-                            "width": 250,
-                            "height": 500
+                            "width": 280,
+                            "height": 400
                         },
                         "options": {
                             "orientation": "vertical",
@@ -320,13 +320,13 @@
                             "y": 376
                         },
                         "img":{
-                            "src": "",
+                            "src": "leefwereldKunst3",
                             "width": 250,
                             "height": 240
                         },
                         "dimensions": {
                             "width": 250,
-                            "height": 500
+                            "height": 450
                         },
                         "options": {
                             "orientation": "vertical",

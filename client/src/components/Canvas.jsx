@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from "react-router-dom";
 
 import {wrapTextIntoLines} from '../js/lib.js';
-import {PADDING, COLOR, FONT} from '../js/settings.js';
+import {PADDING, COLOR, FONT} from '../js/style.js';
 
 class Canvas extends Component {
   
@@ -14,11 +14,14 @@ class Canvas extends Component {
     const ctx = canvas.getContext('2d');
 
     if(parent === 'leefwereld'){
+      
       details.forEach(detail => {
         const {title, text, img, position, dimensions, options} = detail;
 
         const lines = wrapTextIntoLines(ctx, text, dimensions.width - (PADDING * 2));
         let offset = 0;
+
+        const image = document.getElementById(img.src);
 
         switch(options.pointedTo){
           case 'lowerLeft':
@@ -28,6 +31,7 @@ class Canvas extends Component {
                 this.drawText(ctx, line, position.x + PADDING,position.y - dimensions.height + (PADDING * 2.5), COLOR.black, FONT.regular, '14px', offset);
                 offset += 25;
               });
+              this.drawImage(ctx, image, position.x, position.y - img.height, img.width, img.height);
               this.drawPointer(ctx, position.x, position.y -35, position.x, position.y, position.x + 35, position.y, COLOR.red);
           break;
 
@@ -38,6 +42,7 @@ class Canvas extends Component {
               this.drawText(ctx, line, position.x + PADDING,position.y + (PADDING * 2.5) + img.height, COLOR.black, FONT.regular, '14px', offset);
               offset += 25;
             });
+            this.drawImage(ctx, image, position.x, position.y, img.width, img.height);
             this.drawPointer(ctx, position.x, position.y, position.x, position.y +35, position.x +35, position.y, COLOR.red);
           break;
 
@@ -48,6 +53,7 @@ class Canvas extends Component {
             this.drawText(ctx, line, position.x - dimensions.width + PADDING,position.y + (PADDING * 2.5) + img.height, COLOR.black, FONT.regular, '14px', offset);
             offset += 25;
           });
+          this.drawImage(ctx, image, position.x - img.width, position.y, img.width, img.height);
           this.drawPointer(ctx, position.x, position.y, position.x -35, position.y, position.x, position.y +35, COLOR.red);
           break;
 
@@ -58,6 +64,7 @@ class Canvas extends Component {
               this.drawText(ctx, line, position.x - dimensions.width + PADDING, position.y - dimensions.height + (PADDING * 2.5), COLOR.black, FONT.regular, '14px', offset);
               offset += 25;
             });
+            this.drawImage(ctx, image, position.x -  img.width, position.y - img.height, img.width, img.height);
             this.drawPointer(ctx, position.x, position.y, position.x -35, position.y, position.x, position.y -35, COLOR.red);
           break;
         }
@@ -99,8 +106,12 @@ class Canvas extends Component {
   }
 
   render() {
+    const {parent, directParent} = this.props;
+
     return(
-      <canvas className='canvas' id='canvas' width="2000" height="1100"></canvas>
+      <React.Fragment>
+      <canvas className='canvas' id='canvas' width="2000" height="1100" style={{backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}}></canvas>
+      </React.Fragment>
     );
   }
 }

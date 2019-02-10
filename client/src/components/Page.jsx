@@ -27,6 +27,16 @@ class Page extends Component {
     }
   }
 
+  createAccordingImgTags(details, parent, directParent){
+    return (
+      <React.Fragment>
+        {details.map((detail, index) => {
+            return <img id={`${parent}${directParent}${index + 1}`} src={require(`../assets/img/${parent}${directParent}${index + 1}.jpg`)} alt="" key={index}/>
+          })}
+      </React.Fragment>
+    )
+}
+
   render() {
     const {title, subtitle, text, img, link, details} = this.props.data;
     const {type, parent} = this.props;
@@ -40,7 +50,10 @@ class Page extends Component {
             <p className='paragraph'>{text}</p>
             <button className='button link'><Link to={title.toLowerCase() + '/app'}><p dangerouslySetInnerHTML={{__html: link.text}}></p></Link></button>
         </div>
-        <Route path={'/' + title.toLowerCase() + '/app'} exact render={() => <Canvas data={details} parent={parent}/>} />
+        <div style={{display: 'none'}}>
+          {this.createAccordingImgTags(details, parent, title)}
+        </div>
+        <Route path={'/' + title.toLowerCase() + '/app'} exact render={() => <Canvas data={details} parent={parent} directParent={title}/>} />
         <img src={require(`../assets/img/${img.src}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={img.width} height={img.height} className='image'/>
       </section>
     )
