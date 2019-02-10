@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 
 import {wrapTextIntoLines} from '../js/lib.js';
 import {PADDING, COLOR, FONT} from '../js/style.js';
@@ -151,7 +151,8 @@ class Canvas extends Component {
 
     return(
       <React.Fragment>
-      <canvas className='canvas' id='canvas' width="2000" height="1100" style={{backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}}></canvas>
+        <canvas className='canvas' id='canvas' width="2000" height="1100" style={{backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}}></canvas>
+        <button className='button toFront'><Link to={`/${parent}`} className='button'>Terug naar verhaal</Link></button>
       </React.Fragment>
     );
   }
