@@ -12,6 +12,7 @@ class Canvas extends Component {
 
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
+    let offsetNavigation = 0;
 
     if(parent === 'leefwereld'){
       
@@ -72,19 +73,19 @@ class Canvas extends Component {
     }else if(parent === 'creatieproces'){
       //navigatie weergeven
       details.forEach(detail => {
-        this.drawText(ctx, detail.img, 1200 + PADDING, 600 + (PADDING * 1.5), COLOR.white, FONT.bold, '30px', 0);
+        this.drawText(ctx, detail.title, 1300 + offsetNavigation, 600 + (PADDING * 1.5), COLOR.white, FONT.bold, '20px', 0);
+        offsetNavigation += 150;
       })
 
       //navigatie doorgeven in array
       const laag = details[0];
       const navigatieCreatieproces = laag.details;
 
-      const explanationLines = wrapTextIntoLines(ctx, laag.explanation, 600 - (PADDING * 2));
-      const lines = wrapTextIntoLines(ctx, navigatieCreatieproces.text, navigatieCreatieproces.dimensions.width - (PADDING * 2));
+      const creatieprocesExplanationLines = wrapTextIntoLines(ctx, laag.explanation, 600 - (PADDING * 2));
+      const creatieprocesLines = wrapTextIntoLines(ctx, navigatieCreatieproces.text, navigatieCreatieproces.dimensions.width - (PADDING * 2));
       let offset = 0;
 
-      this.drawText(ctx, laag.title, 1200 + PADDING, 600 + (PADDING * 1.5), COLOR.white, FONT.bold, '30px', 0);      
-      explanationLines.forEach(line => {
+      creatieprocesExplanationLines.forEach(line => {
               this.drawText(ctx, line, 1200, 700 + (PADDING * 2.5), COLOR.white, FONT.regular, '18px', offset);
               offset += 25;
       });
@@ -93,7 +94,7 @@ class Canvas extends Component {
         case 'topLeft':
             this.drawBox(ctx, navigatieCreatieproces.position.x, navigatieCreatieproces.position.y, navigatieCreatieproces.dimensions.width, navigatieCreatieproces.dimensions.height, COLOR.white);
             this.drawText(ctx, navigatieCreatieproces.subtitle, navigatieCreatieproces.position.x + PADDING, navigatieCreatieproces.position.y+ (PADDING * 1.5) + navigatieCreatieproces.detailimg.height, COLOR.black, FONT.bold, '18px', 0);
-            lines.forEach(line => {
+            creatieprocesLines.forEach(line => {
               this.drawText(ctx, line, navigatieCreatieproces.position.x + PADDING,navigatieCreatieproces.position.y + (PADDING * 2.5) + navigatieCreatieproces.detailimg.height, COLOR.black, FONT.regular, '14px', offset);
               offset += 25;
             });
@@ -102,7 +103,7 @@ class Canvas extends Component {
         case 'topRight':
            this.drawBox(ctx, navigatieCreatieproces.position.x, navigatieCreatieproces.position.y, -navigatieCreatieproces.dimensions.width, navigatieCreatieproces.dimensions.height, COLOR.white);
            this.drawText(ctx, navigatieCreatieproces.subtitle, navigatieCreatieproces.position.x - navigatieCreatieproces.dimensions.width + PADDING, navigatieCreatieproces.position.y + (PADDING * 1.5) + navigatieCreatieproces.detailimg.height, COLOR.black, FONT.bold, '18px', 0);
-           lines.forEach(line => {
+           creatieprocesLines.forEach(line => {
             this.drawText(ctx, line, navigatieCreatieproces.position.x - navigatieCreatieproces.dimensions.width + PADDING, navigatieCreatieproces.position.y + (PADDING * 2.5) + navigatieCreatieproces.detailimg.height, COLOR.black, FONT.regular, '14px', offset);
             offset += 25;
           });
