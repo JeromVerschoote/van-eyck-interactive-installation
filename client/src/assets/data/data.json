@@ -442,7 +442,102 @@
                 "link": {
                     "text": "Een duik in de het creatieproces van het lam gods",
                     "url": ""
-                }
+                },
+                "details": [
+                    {
+                        "title": "1432",
+                        "points": [ {
+                            "id": "01",
+                            "title": "Gent, St.-Janskerk",
+                            "text": "Het Lam Gods wordt officieel ingewijd in de toenmalige Sint-Janskerk in Gent waar het nadien ook een plekje zal krijgen.",
+                            "position": {
+                                "x": 260,
+                                "y": 560
+                            },
+                            "img":{
+                                "src": "",
+                                "width": 300,
+                                "height": 250
+                            },
+                            "dimensions": {
+                                "width": 250,
+                                "height": 500
+                            },
+                            "options": {
+                                "orientation": "horizontal",
+                                "flipped": true,
+                                "pointedTo": "topLeft"
+                            }    
+                        } ]
+                    },
+                    {
+                "id": "01",
+                "title": "Lam Gods",
+                "subtitle": "Het Lam Gods is een kunstwerk die een rijke geschiedenis achter de rug heeft.",
+                "text": "Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.",
+                "img": {
+                    "src": "levensloop.png",
+                    "width": "812",
+                    "height": "513"
+                },
+                "link": {
+                    "text": "Een duik in de het creatieproces van het lam gods",
+                    "url": ""
+                },
+                "details": [
+                    {
+                        "title": "1432",
+                        "points": [ {
+                            "id": "01",
+                            "title": "Gent, St.-Janskerk",
+                            "text": "Het Lam Gods wordt officieel ingewijd in de toenmalige Sint-Janskerk in Gent waar het nadien ook een plekje zal krijgen.",
+                            "position": {
+                                "x": 260,
+                                "y": 560
+                            },
+                            "img":{
+                                "src": "",
+                                "width": 300,
+                                "height": 250
+                            },
+                            "dimensions": {
+                                "width": 250,
+                                "height": 500
+                            },
+                            "options": {
+                                "orientation": "horizontal",
+                                "flipped": true,
+                                "pointedTo": "topLeft"
+                            }    
+                        } ]
+                    },
+                    {
+                        "title": "1566",
+                        "points": [ {
+                            "id": "01",
+                            "title": "Gent, Verborgen",
+                            "text": "Tijdens de Beeldenstorm worden religieuze beelden en kunstwerken in katholieke kerken verwoest.",
+                            "position": {
+                                "x": 260,
+                                "y": 560
+                            },
+                            "img":{
+                                "src": "",
+                                "width": 300,
+                                "height": 250
+                            },
+                            "dimensions": {
+                                "width": 250,
+                                "height": 500
+                            },
+                            "options": {
+                                "orientation": "horizontal",
+                                "flipped": true,
+                                "pointedTo": "topLeft"
+                            }    
+                        } ]
+                    }
+                ]
             },
             {
                 "id": "02",
@@ -459,28 +554,6 @@
         "endPage": {
             "title": "Gedaaan",
             "text": "Nu is het kunstwerk origineel hier te bewonderen."
-        },
-        "details":[
-            {
-                "title": "1432",
-                "explanation": "Het schilderij wordt officieel ingewijd in de toenmalig Sint-Janskerk in Gent.",
-                "details": [
-                    {
-                        "location": "Gent",
-                        "detail": "Het Lam Gods krijgt een plek in de kapel van de Sint-Janskerk."
-                    }
-                ]
-            },
-            {
-                "title": "1566",
-                "explanation": "Tijdens de Beeldenstorm worden religieuze beelden en kunstwerken in katholieke kerken verwoest.",
-                "details": [
-                    {
-                        "location": "Gent",
-                        "detail": "Het werkt wordt in de toren van de Sint-Janskerk verborgen gehouden."
-                    }
-                ]
-            }
-        ]
+        }
     }   
 }
