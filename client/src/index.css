@@ -31,7 +31,7 @@ body {
 .page--start .content{
   display: flex;
   flex-flow: column;
- align-items: center;
+  align-items: center;
 }
 
 .page--even{
