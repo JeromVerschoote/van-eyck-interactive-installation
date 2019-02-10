@@ -107,6 +107,7 @@
   text-transform: uppercase;
   color: var(--color-red);
   background: none;
+  text-decoration: none;
 }
 
 .button--active{
