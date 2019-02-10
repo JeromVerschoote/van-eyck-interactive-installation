@@ -19,20 +19,3 @@ export const wrapTextIntoLines = (ctx, text, maxWidth) =>{
     lines.push(currentLine);
     return lines;
 }
-
-export const measureText = (ctx, lines, dimension) => {
-  let amountMeasured = 0;
-  
-  if(dimension === 'width'){
-    lines.forEach(line => {
-      amountMeasured += ctx.measureText(line).width;
-    });
-    return amountMeasured;
-  }else if(dimension === 'height'){
-    lines.forEach(line => {
-      amountMeasured += ctx.measureText(line).width;
-      console.log( ctx.measureText(line).width);
-    });
-    return amountMeasured;
-  }
-}
