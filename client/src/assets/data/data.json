@@ -24,8 +24,8 @@
                         "title": "Sinaasappelen",
                         "text": "Sinaasappelen staan symbool voor vruchtbaarheid maar tonen ook aan dat er voldoende geld was voor exotisch vruchten. Giovanni Arnofini was waarschijnlijk een welgesteld man.",
                         "position": {
-                            "x": 145,
-                            "y": 934
+                            "x": 176,
+                            "y": 1059
                         },
                         "img":{
                             "src": "leefwereldCultuur1",
@@ -46,7 +46,7 @@
                         "title": "Bont",
                         "text": "Giovanni Arnofini draagt een met bont afgezette mantel, dit is een teken van welgesteldheid.",
                         "position": {
-                            "x": 793,
+                            "x": 933,
                             "y": 741
                         },
                         "img":{
@@ -68,8 +68,8 @@
                         "title": "Dikheid",
                         "text": "Dikheid was een modeverschijnsel. Het gaf aan dat je genoeg geld had om je meer dan nodig te voeden.",
                         "position": {
-                            "x": 1400,
-                            "y": 706
+                            "x": 1763,
+                            "y": 786
                         },
                         "img":{
                             "src": "leefwereldCultuur3",
@@ -107,8 +107,8 @@
                         "title": "Heilig kruis",
                         "text": "Het heilige kruis waarin een splinter zit uit het kruis van Christus wordt bekeken door Van der Paele. “Christus is tussen ons.",
                         "position": {
-                            "x": 460,
-                            "y": 260
+                            "x": 526,
+                            "y": 185
                         },
                         "img":{
                             "src": "leefwereldReligie1",
@@ -130,7 +130,7 @@
                         "text": "Het Jezuskind is als een volwassene afgebeeld omdat de goddelijke aard de kunstenaar ervan heeft weerhouden om het realistisch weer te geven.",
                         "position": {
                             "x": 987,
-                            "y": 491
+                            "y": 384
                         },
                         "img":{
                             "src": "leefwereldReligie2",
@@ -151,8 +151,8 @@
                         "title": "Beeldjes troon",
                         "text": "De gebeeldhouwde figuurtjes op de troon van Maria beelden passages uit vertolkt vanuit het Oude Testament.",
                         "position": {
-                            "x": 1314,
-                            "y": 506
+                            "x": 1424,
+                            "y": 546
                         },
                         "img":{
                             "src": "leefwereldReligie3",
@@ -190,8 +190,8 @@
                         "title": "Man te paard",
                         "text": "Er zijn ook rijk uitgedoste mannen te paard die het contrast tussen rijk en arm duidelijk accentueren.",
                         "position": {
-                            "x": 260,
-                            "y": 560
+                            "x": 308,
+                            "y": 491
                         },
                         "img":{
                             "src": "leefwereldSociaal1",
@@ -199,7 +199,7 @@
                             "height": 250
                         },
                         "dimensions": {
-                            "width": 250,
+                            "width": 260,
                             "height": 390
                         },
                         "options": {
@@ -212,8 +212,8 @@
                         "title": "Bouwplaats",
                         "text": "Op de bouwplaats bij de toren zijn bouwlieden ijverig aan het werk. Het toont aan dat er hard gewerkt moest worden.",
                         "position": {
-                            "x": 387,
-                            "y": 891
+                            "x": 309,
+                            "y": 841
                         },
                         "img":{
                             "src": "leefwereldSociaal2",
@@ -235,7 +235,7 @@
                         "text": "Het zijn vooral gewoon burgers die zich uit de naad werken en die grootste schilderijen niet konden permitteren.",
                         "position": {
                             "x": 1614,
-                            "y": 776
+                            "y": 736
                         },
                         "img":{
                             "src": "leefwereldSociaal3",
@@ -272,8 +272,8 @@
                         "title": "Stof uit het buitenland",
                         "text": "Er zijn veel invloeden die wijzen op invloed van het buitenland. Zoals de details in klederdracht, tapijten, architectuur.",
                         "position": {
-                            "x": 260,
-                            "y": 560
+                            "x": 344,
+                            "y": 623
                         },
                         "img":{
                             "src": "leefwereldKunst1",
@@ -295,7 +295,7 @@
                         "text": "De stad op de achtergrond moet Jeruzalem voorstellen. Dus Van Eyck was in de ban door religieuze steden.",
                         "position": {
                             "x": 687,
-                            "y": 430
+                            "y": 536
                         },
                         "img":{
                             "src": "leefwereldKunst2",
@@ -316,8 +316,8 @@
                         "title": "Dom van Utrecht",
                         "text": "Een van de torens is gebaseerd op die van de Dom van Utrecht waarop wijst dat er communicatie was tussen steden.",
                         "position": {
-                            "x": 1386,
-                            "y": 376
+                            "x": 1365,
+                            "y": 406
                         },
                         "img":{
                             "src": "leefwereldKunst3",
