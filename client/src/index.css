@@ -20,7 +20,7 @@ body {
   overflow: hidden;
 }
 
-.page{
+.page {
   background: rgb(243, 243, 237);
   height: 100vh;
   width: 42vw;
@@ -28,46 +28,46 @@ body {
   overflow: hidden;
 }
 
-.page--start, .page--end{
-  background: #E28C8D;
+.page--start, .page--end {
+  background: #e28c8d;
 }
 
-.page--start .content, .page--end .content{
+.page--start .content, .page--end .content {
   background: rgb(243, 243, 237);
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 
-.page--even{
+.page--even {
   margin-left: 42vw;
   margin-top: -100vh;
 }
 
-.content{
+.content {
   padding: 10rem;
   height: 97%;
 }
 
-.buttons{
+.buttons {
   padding: 3rem;
 }
 
-.image{
-  margin-top: -35rem;
+.image {
+  margin-top: -45.5rem;
   bottom: 0;
-  transform: scale(0.8)
+  transform: scale(.8);
 }
 
-.page--even .image{
-  margin-left: 2.5rem;
+.page--even .image {
+  margin-left: 5.4rem;
 }
 
-.page--odd .image{
-  margin-left: -14rem;
+.page--odd .image {
+  margin-left: -10.4rem;
 }
 
-.link{
+.link {
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -76,24 +76,24 @@ body {
   flex-flow: column;
 }
 
-.page--even .link{
+.page--even .link {
   margin-left: 35rem;
   align-items: flex-end;
 }
 
-.page--odd .link{
+.page--odd .link {
   margin-left: -10rem;
   align-items: flex-start;
 }
 
 /* flags */
 
-.centered{
+.centered {
   display: flex;
   justify-content: center;
 }
 
-.canvas{
+.canvas {
   position: absolute;
   left: 0;
   top: 0;
@@ -102,7 +102,7 @@ body {
   height: 100vh;
 }
 
-.toFront{
+.toFront {
   position: absolute;
   left: 6rem;
   top: 6rem;
