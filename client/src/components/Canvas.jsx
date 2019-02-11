@@ -14,9 +14,7 @@ class Canvas extends Component {
     const ctx = canvas.getContext('2d');
 
 
-
     if(parent === 'leefwereld'){
-      
 
       details.forEach(detail => {
         const {title, text, img, position, dimensions, options} = detail;
@@ -32,20 +30,33 @@ class Canvas extends Component {
     }else if(parent === 'creatieproces'){
 
 
-      const currentLayer = details[0];
+      if(this.currentLayer){
+        const {section, title, text, img, position, dimensions, options} = this.currentLayer;
+        
+        const image = document.getElementById(img.src);
+        let lines, offset = 0;
 
-      if(currentLayer){
-        const {title, text, img, position, dimensions, options} = currentLayer;
+        lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
+        this.drawInfo(ctx, section, FONT, COLOR);
+      }else{
+        this.currentLayer = details[0];
+
+        const {section, title, text, img, position, dimensions, options} = this.currentLayer;
         
         const image = document.getElementById(img.src);
         let lines, offset = 0;
 
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
 
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
+        this.drawInfo(ctx, section, FONT, COLOR);
       }
 
-      
+
     }else if(parent === 'levensloop'){
 
       const currentLayer = details[12];
@@ -118,6 +129,15 @@ class Canvas extends Component {
     }
   }
 
+  drawInfo(ctx, section, font, color){
+    const {title, text, position} = section;
+    const {display, regular, bold} = font;
+    const {white, red} = color;
+
+    this.drawText(ctx, title, position.x, position.y, white, display, '20px', 0);
+    this.drawText(ctx, text, position.x, position.y + 20, white, regular, '14px', 0);
+  }
+
   drawPointer(ctx, x1, y1, x2, y2, x3, y3, color){
     ctx.fillStyle = color;
     ctx.beginPath();
@@ -147,6 +167,36 @@ class Canvas extends Component {
     ctx.drawImage(img, x, y, width, height);
   }
 
+  createNavigation(){
+    return(
+      <div className='creatieproces-nav'>
+        <button className='creatieproces-nav-button creatieproces-nav-button--1' onClick={e => this.handleClick(e)} value='0'></button>
+        <button className='creatieproces-nav-button creatieproces-nav-button--2' onClick={e => this.handleClick(e)} value='1'></button>
+        <button className='creatieproces-nav-button creatieproces-nav-button--3' onClick={e => this.handleClick(e)} value='2'></button>
+        <button className='creatieproces-nav-button creatieproces-nav-button--4' onClick={e => this.handleClick(e)} value='3'></button>
+      </div>
+    )
+  }
+
+  handleClick(e){
+    e.preventDefault();
+
+    const value = e.currentTarget.value;
+    const details = this.props.data;
+
+    const buttons = document.querySelectorAll('.creatieproces-nav-button');
+
+    buttons.forEach(button => {
+      button.classList.remove('creatieproces-nav-button--active');
+    });
+
+    e.currentTarget.classList.add('creatieproces-nav-button--active');
+
+    this.currentLayer = details[value];
+
+    this.componentDidMount();
+  }
+
   render() {
     const {parent, directParent} = this.props;
 
@@ -154,6 +204,7 @@ class Canvas extends Component {
       <React.Fragment>
         <canvas className='canvas' id='canvas' width="2000" height="1100" style={{backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}}></canvas>
         <button className='button toFront'><Link to={`/${parent}`} className='button'>Terug naar verhaal</Link></button>
+        {parent === 'creatieproces' ? this.createNavigation() : null}
       </React.Fragment>
     );
   }

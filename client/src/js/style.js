@@ -7,6 +7,7 @@ export const COLOR = {
 }
 
 export const FONT = {
+  'display': 'Kodex Regular',
   'regular': 'Montserrat Regular',
   'bold': 'Montserrat Bold'
 }
