@@ -7,7 +7,7 @@ class EndPage extends Component {
     const {type} = this.props;
 
     return (
-        <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
+        <section className={type === 'odd' ? 'page page--odd page--end' :  'page page--even page--end'}>
         <div className='content'>
             <h1>{title}</h1>
             <p>{text}</p>
