@@ -19,7 +19,14 @@ class Canvas extends Component {
       details.forEach(detail => {
         const {title, text, img, position, dimensions, options} = detail;
 
-        const lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
+        let lines;
+
+        if(detail === details[0]){
+          lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 5.5));
+        }else{
+          lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
+        }
+        
         let offset = 0;
 
         const image = document.getElementById(img.src);
@@ -67,6 +74,10 @@ class Canvas extends Component {
             });
             this.drawImage(ctx, image, position.x -  img.width, position.y - img.height, img.width, img.height);
             this.drawPointer(ctx, position.x, position.y, position.x -35, position.y, position.x, position.y -35, COLOR.red);
+          break;
+
+          default:
+          console.log('No direction provided in json data.')
           break;
         }
       });
