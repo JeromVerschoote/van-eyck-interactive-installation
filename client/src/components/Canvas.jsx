@@ -48,7 +48,7 @@ class Canvas extends Component {
       
     }else if(parent === 'levensloop'){
 
-      const currentLayer = details[12];
+      const currentLayer = details[13];
 
       if(currentLayer){
 

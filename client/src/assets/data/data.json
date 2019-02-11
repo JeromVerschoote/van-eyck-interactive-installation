@@ -552,7 +552,7 @@
                         },
                         "dimensions": {
                             "width": 420,
-                            "height": 480
+                            "height": 460
                         },
                         "options": {
                             "orientation": "vertical",
@@ -587,7 +587,7 @@
                     },
                     {
                         "title": "Londen, Richmond",
-                        "text": "De verblijfplaats van Elizabeth I van Engeland",
+                        "text": "De verblijfplaats van Elizabeth I van Engeland.",
                         "position": {
                             "x": 480,
                             "y": 498
@@ -598,8 +598,8 @@
                             "height": 240
                         },
                         "dimensions": {
-                            "width": 240,
-                            "height": 480
+                            "width": 740,
+                            "height": 240
                         },
                         "options": {
                             "orientation": "horizontal",
@@ -625,7 +625,7 @@
                         },
                         "dimensions": {
                             "width": 420,
-                            "height": 500
+                            "height": 480
                         },
                         "options": {
                             "orientation": "vertical",
@@ -646,12 +646,12 @@
                             "height": 240
                         },
                         "dimensions": {
-                            "width": 420,
-                            "height": 480
+                            "width": 590,
+                            "height": 240
                         },
                         "options": {
                             "orientation": "horizontal",
-                            "flipped": true,
+                            "flipped": false,
                             "pointedTo": "lowerLeft"
                         }
                     }
@@ -673,7 +673,7 @@
                         },
                         "dimensions": {
                             "width": 420,
-                            "height": 500
+                            "height": 460
                         },
                         "options": {
                             "orientation": "vertical",
@@ -699,7 +699,7 @@
                         },
                         "dimensions": {
                             "width": 420,
-                            "height": 500
+                            "height": 450
                         },
                         "options": {
                             "orientation": "vertical",
@@ -747,7 +747,7 @@
                         },
                         "dimensions": {
                             "width": 420,
-                            "height": 500
+                            "height": 450
                         },
                         "options": {
                             "orientation": "vertical",
@@ -773,7 +773,7 @@
                         },
                         "options": {
                             "orientation": "vertical",
-                            "flipped": true,
+                            "flipped": false,
                             "pointedTo": "topRight"
                         }
                     }
@@ -795,7 +795,7 @@
                         },
                         "dimensions": {
                             "width": 420,
-                            "height": 500
+                            "height": 450
                         },
                         "options": {
                             "orientation": "vertical",
