@@ -23,14 +23,14 @@
   src: url('../assets/fonts/montserratBold/montserratBold.woff2') format('woff2');
 }
 
-:root{
+:root {
   /* LOGO'S */
   --logo: url('../assets/img/logo.svg');
   --logo-custom: url('../assets/img/logo--custom.svg');
 
   /* COLORS */
-  --color-white: #EBDCBE;
-  --color-red: #BC0000;
+  --color-white: #ebdcbe;
+  --color-red: #bc0000;
 
   /* TYPOGRAPHY */
   --font-display--primairy: Kodex Regular;
@@ -38,22 +38,22 @@
   --font-text: Montserrat Regular;
 }
 
-.main{
+.main {
   background-color: var(--color-white);
 }
 
-.h1{
+.h1 {
   font-family: var(--font-display--primairy);
   font-size: 9.6rem;
 }
 
-.h2{
+.h2 {
   font-family: var(--font-display--primairy);
   font-size: 4.8rem;
   margin-bottom: 1.8rem;
 }
 
-.h3{
+.h3 {
   font-family: var(--font-display--secundairy);
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -61,38 +61,38 @@
   color: var(--color-red);
 }
 
-.h4{
+.h4 {
   font-family: var(--font-display--primairy);
   font-size: 3.6rem;
   margin-bottom: 1.4rem;
 }
 
-.h5{
+.h5 {
   font-family: var(--font-display--primairy);
   font-size: 3rem;
   margin-bottom: 1.2;
 }
 
-.h6{
+.h6 {
   font-family: var(--font-display--primairy);
   font-size: 2.6rem;
   margin-bottom: 1rem;
 }
 
-.subtitle{
+.subtitle {
   font-family: var(--font-display--secundairy);
   font-size: 1.5rem;
   line-height: 1.5;
   padding-bottom: 2rem;
 }
 
-.paragraph{
+.paragraph {
   font-family: var(--font-text);
   font-size: 1.5rem;
   line-height: 1.5;
 }
 
-.logo{
+.logo {
   content: '';
   width: 10rem;
   height: 10rem;
@@ -100,7 +100,7 @@
   background-repeat: no-repeat;
 }
 
-.button{
+.button {
   border: none;
   padding: 1rem;
   font-family: var(--font-display--secundairy);
@@ -110,63 +110,63 @@
   text-decoration: none;
 }
 
-.button--active{
+.button--active {
   color: black;
 }
 
 /* VARIATIONS */
 
-.--color-brown{
+.--color-brown {
   color: var(--color-brown);
 }
 
-.--color-orangeDark{
+.--color-orangeDark {
   color: var(--color-orangeDark);
 }
 
-.--color-orangeLight{
+.--color-orangeLight {
   color: var(--color-orangeLight);
 }
 
-.--color-green{
+.--color-green {
   color: var(--color-green);
 }
 
-.--color-blue{
+.--color-blue {
   color: var(--color-blue);
 }
 
-.--color-red{
+.--color-red {
   color: var(--color-red);
 }
 
-.--color-gold{
+.--color-gold {
   color: var(--color-gold);
 }
 
-.--font-shadow{
+.--font-shadow {
   font-family: var(--font-display--secundairy);
 }
 
-.--logo-custom{
+.--logo-custom {
   background-image: var(--logo-custom);
 }
 
-.--logo-tiny{
+.--logo-tiny {
   width: 2rem;
   height: 2rem;
 }
 
-.--logo-small{
+.--logo-small {
   width: 5rem;
   height: 5rem;
 }
 
-.--logo-big{
+.--logo-big {
   width: 15rem;
   height: 15rem;
 }
 
-.link-highlighted{
+.link-highlighted {
   font-size: 2rem;
 }
