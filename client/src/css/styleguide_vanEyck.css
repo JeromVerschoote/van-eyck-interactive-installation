@@ -3,21 +3,21 @@
  */
 
 @font-face {
-  font-family: 'Kodex Regular';
+  font-family: 'kodex regular';
   font-style: normal;
   font-weight: 400;
   src: url('../assets/fonts/kodexRegular/kodexRegular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Montserrat Regular';
+  font-family: 'montserrat regular';
   font-style: normal;
   font-weight: 400;
   src: url('../assets/fonts/montserratRegular/montserratRegular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Montserrat Bold';
+  font-family: 'montserrat bold';
   font-style: normal;
   font-weight: 400;
   src: url('../assets/fonts/montserratBold/montserratBold.woff2') format('woff2');
@@ -33,9 +33,9 @@
   --color-red: #bc0000;
 
   /* TYPOGRAPHY */
-  --font-display--primairy: Kodex Regular;
-  --font-display--secundairy: Montserrat Bold;
-  --font-text: Montserrat Regular;
+  --font-display--primairy: kodex regular;
+  --font-display--secundairy: montserrat bold;
+  --font-text: montserrat regular;
 }
 
 .main {
