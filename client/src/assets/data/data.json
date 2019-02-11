@@ -492,13 +492,13 @@
     },
     "levensloop": {
         "startPage": {
-            "title": "Levensloop der Schilderijen",
+            "title": "Levensloop",
             "text": "Authentieke werken van Jan van Eyck zijn uiterst zeldzaam. Er zijn slechts een klein aantal werken die bewaard zijn gebleven en andere werken zijn in de loop van de geschiedenis verloren gegaan. Het verhaal achter een schilderij is soms net zo intrigerend als het leven die het schilderij zelf heeft geleden. Een mooi voorbeeld die dit fenomeen illustreert is het Lam Gods."
         },
         "pages": [
            {
                "id": "01",
-               "title": "Lam Gods",
+               "title": "LamGods",
                "subtitle": "Het Lam Gods is een kunstwerk die een rijke geschiedenis achter de rug heeft.",
                "text": "Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.",
                "img": {
@@ -509,7 +509,33 @@
                "link": {
                    "text": "Een duik in de het creatieproces van het lam gods",
                    "url": ""
-               }},
+               },
+               "details": [
+                {
+                    "title": "Gent, St.-Janskerk",
+                    "text": "Het Lam Gods wordt officieel ingewijd in de toenmalig Sint-Janskerk in Gent waar het nadien ook een plekje zal krijgen.",
+                    "position": {
+                        "x": 880,
+                        "y": 550
+                    },
+                    "img": {
+                        "src": "levensloopLamGods1",
+                        "width": 420,
+                        "height": 320
+                    },
+                    "dimensions": {
+                        "width": 420,
+                        "height": 480
+                    },
+                    "options": {
+                        "orientation": "vertical",
+                        "flipped": true,
+                        "pointedTo": "topRight"
+                    }
+                }
+
+              ]
+            },
             {
                "id": "02",
                "title": "Lam Gods",
@@ -527,17 +553,6 @@
                "details": [
                 
                ]
-           },
-           {
-               "id": "02",
-               "title": "Lam Gods",
-               "subtitle": "Het Lam Gods is een kunstwerk die een rijke geschiedenis achter de rug heeft.",
-               "text": "Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.",
-               "img": {
-                   "src": "levensloop.png",
-                   "width": "812",
-                   "height": "513"
-               }
            }
        ],
         "endPage": {
