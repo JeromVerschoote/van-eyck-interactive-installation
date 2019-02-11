@@ -12,7 +12,7 @@ class EndPage extends Component {
     return (
         <section className={type === 'odd' ? 'page page--odd page--end' :  'page page--even page--end'}>
         <div className='content'>
-            <h1 className='h1'>{title}</h1>
+            <h1 className='h2'>{title}</h1>
             <p className='paragraph'> {text}</p>
             <img src={zelfportret} alt="Dit is de zelfportret van Van Eyck" width="600" height="400" />
             <img src={handtekening} alt="Dit is de handtekening van Van Eyck" width="295" height="200" />
