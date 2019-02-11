@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { withRouter } from "react-router-dom";
 import { Route, Link } from 'react-router-dom';
 
+import {wrapTextIntoLines} from '../js/lib.js';
+
 import Canvas from './Canvas';
 
 class Page extends Component {
@@ -41,6 +43,8 @@ class Page extends Component {
     const {title, subtitle, text, img, link, details} = this.props.data;
     const {type, parent} = this.props;
 
+    const lines = wrapTextIntoLines(link.text, 11);
+
     return (
         <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
         <div className='content'>
@@ -48,7 +52,11 @@ class Page extends Component {
             <h1 className='h1'>{title}</h1>
             <p className='subtitle'>{subtitle}</p>
             <p className='paragraph'>{text}</p>
-            <button className='button link'><Link to={title.toLowerCase() + '/app'}><p dangerouslySetInnerHTML={{__html: link.text}}></p></Link></button>
+            <button className='button'>
+              <Link className='button link' to={title.toLowerCase() + '/app'}>
+                {lines.map((line, index) => <p key={index}>{line}</p>)}
+              </Link>
+            </button>
         </div>
         <div style={{display: 'none'}}>
           {this.createAccordingImgTags(details, parent, title)}

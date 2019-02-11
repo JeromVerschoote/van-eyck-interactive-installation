@@ -24,7 +24,7 @@ body {
   background: rgb(243, 243, 237);
   height: 100vh;
   width: 42vw;
-  padding: 5rem;
+  padding: 2rem;
   overflow: hidden;
 }
 
@@ -66,15 +66,18 @@ body {
   z-index: 1;
   bottom: 0;
   margin-bottom: 5rem;
+  display: flex;
+  flex-flow: column;
 }
 
 .page--even .link{
   margin-left: 35rem;
-  text-transform: l
+  align-items: flex-end;
 }
 
 .page--odd .link{
   margin-left: -10rem;
+  align-items: flex-start;
 }
 
 /* flags */

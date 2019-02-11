@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from "react-router-dom";
 
-import {wrapTextIntoLines} from '../js/lib.js';
+import {wrapTextFromCanvasIntoLines} from '../js/lib.js';
 import {PADDING, COLOR, FONT} from '../js/style.js';
 
 class Canvas extends Component {
@@ -19,7 +19,7 @@ class Canvas extends Component {
       details.forEach(detail => {
         const {title, text, img, position, dimensions, options} = detail;
 
-        const lines = wrapTextIntoLines(ctx, text, dimensions.width - (PADDING * 2));
+        const lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
         let offset = 0;
 
         const image = document.getElementById(img.src);
@@ -81,8 +81,8 @@ class Canvas extends Component {
       const laag = details[0];
       const navigatieCreatieproces = laag.details;
 
-      const creatieprocesExplanationLines = wrapTextIntoLines(ctx, laag.explanation, 600 - (PADDING * 2));
-      const creatieprocesLines = wrapTextIntoLines(ctx, navigatieCreatieproces.text, navigatieCreatieproces.dimensions.width - (PADDING * 2));
+      const creatieprocesExplanationLines = wrapTextFromCanvasIntoLines(ctx, laag.explanation, 600 - (PADDING * 2));
+      const creatieprocesLines = wrapTextFromCanvasIntoLines(ctx, navigatieCreatieproces.text, navigatieCreatieproces.dimensions.width - (PADDING * 2));
       let offset = 0;
 
       creatieprocesExplanationLines.forEach(line => {
