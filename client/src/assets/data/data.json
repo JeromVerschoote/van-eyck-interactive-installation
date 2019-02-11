@@ -371,17 +371,17 @@
                         "title": "Baltische eik",
                         "text": "Het hout is van hoge kwaliteit en zorgvuldig geselecteerd zodat het zo min mogelijk gaat uitzetten of krimpen.",
                         "position": {
-                            "x": 560,
-                            "y": 560
+                            "x": 380,
+                            "y": 450
                         },
                         "img": {
                             "src": "creatieprocesOlieverfkunst1",
-                            "width": 300,
-                            "height": 250
+                            "width": 440,
+                            "height": 300
                         },
                         "dimensions": {
-                            "width": 600,
-                            "height": 500
+                            "width": 440,
+                            "height": 440
                         },
                         "options": {
                             "orientation": "vertical",
@@ -397,17 +397,17 @@
                         "title": "Natuurkijt & Lijm",
                         "text": "Deze witte achtergrond zorgt dat het schilderij het effect heeft van weerkaatsing en inwendige glans.",
                         "position": {
-                            "x": 860,
-                            "y": 560
+                            "x": 380,
+                            "y": 450
                         },
                         "img": {
                             "src": "creatieprocesOlieverfkunst2",
-                            "width": 300,
-                            "height": 250
+                            "width": 440,
+                            "height": 300
                         },
                         "dimensions": {
-                            "width": 600,
-                            "height": 500
+                            "width": 440,
+                            "height": 440
                         },
                         "options": {
                             "orientation": "vertical",
@@ -423,22 +423,22 @@
                         "title": "Oog voor detail",
                         "text": "Er is een heel gedetailleerde weergave van onderdelen. De teksten en tekens in het boek worden duidelijk en realistisch weergegeven en is oog voor detail en perspectief die je in het boek terugvindt.",
                         "position": {
-                            "x": 860,
-                            "y": 560
+                            "x": 870,
+                            "y": 814
                         },
                         "img": {
                             "src": "creatieprocesOlieverfkunst3",
-                            "width": 300,
-                            "height": 250
+                            "width": 440,
+                            "height": 300
                         },
                         "dimensions": {
-                            "width": 600,
-                            "height": 500
+                            "width": 440,
+                            "height": 510
                         },
                         "options": {
                             "orientation": "vertical",
                             "flipped": true,
-                            "pointedTo": "topRight"
+                            "pointedTo": "lowerRight"
                         }
                     },
                     {
@@ -449,17 +449,17 @@
                         "title": "Het Lam",
                         "text": "Zo wouden ze het Lam Gods een hedendaagse ‘look’ geven waarin de humanisering van het lam centraal stond en de waardigheid van de goddelijk figuren naar voor kwamen en het dus aanvaardbaar was voor de katholieke kerk.",
                         "position": {
-                            "x": 860,
-                            "y": 560
+                            "x": 1060,
+                            "y": 320
                         },
                         "img": {
                             "src": "creatieprocesOlieverfkunst4",
-                            "width": 300,
-                            "height": 250
+                            "width": 440,
+                            "height": 300
                         },
                         "dimensions": {
-                            "width": 600,
-                            "height": 500
+                            "width": 440,
+                            "height": 530
                         },
                         "options": {
                             "orientation": "vertical",
