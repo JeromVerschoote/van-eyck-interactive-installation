@@ -512,6 +512,8 @@
                },
                "details": [
                 {
+                "year": "1432",    
+                "textboxes":[{
                     "title": "Gent, St.-Janskerk",
                     "text": "Het Lam Gods wordt officieel ingewijd in de toenmalig Sint-Janskerk in Gent waar het nadien ook een plekje zal krijgen.",
                     "position": {
@@ -532,6 +534,515 @@
                         "flipped": true,
                         "pointedTo": "topRight"
                     }
+                }]
+                },
+                {
+                    "year": "1566",    
+                    "textboxes":[{
+                        "title": "Gent, Verborgen",
+                        "text": "Tijdens de Beeldenstrom worden religieuze beelden en kunstwerken in katholieke kerken verwoest.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods1",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 480
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    }]
+                },
+                {
+                    "year": "1574",    
+                    "textboxes":[{
+                        "title": "Gent, St.Janskerk",
+                        "text": "Het stadsbestuur van Gent wil het schilderij schenken aan koningin Elizabeth I van Engeland maar de kerk biedt protest en de schenking wordt niet verwezenlijkt.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods1",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    },
+                    {
+                        "title": "Londen, Richmond",
+                        "text": "De verblijfplaats van Elizabeth I van Engeland",
+                        "position": {
+                            "x": 480,
+                            "y": 498
+                        },
+                        "img": {
+                            "src": "levensloopLamGods2",
+                            "width": 240,
+                            "height": 240
+                        },
+                        "dimensions": {
+                            "width": 240,
+                            "height": 480
+                        },
+                        "options": {
+                            "orientation": "horizontal",
+                            "flipped": true,
+                            "pointedTo": "lowerLeft"
+                        }
+                    }
+                ]
+                },
+                {
+                    "year": "1794",    
+                    "textboxes":[{
+                        "title": "Gent, Verborgen",
+                        "text": "Tijdens invallen van Franse soldaten onder gezag van Napoleon blijven de zijluiken goed verborgen in Gent.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods4",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "lowerRight"
+                        }
+                    },
+                    {
+                        "title": "Parijs",
+                        "text": "Tijdens invallen van Franse soldaten onder gezag van Napoleon worden de middenstukken meegenomen naar Parijs.",
+                        "position": {
+                            "x": 480,
+                            "y": 1000
+                        },
+                        "img": {
+                            "src": "levensloopLamGods3",
+                            "width": 420,
+                            "height": 240
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 480
+                        },
+                        "options": {
+                            "orientation": "horizontal",
+                            "flipped": true,
+                            "pointedTo": "lowerLeft"
+                        }
+                    }
+                ]
+                },
+                {
+                    "year": "1815",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "De val van Napoleon neemt plaats en kunst wordt terug gebracht naar de originele locatie.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods1",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    }
+                ]
+                },
+                {
+                    "year": "1816",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "De delen die niet worden gekocht door Frederik Willem III blijven in Gent.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods6",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    },
+                    {
+                        "title": "Berlijn",
+                        "text": "Frederik Willem III, koning van Pruisen, koopt de  zijluiken van het werk uitgezonder Adam & Eva.",
+                        "position": {
+                            "x": 1580,
+                            "y": 500
+                        },
+                        "img": {
+                            "src": "levensloopLamGods5",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    }
+                ]
+                },
+                {
+                    "year": "1822",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "Een brand woedt in de kathedraal waardoor de overgebleven stukken beschadigd geraken.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods6",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    },
+                    {
+                        "title": "Berlijn",
+                        "text": "De aangekochte delen blijven in eigendom van Frederik Willem III van Pruisen.",
+                        "position": {
+                            "x": 1580,
+                            "y": 500
+                        },
+                        "img": {
+                            "src": "levensloopLamGods5",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    }
+                ]
+                },
+                {
+                    "year": "1861",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "Een brand woedt in de kathedraal waardoor de overgebleven stukken beschadigd geraken.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods3",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    },
+                    {
+                        "title": "Berlijn",
+                        "text": "De aangekochte delen blijven in eigendom van Frederik Willem III van Pruisen.",
+                        "position": {
+                            "x": 1580,
+                            "y": 500
+                        },
+                        "img": {
+                            "src": "levensloopLamGods5",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    },
+                    {
+                        "title": "Brussel",
+                        "text": "De Koninklijke Musea voor Schone Kunsten van België kopen de panelen van Adam & Eva.",
+                        "position": {
+                            "x": 880,
+                            "y": 500
+                        },
+                        "img": {
+                            "src": "levensloopLamGods7",
+                            "width": 220,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 600,
+                            "height": 320
+                        },
+                        "options": {
+                            "orientation": "horizontal",
+                            "flipped": true,
+                            "pointedTo": "lowerRight"
+                        }
+                    }
+                ]
+                },
+                {
+                    "year": "1914",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "De overgebleven stukken worden verstopt voor de duitse soldaten tijdens de Eerste Wereldoorlog.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods3",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    },
+                    {
+                        "title": "Berlijn",
+                        "text": "De aangekochte delen blijven in eigendom van Frederik Willem III van Pruisen.",
+                        "position": {
+                            "x": 1580,
+                            "y": 500
+                        },
+                        "img": {
+                            "src": "levensloopLamGods5",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 500
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    },
+                    {
+                        "title": "Brussel",
+                        "text": "Adam & Eva blijven in het bezit van de Koninklijke Musea voor Schone Kunsten van België.",
+                        "position": {
+                            "x": 880,
+                            "y": 500
+                        },
+                        "img": {
+                            "src": "levensloopLamGods7",
+                            "width": 220,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 600,
+                            "height": 320
+                        },
+                        "options": {
+                            "orientation": "horizontal",
+                            "flipped": true,
+                            "pointedTo": "lowerRight"
+                        }
+                    }
+                ]
+                },
+                {
+                    "year": "1920",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "De Eerste Wereldoorlog is ten einde en in het Verdag van Versailles wordt afgesproken de stukken te herverenigen in Gent.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods1",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 480
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    }]
+                },
+                {
+                    "year": "1934",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "Het zwarste jaar voor het meesterwerk de rechtvaardige rechters en St.Jan de Doper worden gestolen. De Tweede wordt echter spoedig teruggevonden.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods8",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 480
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    }]
+                },
+                {
+                    "year": "194O",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "Tijdens duitse invallen onder Hilter's bewind worden alle panelen gestolen door duitse soldaten en opgeborgen op geheime locaties.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods8",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 480
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    }]
+                },
+                {
+                    "year": "1945",    
+                    "textboxes":[{
+                        "title": "Salzburg",
+                        "text": "Het veelluik wordt teruggevonden door het Amerikaanse leger in zoutmijnen in Salzburg.",
+                        "position": {
+                            "x": 1380,
+                            "y": 850
+                        },
+                        "img": {
+                            "src": "levensloopLamGods8",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 480
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "lowerRight"
+                        }
+                    }]
+                },
+                {
+                    "year": "1951",    
+                    "textboxes":[{
+                        "title": "Gent, St.Baafskathedraal",
+                        "text": "De befaamde Monuments Men brengen het Lam Gods terug naar Gent waar het een restauratie met vernis ondergaat.",
+                        "position": {
+                            "x": 880,
+                            "y": 550
+                        },
+                        "img": {
+                            "src": "levensloopLamGods8",
+                            "width": 420,
+                            "height": 320
+                        },
+                        "dimensions": {
+                            "width": 420,
+                            "height": 480
+                        },
+                        "options": {
+                            "orientation": "vertical",
+                            "flipped": true,
+                            "pointedTo": "topRight"
+                        }
+                    }]
                 }
 
               ]

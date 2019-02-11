@@ -48,19 +48,21 @@ class Canvas extends Component {
       
     }else if(parent === 'levensloop'){
 
-      const currentLayer = details[0];
+      const currentLayer = details[12];
 
       if(currentLayer){
-        const {title, text, img, position, dimensions, options} = currentLayer;
-        
+
+      currentLayer.textboxes.forEach(detail => {
+        const {title, text, img, position, dimensions, options} = detail;
         const image = document.getElementById(img.src);
         let lines, offset = 0;
 
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
 
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
-      }
 
+    }
+      )}
     }
   }
 
