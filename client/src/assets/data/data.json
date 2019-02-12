@@ -373,6 +373,7 @@
                             "title": "Opbouw",
                             "laag": "EERSTE LAAG",
                             "text": "Om te schilderen is er een oppervlakte nodig. het Lam Gods is opgebouwd uit panelen van Baltische eik.",
+                            "nav": "creatieprocesOlieverfkunst1.jpg",
                             "position": {
                                 "x": 1120,
                                 "y": 500
@@ -404,6 +405,7 @@
                             "title": "Voorbereiding",
                             "laag": "TWEEDE LAAG",
                             "text": "Op de panelen werd dan verschillende preparatie lagen aangebracht bestaande uit mengsel van natuurkrijt (calciumcarbonaat) en lijm van dierlijke oorsprong. Wanneer deze droog waren schuurde hij de panelen glad. Hierop bracht hij een gedetailleerde tekening aan met penseel en vloeibaar zwart medium.",
+                            "nav": "creatieprocesOlieverfkunst2.jpg",
                             "position": {
                                 "x": 1270,
                                 "y": 500
@@ -435,6 +437,7 @@
                             "title": "Origineel",
                             "laag": "DERDE LAAG",
                             "text": "Wanneer de ondertekening klaar was kon hij beginnen met schilderen. De verf bestond uit olie met pigment. Om het droogproces te versnellen gebruikte hij waarschijnlijk siccatieven. Om kleur te geven gebruikte hij pigmenten naargelang het kleur dat hij wou verkrijgen. Een herkenbare techniek van Van Eyck is het gebruik van glacis. De pigmenten werden verdund in een grote hoeveelheid bindmiddel en zo werden de kleuren heel doorschijnend, door verschillende lagen hiervan aan te brengen konden kleuren optisch worden vermengd.",
+                            "nav": "creatieprocesOlieverfkunst3.jpg",
                             "position": {
                                 "x": 1270,
                                 "y": 500
@@ -466,6 +469,7 @@
                             "title": "Overschildering",
                             "laag": "VIERDE LAAG",
                             "text": "Je zou veronderstellen dat een overschildering werd aangebracht om kleine slijtage van de originele verf te verbergen maar bij oudere overschilderingen is dit niet het geval. De figuren kregen soms een nieuwe afwerking in de 16de eeuw, begin 17de eeuw.",
+                            "nav": "creatieprocesOlieverfkunst4.jpg",
                             "position": {
                                 "x": 1270,
                                 "y": 500
@@ -514,6 +518,7 @@
                             "title": "Jan van Eyck",
                             "laag": "National Gallery London",
                             "text": "Portret van een man",
+                            "nav": "creatieprocesRevolutie1.jpg",
                             "position": {
                                 "x": 1270,
                                 "y": 500
@@ -545,6 +550,7 @@
                             "title": "Jan van Eyck",
                             "laag": "Kunsthistorisch Museum, Vienna",
                             "text": "Portret van kardinal Niccolo Albergati",
+                            "nav": "creatieprocesRevolutie2.jpg",
                             "position": {
                                 "x": 1270,
                                 "y": 500
@@ -576,6 +582,7 @@
                             "title": "Antonella da Messina",
                             "laag": "Galleria Borghese, Rome",
                             "text": "Portret van een man",
+                            "nav": "creatieprocesRevolutie3.jpg",
                             "position": {
                                 "x": 1270,
                                 "y": 500
@@ -607,6 +614,7 @@
                             "title": "Antonella da Messina",
                             "laag": "Museo Civico d'Arte Antica",
                             "text": "Portret van een man",
+                            "nav": "creatieprocesRevolutie4.jpg",
                             "position": {
                                 "x": 1270,
                                 "y": 500
@@ -1205,16 +1213,16 @@
             },
             {
                "id": "02",
-               "title": "Lam Gods",
-               "subtitle": "Het Lam Gods is een kunstwerk die een rijke geschiedenis achter de rug heeft.",
+               "title": "Lam Gods Alternatief",
+               "subtitle": "In de 19de eeuw is de maatschappij nogal preuts en wordt het schilderij aangepast.",
                "text": "Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.",
                "img": {
-                   "src": "levensloop.png",
-                   "width": "812",
-                   "height": "513"
+                   "src": "levensloopLamGodsWeetje.jpg",
+                   "width": "600",
+                   "height": "400"
                },
                "link": {
-                   "text": "Een duik in de het creatieproces van het lam gods",
+                   "text": "",
                    "url": ""
                },
                "details": [

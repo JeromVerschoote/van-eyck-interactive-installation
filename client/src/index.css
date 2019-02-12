@@ -113,7 +113,6 @@ body {
 }
 
 .creatieproces-nav-button--1 {
-  background-image: url('./assets/img/creatieprocesOlieverfkunst1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -121,28 +120,21 @@ body {
 .creatieproces-nav-button--2 {
   margin-top: -10rem;
   margin-left: -2rem;
-
-  background-image: url('./assets/img/creatieprocesOlieverfkunst2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .creatieproces-nav-button--3 {
   margin-top: -15rem;
-
-  background-image: url('./assets/img/creatieprocesOlieverfkunst3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .creatieproces-nav-button--4 {
   margin-top: -12.5rem;
-
-  background-image: url('./assets/img/creatieprocesOlieverfkunst4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 /* flags */
 
