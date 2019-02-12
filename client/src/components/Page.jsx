@@ -24,7 +24,7 @@ class Page extends Component {
               <button className='button'>en</button>
               <button className='button'>it</button>
               <button className='button'>es</button>
-          </div>
+        </div>
       )
     }
   }
@@ -32,9 +32,8 @@ class Page extends Component {
   createAccordingImgTags(details, parent, directParent){
     return (
       <React.Fragment>
-        {details.map((detail, index) => {
-            return <img id={`${parent}${directParent}${index + 1}`} src={require(`../assets/img/${parent}${directParent}${index + 1}.jpg`)} alt="" key={index}/>
-          })}
+        {details.map((detail, index) => (<img id={`${parent}${directParent}${index + 1}`} src={require(`../assets/img/${parent}${directParent}${index + 1}.jpg`)} alt="" key={index}/>))}
+        {parent === 'creatieproces' ? details.map((detail, index) => (<img id={`${parent}${directParent}Background${index + 1}`} src={require(`../assets/img/${parent}${directParent}Background${index + 1}.jpg`)} alt=""/>)) : null}
       </React.Fragment>
     )
 }
@@ -62,7 +61,7 @@ class Page extends Component {
           {this.createAccordingImgTags(details, parent, title)}
         </div>
         <Route path={'/' + title.toLowerCase() + '/app'} exact render={() => <Canvas data={details} parent={parent} directParent={title}/>} />
-        <img src={require(`../assets/img/${img.src}`)} alt="Dit is een afbeelding die de persoon dieper in de pagina onderdompelt." width={img.width} height={img.height} className='image'/>
+        <img src={require(`../assets/img/${img.src}`)} alt="" width={img.width} height={img.height} className='image'/>
       </section>
     )
   }

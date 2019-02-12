@@ -30,16 +30,20 @@ class Canvas extends Component {
       if(this.currentLayer){
         const {section, title, text, img, position, dimensions, options} = this.currentLayer;
         const image = document.getElementById(img.src);
+        const background = document.getElementById(section.img);
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
+        this.drawImage(ctx, background, 0, 0, canvas.width, canvas.height);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawInfo(ctx, section, FONT, COLOR);
       }else{
         this.currentLayer = details[0];
         const {section, title, text, img, position, dimensions, options} = this.currentLayer;
         const image = document.getElementById(img.src);
+        const background = document.getElementById(section.img);
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
+        this.drawImage(ctx, background, 0, 0, canvas.width, canvas.height);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawInfo(ctx, section, FONT, COLOR);
       }
@@ -224,7 +228,7 @@ class Canvas extends Component {
 
     return(
       <React.Fragment>
-        <canvas className='canvas' id='canvas' width="2000" height="1100" style={{backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}}></canvas>
+        <canvas className='canvas' id='canvas' width="2000" height="1100" style={parent !== 'creatieproces' ? ({backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}) : null}></canvas>
         <button className='button toFront'><Link to={`/${parent}`} className='button'>Terug naar verhaal</Link></button>
         {this.createNavigation()}
       </React.Fragment>
