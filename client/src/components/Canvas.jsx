@@ -135,14 +135,14 @@ class Canvas extends Component {
     const {white, red} = color;
 
     this.drawText(ctx, title, position.x, position.y, white, display, '72px', 0);
-    this.drawText(ctx, laag, position.x, position.y + 40, COLOR.red, bold, '24px', 0);
+    this.drawText(ctx, laag, position.x, position.y + 40, red, bold, '24px', 0);
 
     let lines, offset = 0;
 
     lines = wrapTextFromCanvasIntoLines(ctx, text, 1100);
 
     lines.forEach(line => {
-      this.drawText(ctx, line, position.x, position.y + 60, COLOR.white, FONT.regular, '14px', offset);
+      this.drawText(ctx, line, position.x, position.y + 60, COLOR.white, regular, '14px', offset);
       offset += 25;
     });
   }
