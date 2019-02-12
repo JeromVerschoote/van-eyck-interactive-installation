@@ -177,7 +177,7 @@ class Canvas extends Component {
       case 'creatieproces':
         return(
           <div className='nav'>
-          {details.map((detail, index) => (<button className={`creatieproces-nav-button creatieproces-nav-button--${index+1}`} onClick={e => this.handleClick(e)} value={`${index}`}></button>))}
+          {details.map((detail, index) => (<button className={`creatieproces-nav-button creatieproces-nav-button--${index+1}`} onClick={e => this.handleClick(e)} value={`${index}`} style={{backgroundImage: `url(${require(`../assets/img/${details[index].section.nav}`)})`}}></button>))}
           </div>
         )
 
