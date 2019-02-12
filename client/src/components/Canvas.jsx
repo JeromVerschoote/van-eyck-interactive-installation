@@ -193,7 +193,7 @@ class Canvas extends Component {
 
       case 'levensloop':
       return(
-        <div className='nav'>
+        <div className='nav-levensloop'>
           {details.map((detail, index) => (<button className={`levensloop-nav-button levensloop-nav-button--${index+1}`} onClick={e => this.handleClick(e)} value={`${index}`}></button>))}
         </div>
       )

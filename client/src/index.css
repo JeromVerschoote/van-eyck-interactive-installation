@@ -86,7 +86,7 @@ body {
   align-items: flex-start;
 }
 
-.nav{
+.nav {
   width: 30vw;
   display: flex;
   justify-content: space-between;
@@ -96,7 +96,7 @@ body {
   right: 20vw;
 }
 
-.creatieproces-nav-button{
+.creatieproces-nav-button {
   border: none;
   content: '';
   width: 10rem;
@@ -157,4 +157,20 @@ body {
   left: 6rem;
   top: 6rem;
   z-index: 5;
+}
+
+.levensloop-nav-button {
+  width: 5rem;
+  height: 2rem;
+}
+
+.nav-levensloop {
+  height: 60vh;
+  bottom: 20vh;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 5;
+  position: absolute;
 }
