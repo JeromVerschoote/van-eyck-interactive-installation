@@ -86,7 +86,7 @@ body {
   align-items: flex-start;
 }
 
-.creatieproces-nav{
+.nav{
   width: 30vw;
   display: flex;
   justify-content: space-between;

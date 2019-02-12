@@ -13,6 +13,7 @@ class Canvas extends Component {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
 
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     if(parent === 'leefwereld'){
 
@@ -20,60 +21,52 @@ class Canvas extends Component {
         const {title, text, img, position, dimensions, options} = detail;
         const image = document.getElementById(img.src);
         let lines, offset = 0;
-
         detail === details[0] ? lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 5.5)) : lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
-
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
       });
 
-
     }else if(parent === 'creatieproces'){
-
 
       if(this.currentLayer){
         const {section, title, text, img, position, dimensions, options} = this.currentLayer;
-        
         const image = document.getElementById(img.src);
         let lines, offset = 0;
-
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
-
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawInfo(ctx, section, FONT, COLOR);
       }else{
         this.currentLayer = details[0];
-
         const {section, title, text, img, position, dimensions, options} = this.currentLayer;
-        
         const image = document.getElementById(img.src);
         let lines, offset = 0;
-
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
-
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawInfo(ctx, section, FONT, COLOR);
       }
 
-
     }else if(parent === 'levensloop'){
 
-      const currentLayer = details[13];
-
-      if(currentLayer){
-
-      currentLayer.textboxes.forEach(detail => {
-        const {title, text, img, position, dimensions, options} = detail;
+      if(this.currentLayer){
+        this.currentLayer.textboxes.forEach(textbox => {
+        const {title, text, img, position, dimensions, options} = textbox;
         const image = document.getElementById(img.src);
+        
         let lines, offset = 0;
-
-        lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
-
+        lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
-
-    }
-      )}
+        })
+        
+      }else{
+        this.currentLayer = details[0];
+        this.currentLayer.textboxes.forEach(textbox => {
+        const {title, text, img, position, dimensions, options} = textbox;
+        const image = document.getElementById(img.src);
+        
+        let lines, offset = 0;
+        lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
+        this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
+        })
+      }
     }
   }
 
@@ -177,14 +170,28 @@ class Canvas extends Component {
   }
 
   createNavigation(){
-    return(
-      <div className='creatieproces-nav'>
-        <button className='creatieproces-nav-button creatieproces-nav-button--1' onClick={e => this.handleClick(e)} value='0'></button>
-        <button className='creatieproces-nav-button creatieproces-nav-button--2' onClick={e => this.handleClick(e)} value='1'></button>
-        <button className='creatieproces-nav-button creatieproces-nav-button--3' onClick={e => this.handleClick(e)} value='2'></button>
-        <button className='creatieproces-nav-button creatieproces-nav-button--4' onClick={e => this.handleClick(e)} value='3'></button>
-      </div>
-    )
+    const details = this.props.data;
+    const {parent} = this.props;
+
+    switch(parent){
+      case 'creatieproces':
+        return(
+          <div className='nav'>
+          {details.map((detail, index) => (<button className={`creatieproces-nav-button creatieproces-nav-button--${index+1}`} onClick={e => this.handleClick(e)} value={`${index}`}></button>))}
+          </div>
+        )
+
+      case 'levensloop':
+      return(
+        <div className='nav'>
+          {details.map((detail, index) => (<button className={`levensloop-nav-button levensloop-nav-button--${index+1}`} onClick={e => this.handleClick(e)} value={`${index}`}></button>))}
+        </div>
+      )
+
+      default:
+      console.log('No direction provided in json data.')
+      break;
+    }
   }
 
   handleClick(e){
@@ -213,7 +220,7 @@ class Canvas extends Component {
       <React.Fragment>
         <canvas className='canvas' id='canvas' width="2000" height="1100" style={{backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}}></canvas>
         <button className='button toFront'><Link to={`/${parent}`} className='button'>Terug naar verhaal</Link></button>
-        {parent === 'creatieproces' ? this.createNavigation() : null}
+        {this.createNavigation()}
       </React.Fragment>
     );
   }
