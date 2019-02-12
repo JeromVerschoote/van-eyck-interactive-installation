@@ -338,8 +338,13 @@
             }
         ],
         "endPage": {
-            "title": "I do as I can",
-            "text": "Wandel een eindje verder en ontdek hoe de revolutionaire kunstwerken van de gebroeders van Eyck tot stand kwamen en een inspiratie vormden voor een nieuwe kunststroom."
+            "title": "Ik doe wat ik kan",
+            "text": "Een uitspraak van Jan Van Eyck die als inscriptie op het kader van het schilderij 'De man met een rode tulband' staat. Wandel een eindje verder en ontdek hoe de revolutionaire kunstwerken van de gebroeders van Eyck tot stand kwamen en een inspiratie vormden voor andere kunstenaars.",
+            "img": {
+                "src": "endPageLeefwereld.png",
+                "width": "600",
+                "height": "400"
+            }
         }
     },
     "creatieproces": {
@@ -491,32 +496,37 @@
             },
             {
                 "id": "02",
-                "title": "Olieverfkunst",
-                "subtitle": "Olieverf kunst bestaat uit een heel proces die zorgvuldig moet worden doorlopen.",
-                "text": "De kunstenaar moet geduldig verscheidene stappen doornemen die het schilderij vormgeven. Elke stap is een belangrijke factor om tot het eindresultaat te komen. Neem een kijkje achter het grootste werk van de gebroeder Van Eyck: het Lam Gods.",
+                "title": "Revolutie",
+                "subtitle": "Jan Van Eyck werd gezien als een revolutionair door zijn tijdsgenoten en beschermheren.",
+                "text": "De schilderijen van Van Eyck krijgen afstammelingen van portretten door kunstenaren die zich laten inspireren door hem. De kopieën zijn grotendeels hetzelfde met kleine nieuwigheden.",
                 "img": {
-                    "src": "creatieproces.png",
+                    "src": "creatieprocesRevolutie1.png",
                     "width": "814",
                     "height": "532"
                 },
                 "link": {
-                    "text": "Een kijk achter het creatieproces van het lam gods",
+                    "text": "Neem een duik in de verschilllende werken",
                     "url": ""
                 },
                 "details": [
                     {
                         "section": {
-                            "title": "Opbouw",
-                            "text": "Om te schilderen is er een oppervlakte nodig. het Lam Gods is opgebouwd uit panelen van Baltische eik."
+                            "title": "Jan van Eyck",
+                            "laag": "National Gallery London",
+                            "text": "Portret van een man",
+                            "position": {
+                                "x": 1270,
+                                "y": 500
+                            }
                         },
-                        "title": "Baltische eik",
-                        "text": "Het hout is van hoge kwaliteit en zorgvuldig geselecteerd zodat het zo min mogelijk gaat uitzetten of krimpen.",
+                        "title": "Realistisch",
+                        "text": "Realtiteit overheerst: rimpels op het voorhoofd, plooien boven de oogleden, forse kin.",
                         "position": {
                             "x": 380,
                             "y": 450
                         },
                         "img": {
-                            "src": "creatieprocesOlieverfkunst1",
+                            "src": "creatieprocesRevolutie1",
                             "width": 440,
                             "height": 300
                         },
@@ -532,17 +542,22 @@
                     },
                     {
                         "section": {
-                            "title": "Voorbereiding",
-                            "text": "Op de panelen werd dan verschillende preparatie lagen aangebracht bestaande uit mengsel van natuurkrijt (calciumcarbonaat) en lijm van dierlijke oorsprong. Wanneer deze droog waren schuurde hij de panelen glad. Hierop bracht hij een gedetailleerde tekening aan met penseel en vloeibaar zwart medium."
+                            "title": "Jan van Eyck",
+                            "laag": "Kunsthistorisch Museum, Vienna",
+                            "text": "Portret van kardinal Niccolo Albergati",
+                            "position": {
+                                "x": 1270,
+                                "y": 500
+                            }
                         },
-                        "title": "Natuurkijt & Lijm",
-                        "text": "Deze witte achtergrond zorgt dat het schilderij het effect heeft van weerkaatsing en inwendige glans.",
+                        "title": "Detail",
+                        "text": "Zoals gewoonlijk is er in het schilderij van Van Eyck veel aandacht voor detail zoals diepe effecten.",
                         "position": {
                             "x": 380,
                             "y": 450
                         },
                         "img": {
-                            "src": "creatieprocesOlieverfkunst2",
+                            "src": "creatieprocesRevolutie2",
                             "width": 440,
                             "height": 300
                         },
@@ -558,62 +573,77 @@
                     },
                     {
                         "section": {
-                            "title": "Origineel",
-                            "text": "Wanneer de ondertekening klaar was kon hij beginnen met schilderen. De verf bestond uit olie met pigment. Om het droogproces te versnellen gebruikte hij waarschijnlijk siccatieven. Om kleur te geven gebruikte hij pigmenten naargelang het kleur dat hij wou verkrijgen. Een herkenbare techniek van Van Eyck is het gebruik van glacis. De pigmenten werden verdund in een grote hoeveelheid bindmiddel en zo werden de kleuren heel doorschijnend, door verschillende lagen hiervan aan te brengen konden kleuren optisch worden vermengd."
+                            "title": "Antonella da Messina",
+                            "laag": "Galleria Borghese, Rome",
+                            "text": "Portret van een man",
+                            "position": {
+                                "x": 1270,
+                                "y": 500
+                            }
                         },
-                        "title": "Oog voor detail",
-                        "text": "Er is een heel gedetailleerde weergave van onderdelen. De teksten en tekens in het boek worden duidelijk en realistisch weergegeven en is oog voor detail en perspectief die je in het boek terugvindt.",
+                        "title": "Uitdrukking",
+                        "text": "Het schilderij heeft een realtistische weergave van een blik van de persoon. De blik is aanstarend net zoals bij de kardinaal van Van Eyck.",
                         "position": {
-                            "x": 870,
-                            "y": 814
+                            "x": 380,
+                            "y": 450
                         },
                         "img": {
-                            "src": "creatieprocesOlieverfkunst3",
+                            "src": "creatieprocesRevolutie3",
                             "width": 440,
                             "height": 300
                         },
                         "dimensions": {
                             "width": 440,
-                            "height": 510
+                            "height": 440
                         },
                         "options": {
                             "orientation": "vertical",
                             "flipped": true,
-                            "pointedTo": "lowerRight"
+                            "pointedTo": "topLeft"
                         }
                     },
                     {
                         "section": {
-                            "title": "Overschildering",
-                            "text": "Je zou veronderstellen dat een overschildering werd aangebracht om kleine slijtage van de originele verf te verbergen maar bij oudere overschilderingen is dit niet het geval. De figuren kregen soms een nieuwe afwerking in de 16de eeuw, begin 17de eeuw."
+                            "title": "Antonella da Messina",
+                            "laag": "Museo Civico d'Arte Antica",
+                            "text": "Portret van een man",
+                            "position": {
+                                "x": 1270,
+                                "y": 500
+                            }
                         },
-                        "title": "Het Lam",
-                        "text": "Zo wouden ze het Lam Gods een hedendaagse ‘look’ geven waarin de humanisering van het lam centraal stond en de waardigheid van de goddelijk figuren naar voor kwamen en het dus aanvaardbaar was voor de katholieke kerk.",
+                        "title": "Houding",
+                        "text": "Antonello was de eerste van de Italiaanse schilders die aspecten van de Vlaamse Primitieven overnam en dit is duidelijk zichtbaar in dit schilderij. Herkenbare houding, blik, diepte weergave komen hier naar voor.",
                         "position": {
-                            "x": 1060,
-                            "y": 320
+                            "x": 380,
+                            "y": 450
                         },
                         "img": {
-                            "src": "creatieprocesOlieverfkunst4",
+                            "src": "creatieprocesRevolutie4",
                             "width": 440,
                             "height": 300
                         },
                         "dimensions": {
                             "width": 440,
-                            "height": 530
+                            "height": 440
                         },
                         "options": {
                             "orientation": "vertical",
                             "flipped": true,
-                            "pointedTo": "topRight"
+                            "pointedTo": "topLeft"
                         }
                     }
                 ]
             }
         ],
         "endPage": {
-            "title": "United with its frame.",
-            "text": "Ontdek verder de tentoonstelling en leg de geschiedenis van het Lam Gods bloot."
+            "title": "Verenigd met zijn frame.",
+            "text": "Het citaat toont van Eyck's wens om het frame en de verf op een manier te verbinden, de frame wordt als onderdeel van het geheel ook gezien. Ontdek verder de tentoonstelling en leg de geschiedenis van het Lam Gods bloot.",
+            "img": {
+                "src": "endPageCreatieproces.png",
+                "width": "380",
+                "height": "460"
+            }
         }
     },
     "levensloop": {
@@ -1194,7 +1224,12 @@
        ],
         "endPage": {
             "title": "VersU seXta MaI. Vos CoLLoCat aCta tUerI",
-            "text": "De inwijding is voorbij maar het gerenoveerde kunstwerk is nu hier origineel te bewonderen."
+            "text": "De hoofdletters vormen een chronogram dat het jaartal van de inwijding aangeeft: V+V+X+M+I+V+C+L+L+C+C+V+I = 1432. We zijn nu 2020 en u kan het gerenoveerde kunstwerk nu hier origineel bewonderen.",
+            "img": {
+                "src": "endPageLevensloop.jpg",
+                "width": "600",
+                "height": "400"
+            }
         }
     }   
 }
