@@ -1213,16 +1213,16 @@
             },
             {
                "id": "02",
-               "title": "Lam Gods",
-               "subtitle": "Het Lam Gods is een kunstwerk die een rijke geschiedenis achter de rug heeft.",
+               "title": "Lam Gods Alternatief",
+               "subtitle": "In de 19de eeuw is de maatschappij nogal preuts en wordt het schilderij aangepast.",
                "text": "Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.",
                "img": {
-                   "src": "levensloop.png",
-                   "width": "812",
-                   "height": "513"
+                   "src": "levensloopLamGodsWeetje.jpg",
+                   "width": "600",
+                   "height": "400"
                },
                "link": {
-                   "text": "Een duik in de het creatieproces van het lam gods",
+                   "text": "",
                    "url": ""
                },
                "details": [
