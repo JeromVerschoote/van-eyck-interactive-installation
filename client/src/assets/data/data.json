@@ -426,7 +426,7 @@
                         },
                         "dimensions": {
                             "width": 440,
-                            "height": 440
+                            "height": 420
                         },
                         "options": {
                             "orientation": "vertical",
@@ -459,7 +459,7 @@
                         },
                         "dimensions": {
                             "width": 440,
-                            "height": 510
+                            "height": 460
                         },
                         "options": {
                             "orientation": "vertical",
@@ -492,7 +492,7 @@
                         },
                         "dimensions": {
                             "width": 440,
-                            "height": 530
+                            "height": 500
                         },
                         "options": {
                             "orientation": "vertical",
@@ -526,13 +526,14 @@
                             "position": {
                                 "x": 1270,
                                 "y": 500
-                            }
+                            },
+                            "img": "creatieprocesRevolutieBackground1"
                         },
                         "title": "Realistisch",
                         "text": "Realtiteit overheerst: rimpels op het voorhoofd, plooien boven de oogleden, forse kin.",
                         "position": {
-                            "x": 380,
-                            "y": 450
+                            "x": 480,
+                            "y": 550
                         },
                         "img": {
                             "src": "creatieprocesRevolutie1",
@@ -558,13 +559,14 @@
                             "position": {
                                 "x": 1270,
                                 "y": 500
-                            }
+                            },
+                            "img": "creatieprocesRevolutieBackground2"
                         },
                         "title": "Detail",
                         "text": "Zoals gewoonlijk is er in het schilderij van Van Eyck veel aandacht voor detail zoals diepe effecten.",
                         "position": {
-                            "x": 380,
-                            "y": 450
+                            "x": 430,
+                            "y": 550
                         },
                         "img": {
                             "src": "creatieprocesRevolutie2",
@@ -573,7 +575,7 @@
                         },
                         "dimensions": {
                             "width": 440,
-                            "height": 440
+                            "height": 420
                         },
                         "options": {
                             "orientation": "vertical",
@@ -590,13 +592,14 @@
                             "position": {
                                 "x": 1270,
                                 "y": 500
-                            }
+                            },
+                            "img": "creatieprocesRevolutieBackground3"
                         },
                         "title": "Uitdrukking",
                         "text": "Het schilderij heeft een realtistische weergave van een blik van de persoon. De blik is aanstarend net zoals bij de kardinaal van Van Eyck.",
                         "position": {
-                            "x": 380,
-                            "y": 450
+                            "x": 340,
+                            "y": 370
                         },
                         "img": {
                             "src": "creatieprocesRevolutie3",
@@ -622,7 +625,8 @@
                             "position": {
                                 "x": 1270,
                                 "y": 500
-                            }
+                            },
+                            "img": "creatieprocesRevolutieBackground4"
                         },
                         "title": "Houding",
                         "text": "Antonello was de eerste van de Italiaanse schilders die aspecten van de Vlaamse Primitieven overnam en dit is duidelijk zichtbaar in dit schilderij. Herkenbare houding, blik, diepte weergave komen hier naar voor.",
@@ -637,7 +641,7 @@
                         },
                         "dimensions": {
                             "width": 440,
-                            "height": 440
+                            "height": 460
                         },
                         "options": {
                             "orientation": "vertical",
