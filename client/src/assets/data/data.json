@@ -366,10 +366,11 @@
                     {
                         "section": {
                             "title": "Opbouw",
+                            "laag": "EERSTE LAAG",
                             "text": "Om te schilderen is er een oppervlakte nodig. het Lam Gods is opgebouwd uit panelen van Baltische eik.",
                             "position": {
-                                "x": 50,
-                                "y": 50
+                                "x": 1120,
+                                "y": 500
                             }
                         },
                         "title": "Baltische eik",
@@ -396,10 +397,11 @@
                     {
                         "section": {
                             "title": "Voorbereiding",
+                            "laag": "TWEEDE LAAG",
                             "text": "Op de panelen werd dan verschillende preparatie lagen aangebracht bestaande uit mengsel van natuurkrijt (calciumcarbonaat) en lijm van dierlijke oorsprong. Wanneer deze droog waren schuurde hij de panelen glad. Hierop bracht hij een gedetailleerde tekening aan met penseel en vloeibaar zwart medium.",
                             "position": {
-                                "x": 50,
-                                "y": 50
+                                "x": 1270,
+                                "y": 500
                             }
                         },
                         "title": "Natuurkijt & Lijm",
@@ -426,10 +428,11 @@
                     {
                         "section": {
                             "title": "Origineel",
+                            "laag": "DERDE LAAG",
                             "text": "Wanneer de ondertekening klaar was kon hij beginnen met schilderen. De verf bestond uit olie met pigment. Om het droogproces te versnellen gebruikte hij waarschijnlijk siccatieven. Om kleur te geven gebruikte hij pigmenten naargelang het kleur dat hij wou verkrijgen. Een herkenbare techniek van Van Eyck is het gebruik van glacis. De pigmenten werden verdund in een grote hoeveelheid bindmiddel en zo werden de kleuren heel doorschijnend, door verschillende lagen hiervan aan te brengen konden kleuren optisch worden vermengd.",
                             "position": {
-                                "x": 50,
-                                "y": 50
+                                "x": 1270,
+                                "y": 500
                             }
                         },
                         "title": "Oog voor detail",
@@ -456,10 +459,11 @@
                     {
                         "section": {
                             "title": "Overschildering",
+                            "laag": "VIERDE LAAG",
                             "text": "Je zou veronderstellen dat een overschildering werd aangebracht om kleine slijtage van de originele verf te verbergen maar bij oudere overschilderingen is dit niet het geval. De figuren kregen soms een nieuwe afwerking in de 16de eeuw, begin 17de eeuw.",
                             "position": {
-                                "x": 50,
-                                "y": 50
+                                "x": 1270,
+                                "y": 500
                             }
                         },
                         "title": "Het Lam",

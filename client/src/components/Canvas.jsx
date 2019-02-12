@@ -130,12 +130,21 @@ class Canvas extends Component {
   }
 
   drawInfo(ctx, section, font, color){
-    const {title, text, position} = section;
+    const {title, text, laag, position} = section;
     const {display, regular, bold} = font;
     const {white, red} = color;
 
-    this.drawText(ctx, title, position.x, position.y, white, display, '20px', 0);
-    this.drawText(ctx, text, position.x, position.y + 20, white, regular, '14px', 0);
+    this.drawText(ctx, title, position.x, position.y, white, display, '72px', 0);
+    this.drawText(ctx, laag, position.x, position.y + 40, COLOR.red, bold, '24px', 0);
+
+    let lines, offset = 0;
+
+    lines = wrapTextFromCanvasIntoLines(ctx, text, 1100);
+
+    lines.forEach(line => {
+      this.drawText(ctx, line, position.x, position.y + 60, COLOR.white, FONT.regular, '14px', offset);
+      offset += 25;
+    });
   }
 
   drawPointer(ctx, x1, y1, x2, y2, x3, y3, color){
