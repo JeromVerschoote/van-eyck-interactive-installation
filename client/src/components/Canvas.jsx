@@ -5,7 +5,7 @@ import {wrapTextFromCanvasIntoLines} from '../js/lib.js';
 import {PADDING, COLOR, FONT} from '../js/style.js';
 
 class Canvas extends Component {
-  
+
   componentDidMount(){
     const details = this.props.data;
     const {parent} = this.props;
@@ -50,27 +50,27 @@ class Canvas extends Component {
 
     }else if(parent === 'levensloop'){
 
-      if(this.currentLayer){
-        const {year} = this.currentLayer; 
+      if(this.currentView){
+        const {year} = this.currentView;
 
-        this.currentLayer.textboxes.forEach(textbox => {
+        this.currentView.textboxes.forEach(textbox => {
         const {title, text, img, position, dimensions, options} = textbox;
         const image = document.getElementById(img.src);
-        
+
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, 1040);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawText(ctx, year, 100, 300, COLOR.white, FONT.display, '72px', 0);
         })
-        
-      }else{
-        this.currentLayer = details[0];
-        const {year} = this.currentLayer; 
 
-        this.currentLayer.textboxes.forEach(textbox => {
+      }else{
+        this.currentView = details[0];
+        const {year} = this.currentView;
+
+        this.currentView.textboxes.forEach(textbox => {
         const {title, text, img, position, dimensions, options} = textbox;
         const image = document.getElementById(img.src);
-        
+
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
@@ -186,25 +186,26 @@ class Canvas extends Component {
     switch(parent){
       case 'creatieproces':
         return(
-          <div className='nav'>
-          {details.map((detail, index) => (<button className={`creatieproces-nav-button creatieproces-nav-button--${index+1}`} onClick={e => this.handleClick(e)} value={`${index}`} style={{backgroundImage: `url(${require(`../assets/img/${details[index].section.nav}`)})`}}></button>))}
+          <div className='creatieproces-nav'>
+          {details.map((detail, index) => (<button className={`creatieproces-nav-button creatieproces-nav-button--${index+1}`} onClick={e => this.handleClickCreatieprocesCard(e)} value={`${index}`} style={{backgroundImage: `url(${require(`../assets/img/${details[index].section.nav}`)})`}}></button>))}
           </div>
         )
 
       case 'levensloop':
       return(
-        <div className='nav-levensloop'>
-          {details.map((detail, index) => (<button className={`levensloop-nav-button levensloop-nav-button--${index+1}`} onClick={e => this.handleClick(e)} value={`${index}`}></button>))}
+        <div className='levensloop-nav'>
+          <button className='levensloop-nav-button levensloop-nav-button--prev' onClick={e => this.handleClickLevensloopCard(e)} value='prev'></button>
+          <button className='levensloop-nav-button levensloop-nav-button--next' onClick={e => this.handleClickLevensloopCard(e)} value='next'></button>
         </div>
       )
 
       default:
-      console.log('No direction provided in json data.')
+        console.log('No direction provided in json data.')
       break;
     }
   }
 
-  handleClick(e){
+  handleClickCreatieprocesCard(e){
     e.preventDefault();
 
     const value = e.currentTarget.value;
@@ -220,6 +221,24 @@ class Canvas extends Component {
 
     this.currentLayer = details[value];
 
+    this.componentDidMount();
+  }
+
+  handleClickLevensloopCard(e){
+    e.preventDefault();
+
+    const value = e.currentTarget.value;
+    const details = this.props.data;
+
+    let index = this.currentView.id;
+
+    if(value === 'prev'){
+      index--
+    }else if(value === 'next'){
+      index++;
+    }
+
+    this.currentView = details[index - 1];
     this.componentDidMount();
   }
 
