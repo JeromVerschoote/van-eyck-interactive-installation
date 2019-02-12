@@ -74,6 +74,16 @@ body {
   margin-bottom: 5rem;
   display: flex;
   flex-flow: column;
+  font-size: 2rem;
+  background-color: rgba(188, 0, 0, .6);
+  color: white;
+}
+
+.backLink {
+  font-size: 2rem;
+  background-color: rgba(188, 0, 0, .6);
+  color: white;
+  text-align: left;
 }
 
 .page--even .link {
@@ -86,7 +96,7 @@ body {
   align-items: flex-start;
 }
 
-.creatieproces-nav{
+.creatieproces-nav {
   width: 30vw;
   display: flex;
   justify-content: space-between;
@@ -96,7 +106,7 @@ body {
   right: 20vw;
 }
 
-.levensloop-nav{
+.levensloop-nav {
   height: 12.5vh;
   display: flex;
   flex-flow: column;
@@ -107,7 +117,7 @@ body {
   top: 18.3rem;
 }
 
-.levensloop-nav-button{
+.levensloop-nav-button {
   border: none;
   content: '';
   width: 3rem;
@@ -115,15 +125,15 @@ body {
   background: linear-gradient(to top right, #bc0000 50%, 50%, rgba(0, 0, 0, 0));
 }
 
-.levensloop-nav-button--prev{
+.levensloop-nav-button--prev {
   transform: rotate(135deg);
 }
 
-.levensloop-nav-button--next{
+.levensloop-nav-button--next {
   transform: rotate(-45deg);
 }
 
-.creatieproces-nav-button{
+.creatieproces-nav-button {
   border: none;
   content: '';
   width: 10rem;

@@ -52,6 +52,17 @@ class Page extends Component {
 
     const lines = wrapTextIntoLines(link.text, 11);
 
+    var rectStyle = {
+      stroke: 'rgba(188, 0, 0, .6)',
+      strokeWidth: '6',
+      fill: 'none'
+    };
+
+    const svgStyle = {
+      position: 'absolute',
+      zIndex: '1',
+    }
+
     return (
         <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
         <div className='content'>
@@ -65,6 +76,9 @@ class Page extends Component {
               <Link className='button link' to={title.toLowerCase() + '/app'}>
                 {lines.map((line, index) => <p key={index}>{line}</p>)}
               </Link>
+              <svg width="800" height="400" style={svgStyle}>
+                 <rect width="600" height="400" style={rectStyle} />
+              </svg>
             </button>
         </div>
         <div style={{display: 'none'}}>
