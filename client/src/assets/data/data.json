@@ -684,7 +684,8 @@
                },
                "details": [
                 {
-                "year": "1432",    
+                "year": "1432",
+                "id": "1",    
                 "textboxes":[{
                     "title": "Gent, St.-Janskerk",
                     "text": "Het Lam Gods wordt officieel ingewijd in de toenmalig Sint-Janskerk in Gent waar het nadien ook een plekje zal krijgen.",
@@ -709,7 +710,8 @@
                 }]
                 },
                 {
-                    "year": "1566",    
+                    "year": "1566",
+                    "id": "2",    
                     "textboxes":[{
                         "title": "Gent, Verborgen",
                         "text": "Tijdens de Beeldenstrom worden religieuze beelden en kunstwerken in katholieke kerken verwoest.",
@@ -734,7 +736,8 @@
                     }]
                 },
                 {
-                    "year": "1574",    
+                    "year": "1574",
+                    "id": "3",
                     "textboxes":[{
                         "title": "Gent, St.Janskerk",
                         "text": "Het stadsbestuur van Gent wil het schilderij schenken aan koningin Elizabeth I van Engeland maar de kerk biedt protest en de schenking wordt niet verwezenlijkt.",
@@ -782,7 +785,8 @@
                 ]
                 },
                 {
-                    "year": "1794",    
+                    "year": "1794",
+                    "id": "4",
                     "textboxes":[{
                         "title": "Gent, Verborgen",
                         "text": "Tijdens invallen van Franse soldaten onder gezag van Napoleon blijven de zijluiken goed verborgen in Gent.",
@@ -830,7 +834,8 @@
                 ]
                 },
                 {
-                    "year": "1815",    
+                    "year": "1815",
+                    "id": "5",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "De val van Napoleon neemt plaats en kunst wordt terug gebracht naar de originele locatie.",
@@ -856,7 +861,8 @@
                 ]
                 },
                 {
-                    "year": "1816",    
+                    "year": "1816",
+                    "id": "6",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "De delen die niet worden gekocht door Frederik Willem III blijven in Gent.",
@@ -904,7 +910,8 @@
                 ]
                 },
                 {
-                    "year": "1822",    
+                    "year": "1822",
+                    "id": "7",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "Een brand woedt in de kathedraal waardoor de overgebleven stukken beschadigd geraken.",
@@ -952,7 +959,8 @@
                 ]
                 },
                 {
-                    "year": "1861",    
+                    "year": "1861",
+                    "id": "8",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "Een brand woedt in de kathedraal waardoor de overgebleven stukken beschadigd geraken.",
@@ -1022,7 +1030,8 @@
                 ]
                 },
                 {
-                    "year": "1914",    
+                    "year": "1914",
+                    "id": "9",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "De overgebleven stukken worden verstopt voor de duitse soldaten tijdens de Eerste Wereldoorlog.",
@@ -1092,7 +1101,8 @@
                 ]
                 },
                 {
-                    "year": "1920",    
+                    "year": "1920",
+                    "id": "10",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "De Eerste Wereldoorlog is ten einde en in het Verdag van Versailles wordt afgesproken de stukken te herverenigen in Gent.",
@@ -1117,7 +1127,8 @@
                     }]
                 },
                 {
-                    "year": "1934",    
+                    "year": "1934",
+                    "id": "11",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "Het zwarste jaar voor het meesterwerk de rechtvaardige rechters en St.Jan de Doper worden gestolen. De Tweede wordt echter spoedig teruggevonden.",
@@ -1142,7 +1153,8 @@
                     }]
                 },
                 {
-                    "year": "194O",    
+                    "year": "194O",
+                    "id": "12",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "Tijdens duitse invallen onder Hilter's bewind worden alle panelen gestolen door duitse soldaten en opgeborgen op geheime locaties.",
@@ -1167,7 +1179,8 @@
                     }]
                 },
                 {
-                    "year": "1945",    
+                    "year": "1945",
+                    "id": "13",
                     "textboxes":[{
                         "title": "Salzburg",
                         "text": "Het veelluik wordt teruggevonden door het Amerikaanse leger in zoutmijnen in Salzburg.",
@@ -1192,7 +1205,8 @@
                     }]
                 },
                 {
-                    "year": "1951",    
+                    "year": "1951",
+                    "id": "14",
                     "textboxes":[{
                         "title": "Gent, St.Baafskathedraal",
                         "text": "De befaamde Monuments Men brengen het Lam Gods terug naar Gent waar het een restauratie met vernis ondergaat.",
