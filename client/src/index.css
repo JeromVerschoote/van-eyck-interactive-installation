@@ -174,3 +174,15 @@ body {
   z-index: 5;
   position: absolute;
 }
+
+.hr {
+  width: 7vw;
+  height: .1rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

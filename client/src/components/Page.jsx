@@ -11,20 +11,28 @@ class Page extends Component {
   renderMenu(type){
     if(type === 'even'){
       return(
+        <article className='article'>
+        <hr className='hr'/>
         <div className='buttons centered'>
           <button className='button'>Restart Story</button>
         </div>
+        <hr className='hr'/>
+        </article>
       )
     }else if(type === 'odd'){
       return(
-        <div className='buttons centered'>
+        <article className='article'>
+          <hr className='hr'/>
+          <div className='buttons'>
               <button className='button button--active'>nl</button>
               <button className='button'>fr</button>
               <button className='button'>de</button>
               <button className='button'>en</button>
               <button className='button'>it</button>
               <button className='button'>es</button>
-        </div>
+          </div>
+          <hr className='hr'/>
+        </article>
       )
     }
   }
@@ -48,8 +56,10 @@ class Page extends Component {
         <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
         <div className='content'>
             {this.renderMenu(type)}
+            <header>
             <h1 className='h1'>{title}</h1>
             <p className='subtitle'>{subtitle}</p>
+            </header>
             <p className='paragraph'>{text}</p>
             <button className='button'>
               <Link className='button link' to={title.toLowerCase() + '/app'}>

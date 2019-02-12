@@ -14,6 +14,8 @@ class StartPage extends Component {
           <img src={logo} alt="Dit is het logo van MSK Gent." width="300" height="300" />
           <h1 className='h2'>Van Eyck: Een Optische Revolutie</h1>
           <h2 className='h3'>{title}</h2>
+          <article className='article'>
+          <hr className='hr'/>
           <div className='buttons'>
               <button className='button button--active'>nl</button>
               <button className='button'>fr</button>
@@ -22,6 +24,8 @@ class StartPage extends Component {
               <button className='button'>it</button>
               <button className='button'>es</button>
           </div>
+          <hr className='hr'/>
+          </article>
           <p className='paragraph'>{text}</p>
         </div>
       </section>
