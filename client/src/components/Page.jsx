@@ -12,17 +12,17 @@ class Page extends Component {
     if(type === 'even'){
       return(
         <article className='article'>
-        <hr className='hr'/>
+        <hr className='line'/>
         <div className='buttons centered'>
           <button className='button'>Restart Story</button>
         </div>
-        <hr className='hr'/>
+        <hr className='line'/>
         </article>
       )
     }else if(type === 'odd'){
       return(
         <article className='article'>
-          <hr className='hr'/>
+          <hr className='line'/>
           <div className='buttons'>
               <button className='button button--active'>nl</button>
               <button className='button'>fr</button>
@@ -31,7 +31,7 @@ class Page extends Component {
               <button className='button'>it</button>
               <button className='button'>es</button>
           </div>
-          <hr className='hr'/>
+          <hr className='line'/>
         </article>
       )
     }
@@ -50,34 +50,45 @@ class Page extends Component {
     const {title, subtitle, text, img, link, details} = this.props.data;
     const {type, parent} = this.props;
 
-    const lines = wrapTextIntoLines(link.text, 11);
+    const lines = wrapTextIntoLines(link.text, 10);
 
-    var rectStyle = {
-      stroke: 'rgba(188, 0, 0, .6)',
-      strokeWidth: '6',
+    const rectStyle = {
+      stroke: 'rgba(220, 0, 0, 1)',
+      strokeWidth: '2',
       fill: 'none'
     };
 
-    const svgStyle = {
+    const svgOdd = {
       position: 'absolute',
+      bottom: 0,
+      marginBottom: '-10rem',
+      marginLeft: '-10rem',
+      zIndex: '1',
+    }
+
+    const svgEven = {
+      position: 'absolute',
+      bottom: 0,
+      marginBottom: '-10rem',
+      marginLeft: '9rem',
       zIndex: '1',
     }
 
     return (
-        <section className={type === 'odd' ? 'page page--odd' :  'page page--even'}>
+        <section className={type === 'odd' ? 'page page--odd' : 'page page--even'}>
         <div className='content'>
             {this.renderMenu(type)}
             <header>
-            <h1 className='h1'>{title}</h1>
-            <p className='subtitle'>{subtitle}</p>
+              <h1 className='h1'>{title}</h1>
+              <p className='subtitle'>{subtitle}</p>
             </header>
             <p className='paragraph'>{text}</p>
             <button className='button'>
               <Link className='button link' to={title.toLowerCase() + '/app'}>
-                {lines.map((line, index) => <p key={index}>{line}</p>)}
+                {lines.map((line, index) => <p className='button' key={index}>{line}</p>)}
               </Link>
-              <svg width="800" height="400" style={svgStyle}>
-                 <rect width="600" height="400" style={rectStyle} />
+              <svg width="800" height="400" style={type === 'odd' ? svgOdd :  svgEven}>
+                 <rect width="440" height="270" style={rectStyle} />
               </svg>
             </button>
         </div>

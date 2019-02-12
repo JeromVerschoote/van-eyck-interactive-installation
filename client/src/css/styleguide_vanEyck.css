@@ -53,7 +53,6 @@
   float: left;
   padding-right: 2rem;
   padding-left: .3rem;
-  font-weight: bold;
 }
 
 .h2 {
@@ -105,7 +104,7 @@
 
 .paragraph {
   font-family: var(--font-text);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   margin-top: 4rem;
 }
@@ -121,9 +120,10 @@
 .button {
   border: none;
   padding: 1rem;
+  font-size: 1.4rem;
   font-family: var(--font-display--secundairy);
   text-transform: uppercase;
-  color: var(--color-red);
+  color: rgba(220, 0, 0, 1);
   background: none;
   text-decoration: none;
 }
@@ -183,8 +183,4 @@
 .--logo-big {
   width: 15rem;
   height: 15rem;
-}
-
-.link-highlighted {
-  font-size: 2rem;
 }
