@@ -58,7 +58,7 @@ class Canvas extends Component {
         const image = document.getElementById(img.src);
         
         let lines, offset = 0;
-        lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
+        lines = wrapTextFromCanvasIntoLines(ctx, text, 1040);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawText(ctx, year, 100, 300, COLOR.white, FONT.display, '72px', 0);
         })
