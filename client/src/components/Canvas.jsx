@@ -5,7 +5,7 @@ import {wrapTextFromCanvasIntoLines} from '../js/lib.js';
 import {PADDING, COLOR, FONT} from '../js/style.js';
 
 class Canvas extends Component {
-  
+
   componentDidMount(){
     const details = this.props.data;
     const {parent} = this.props;
@@ -51,26 +51,26 @@ class Canvas extends Component {
     }else if(parent === 'levensloop'){
 
       if(this.currentView){
-        const {year} = this.currentView; 
+        const {year} = this.currentView;
 
         this.currentView.textboxes.forEach(textbox => {
         const {title, text, img, position, dimensions, options} = textbox;
         const image = document.getElementById(img.src);
-        
+
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, 1040);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawText(ctx, year, 100, 300, COLOR.white, FONT.display, '72px', 0);
         })
-        
+
       }else{
         this.currentView = details[0];
-        const {year} = this.currentView; 
+        const {year} = this.currentView;
 
         this.currentView.textboxes.forEach(textbox => {
         const {title, text, img, position, dimensions, options} = textbox;
         const image = document.getElementById(img.src);
-        
+
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);

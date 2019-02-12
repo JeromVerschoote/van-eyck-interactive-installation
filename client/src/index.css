@@ -185,3 +185,19 @@ body {
   top: 6rem;
   z-index: 5;
 }
+
+.levensloop-nav-button {
+  width: 5rem;
+  height: 2rem;
+}
+
+.nav-levensloop {
+  height: 60vh;
+  bottom: 20vh;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 5;
+  position: absolute;
+}
