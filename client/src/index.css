@@ -97,21 +97,21 @@ body {
 }
 
 .levensloop-nav{
-  height: 15vh;
+  height: 12.5vh;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   z-index: 5;
   position: absolute;
-  left: 8.7rem;
-  top: 17rem;
+  left: 10rem;
+  top: 18.3rem;
 }
 
 .levensloop-nav-button{
   border: none;
   content: '';
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   background: linear-gradient(to top right, #bc0000 50%, 50%, rgba(0, 0, 0, 0));
 }
 
@@ -184,11 +184,6 @@ body {
   left: 6rem;
   top: 6rem;
   z-index: 5;
-}
-
-.levensloop-nav-button {
-  width: 5rem;
-  height: 2rem;
 }
 
 .nav-levensloop {
