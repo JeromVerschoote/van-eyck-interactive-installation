@@ -47,6 +47,8 @@ class Canvas extends Component {
     }else if(parent === 'levensloop'){
 
       if(this.currentLayer){
+        const {year} = this.currentLayer; 
+
         this.currentLayer.textboxes.forEach(textbox => {
         const {title, text, img, position, dimensions, options} = textbox;
         const image = document.getElementById(img.src);
@@ -54,10 +56,13 @@ class Canvas extends Component {
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 2));
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
+        this.drawText(ctx, year, 100, 300, COLOR.white, FONT.display, '72px', 0);
         })
         
       }else{
         this.currentLayer = details[0];
+        const {year} = this.currentLayer; 
+
         this.currentLayer.textboxes.forEach(textbox => {
         const {title, text, img, position, dimensions, options} = textbox;
         const image = document.getElementById(img.src);
@@ -65,6 +70,7 @@ class Canvas extends Component {
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
+        this.drawText(ctx, year, 100, 300, COLOR.white, FONT.display, '72px', 0);
         })
       }
     }
