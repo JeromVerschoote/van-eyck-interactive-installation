@@ -14,7 +14,7 @@ class Page extends Component {
         <article className='article'>
         <hr className='line'/>
         <div className='buttons centered'>
-          <button className='button'>Restart Story</button>
+        <button className='button' onClick={e => this.handleClickRefresh(e)} >Restart Story</button>
         </div>
         <hr className='line'/>
         </article>
@@ -35,6 +35,10 @@ class Page extends Component {
         </article>
       )
     }
+  }
+
+  handleClickRefresh(e){
+    window.location.reload(); 
   }
 
   createAccordingImgTags(details, parent, directParent){
@@ -87,7 +91,7 @@ class Page extends Component {
               <Link className='button link' to={title.toLowerCase() + '/app'}>
                 {lines.map((line, index) => <p className='button' key={index}>{line}</p>)}
               </Link>
-              <svg width="800" height="400" style={type === 'odd' ? svgOdd :  svgEven}>
+              <svg width="800" height="400" style={type === 'odd' ? svgOdd :  svgEven} className={img.src === 'levensloopLamGodsWeetje.png' ? ('hidden') : ('') }>
                  <rect width="440" height="270" style={rectStyle} />
               </svg>
             </button>
@@ -96,7 +100,7 @@ class Page extends Component {
           {this.createAccordingImgTags(details, parent, title)}
         </div>
         <Route path={'/' + title.toLowerCase() + '/app'} exact render={() => <Canvas data={details} parent={parent} directParent={title}/>} />
-        <img src={require(`../assets/img/${img.src}`)} alt="" width={img.width} height={img.height} className='image'/>
+        <img src={require(`../assets/img/${img.src}`)} alt="" width={img.width} height={img.height} className={img.src === 'levensloopLamGodsWeetje.png' ? ('specialImage') : ('image') }/>
       </section>
     )
   }

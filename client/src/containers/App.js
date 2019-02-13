@@ -17,8 +17,8 @@ class App extends Component {
         <p><Link to="/levensloop">Levensloop</Link></p>
         <Switch>
           <Route path='/leefwereld' exact render={() => <Book server={this.props.server} data={leefwereld}/>} />
-          <Route path='/creatieproces' exact render={() => <Book server={this.props.server} data={creatieproces}/>} />
-          <Route path='/levensloop' exact render={() => <Book server={this.props.server} data={levensloop}/>} />
+          <Route path='/creatieproces' exact render={() => <Book server={this.props.server} data={creatieproces}/>}/>} />
+          <Route path='/levensloop' exact render={() => <Book server={this.props.server} data={levensloop}/>}/>} />
         </Switch>
       </React.Fragment>
     );

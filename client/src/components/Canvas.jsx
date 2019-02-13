@@ -50,6 +50,8 @@ class Canvas extends Component {
 
     }else if(parent === 'levensloop'){
 
+        this.drawTimeline(ctx);
+
       if(this.currentView){
         const {year} = this.currentView;
 
@@ -60,7 +62,7 @@ class Canvas extends Component {
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, 1040);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
-        this.drawText(ctx, year, 100, 300, COLOR.white, FONT.display, '72px', 0);
+        this.drawText(ctx, year, 160, 300, COLOR.white, FONT.display, '72px', 0);
         })
 
       }else{
@@ -74,7 +76,7 @@ class Canvas extends Component {
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
-        this.drawText(ctx, year, 100, 300, COLOR.white, FONT.display, '72px', 0);
+        this.drawText(ctx, year, 160, 300, COLOR.white, FONT.display, '72px', 0);
         })
       }
     }
@@ -179,6 +181,27 @@ class Canvas extends Component {
     ctx.drawImage(img, x, y, width, height);
   }
 
+  drawTimeline(ctx){
+    ctx.beginPath();
+    ctx.lineTo(150, 200);
+    ctx.lineTo(80, 200);
+    ctx.lineTo(80, 800);
+    ctx.lineTo(150, 800);
+    ctx.moveTo(80, 300);
+    ctx.lineTo(110, 300);
+    ctx.moveTo(80, 400);
+    ctx.lineTo(150, 400);
+    ctx.moveTo(80, 500);
+    ctx.lineTo(110, 500);
+    ctx.moveTo(80, 600);
+    ctx.lineTo(150, 600);
+    ctx.moveTo(80, 700);
+    ctx.lineTo(110, 700);
+    ctx.strokeStyle = "#FFFFFF";
+    ctx.lineWidth = 4;
+    ctx.stroke();
+  }
+
   createNavigation(){
     const details = this.props.data;
     const {parent} = this.props;
@@ -248,7 +271,21 @@ class Canvas extends Component {
     return(
       <React.Fragment>
         <canvas className='canvas' id='canvas' width="2000" height="1100" style={parent !== 'creatieproces' ? ({backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}) : null}></canvas>
-        <button className='button toFront'><Link to={`/${parent}`} className='button'>Terug naar verhaal</Link></button>
+        <div className="nav-canvas">
+        <button className='button toFront terug'><Link to={`/${parent}`} className='button'>Terug naar verhaal</Link></button>
+        <article className='article toFront taal'>
+          <hr className='hr'/>
+          <div className='buttons'>
+              <button className='button button--active'>nl</button>
+              <button className='button'>fr</button>
+              <button className='button'>de</button>
+              <button className='button'>en</button>
+              <button className='button'>it</button>
+              <button className='button'>es</button>
+          </div>
+          <hr className='hr'/>
+          </article>
+        </div>
         {this.createNavigation()}
       </React.Fragment>
     );

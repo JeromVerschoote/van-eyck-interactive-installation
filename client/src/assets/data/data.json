@@ -341,9 +341,9 @@
             "title": "Ik doe wat ik kan",
             "text": "Een uitspraak van Jan Van Eyck die als inscriptie op het kader van het schilderij 'De man met een rode tulband' staat. Wandel een eindje verder en ontdek hoe de revolutionaire kunstwerken van de gebroeders van Eyck tot stand kwamen en een inspiratie vormden voor andere kunstenaars.",
             "img": {
-                "src": "endPageLeefwereld.png",
-                "width": "600",
-                "height": "400"
+                "src": "endPageLeefwereld.gif",
+                "width": "400",
+                "height": "300"
             }
         }
     },
@@ -656,9 +656,9 @@
             "title": "Verenigd met zijn frame.",
             "text": "Het citaat toont van Eyck's wens om het frame en de verf op een manier te verbinden, de frame wordt als onderdeel van het geheel ook gezien. Ontdek verder de tentoonstelling en leg de geschiedenis van het Lam Gods bloot.",
             "img": {
-                "src": "endPageCreatieproces.png",
-                "width": "380",
-                "height": "460"
+                "src": "endPageCreatieproces.gif",
+                "width": "220",
+                "height": "300"
             }
         }
     },
@@ -1235,11 +1235,11 @@
             },
             {
                "id": "02",
-               "title": "Lam Gods Alternatief",
+               "title": "Lam Gods Weetje",
                "subtitle": "In de 19de eeuw is de maatschappij nogal preuts en wordt het schilderij aangepast.",
                "text": "Het wordt beweerd het meeste gestolen kunstwerk te zijn in de geschiedenis. Niet enkel diefstal heeft het meesterwerk in gevaar gebracht. Het schilderij heeft een heleboel illegale praktijken doorstaan: vervalst, verkocht, gesmokkeld, gecensureerd,… Het klassieke stuk heeft veel landen doorgereisd. Maar nu is het kunstwerk origineel hier te bewonderen.",
                "img": {
-                   "src": "levensloopLamGodsWeetje.jpg",
+                   "src": "levensloopLamGodsWeetje.png",
                    "width": "600",
                    "height": "400"
                },
@@ -1256,9 +1256,9 @@
             "title": "VersU seXta MaI. Vos CoLLoCat aCta tUerI",
             "text": "De hoofdletters vormen een chronogram dat het jaartal van de inwijding aangeeft: V+V+X+M+I+V+C+L+L+C+C+V+I = 1432. We zijn nu 2020 en u kan het gerenoveerde kunstwerk nu hier origineel bewonderen.",
             "img": {
-                "src": "endPageLevensloop.jpg",
-                "width": "600",
-                "height": "400"
+                "src": "endPageLevensloop.gif",
+                "width": "400",
+                "height": "300"
             }
         }
     }   
