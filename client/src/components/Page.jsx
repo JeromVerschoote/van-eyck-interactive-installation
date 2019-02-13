@@ -70,7 +70,7 @@ class Page extends Component {
       position: 'absolute',
       bottom: 0,
       marginBottom: '-10rem',
-      marginLeft: '9rem',
+      marginLeft: '13rem',
       zIndex: '1',
     }
 

@@ -54,6 +54,7 @@ body {
 }
 
 .image {
+  margin-left: 9.4rem;
   margin-top: -42.5rem;
   bottom: 0;
   transform: scale(.7);

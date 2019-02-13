@@ -72,7 +72,7 @@
 .paragraph::first-letter {
   float: left;
   font-size: 4.4rem;
-  line-height: 4rem;
+  line-height: 3rem;
   padding-right: .4rem;
   font-weight: bold;
 }
