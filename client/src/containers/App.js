@@ -6,6 +6,7 @@ import data from '../assets/data/data.json';
 import Book from './Book.js';
 
 class App extends Component {
+  
   render() {
     const {leefwereld, creatieproces, levensloop} = data;
 
@@ -15,9 +16,9 @@ class App extends Component {
         <p><Link to="/creatieproces">Creatieproces</Link></p>
         <p><Link to="/levensloop">Levensloop</Link></p>
         <Switch>
-          <Route path='/leefwereld' exact render={() => <Book data={leefwereld}/>} />
-          <Route path='/creatieproces' exact render={() => <Book data={creatieproces}/>} />
-          <Route path='/levensloop' exact render={() => <Book data={levensloop}/>} />
+          <Route path='/leefwereld' exact render={() => <Book server={this.props.server} data={leefwereld}/>} />
+          <Route path='/creatieproces' exact render={() => <Book server={this.props.server} data={creatieproces}/>} />
+          <Route path='/levensloop' exact render={() => <Book server={this.props.server} data={levensloop}/>} />
         </Switch>
       </React.Fragment>
     );

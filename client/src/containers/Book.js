@@ -5,10 +5,6 @@ import StartPage from '../components/StartPage.jsx';
 import Page from '../components/Page.jsx'
 import EndPage from '../components/EndPage.jsx';
 
-import Api from '../js/api.js';
-const arduino = new Api('http://localhost:9090');
-const kinect = new Api('http://localhost:8080');
-
 class Book extends Component {
   constructor(props){
     super(props);
@@ -19,6 +15,7 @@ class Book extends Component {
 
     document.addEventListener('keydown', this.handleKeyDown);
 
+    const {arduino, kinect} = this.props.server;
     arduino.socket.on(`touch`, touch => this.handleTouch(touch));
     kinect.socket.on(`gesture`, gesture => this.handleGesture(gesture));
   }
