@@ -226,3 +226,11 @@ hr {
 .hidden {
   display: none;
 }
+
+.endGif {
+  margin-top: 5rem;
+}
+
+.endHandtekening {
+  align-self: flex-end;
+}

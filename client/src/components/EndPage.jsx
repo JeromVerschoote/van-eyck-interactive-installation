@@ -13,8 +13,8 @@ class EndPage extends Component {
         <div className='content'>
             <h1 className='h2'>{title}</h1>
             <p className='paragraph'> {text}</p>
-            <img src={require(`../assets/img/${img.src}`)} alt="Dit is een afbeelding om het boek mee af te sluiten." width={img.width} height={img.height}/>
-            <img src={handtekening} alt="Dit is de handtekening van Van Eyck" width="295" height="200" />
+            <img src={require(`../assets/img/${img.src}`)} alt="Dit is een afbeelding om het boek mee af te sluiten." width={img.width} height={img.height} className="endGif"/>
+            <img src={handtekening} alt="Dit is de handtekening van Van Eyck" width="295" height="200" className="endHandtekening"/>
         </div>
       </section>
     )
