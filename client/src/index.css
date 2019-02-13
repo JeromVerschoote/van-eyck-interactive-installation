@@ -61,6 +61,14 @@ body {
   opacity: 1;
 }
 
+.specialImage {
+  margin-top: -60.5rem;
+  margin-left: 8rem;
+  bottom: 0;
+  transform: scale(.8);
+  opacity: 1;
+}
+
 .page--odd .image {
   margin-left: -18.4rem;
 }
@@ -213,4 +221,8 @@ hr {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }

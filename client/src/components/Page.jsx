@@ -87,7 +87,7 @@ class Page extends Component {
               <Link className='button link' to={title.toLowerCase() + '/app'}>
                 {lines.map((line, index) => <p className='button' key={index}>{line}</p>)}
               </Link>
-              <svg width="800" height="400" style={type === 'odd' ? svgOdd :  svgEven}>
+              <svg width="800" height="400" style={type === 'odd' ? svgOdd :  svgEven} className={img.src === 'levensloopLamGodsWeetje.jpg' ? ('hidden') : ('') }>
                  <rect width="440" height="270" style={rectStyle} />
               </svg>
             </button>
@@ -96,7 +96,7 @@ class Page extends Component {
           {this.createAccordingImgTags(details, parent, title)}
         </div>
         <Route path={'/' + title.toLowerCase() + '/app'} exact render={() => <Canvas data={details} parent={parent} directParent={title}/>} />
-        <img src={require(`../assets/img/${img.src}`)} alt="" width={img.width} height={img.height} className='image'/>
+        <img src={require(`../assets/img/${img.src}`)} alt="" width={img.width} height={img.height} className={img.src === 'levensloopLamGodsWeetje.jpg' ? ('specialImage') : ('image') }/>
       </section>
     )
   }
