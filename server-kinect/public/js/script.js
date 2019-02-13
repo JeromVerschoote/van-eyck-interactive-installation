@@ -23,6 +23,8 @@ const updateFrame = frame => {
     frame.bodies.forEach(body => {
 
         if(body.tracked){
+            socket.emit(`broadcast`, body);
+            
             skeletonCenter.update(body.joints[1]);
             skeleton.handRight.update(body.joints[11], skeletonCenter);
             skeleton.handLeft.update(body.joints[7], skeletonCenter);
