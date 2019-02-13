@@ -195,9 +195,17 @@ body {
 
 .toFront {
   position: absolute;
+  z-index: 5;
+}
+
+.terug {
   left: 6rem;
   top: 6rem;
-  z-index: 5;
+}
+
+.taal {
+  left: 60vw;
+  top: 3rem;
 }
 
 .nav-levensloop {
@@ -233,4 +241,9 @@ hr {
 
 .endHandtekening {
   align-self: flex-end;
+}
+
+.nav-canvas {
+  display: flex;
+  flex-direction: row;
 }

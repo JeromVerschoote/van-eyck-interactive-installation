@@ -248,7 +248,21 @@ class Canvas extends Component {
     return(
       <React.Fragment>
         <canvas className='canvas' id='canvas' width="2000" height="1100" style={parent !== 'creatieproces' ? ({backgroundImage: `url(${require(`../assets/img/${parent}${directParent}Background.jpg`)})`}) : null}></canvas>
-        <button className='button toFront'><Link to={`/${parent}`} className='button'>Terug naar verhaal</Link></button>
+        <div className="nav-canvas">
+        <button className='button toFront terug'><Link to={`/${parent}`} className='button'>Terug naar verhaal</Link></button>
+        <article className='article toFront taal'>
+          <hr className='hr'/>
+          <div className='buttons'>
+              <button className='button button--active'>nl</button>
+              <button className='button'>fr</button>
+              <button className='button'>de</button>
+              <button className='button'>en</button>
+              <button className='button'>it</button>
+              <button className='button'>es</button>
+          </div>
+          <hr className='hr'/>
+          </article>
+        </div>
         {this.createNavigation()}
       </React.Fragment>
     );
