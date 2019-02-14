@@ -8,14 +8,16 @@ import * as serviceWorker from './serviceWorker';
 import Api from './js/api.js';
 
 const server = {
-    'arduino': new Api('http://localhost:9090'),
+    'arduino': new Api('http://192.168.0.205:9090'),
     'kinect': new Api('http://localhost:8080')
 }
 
 ReactDOM.render(<BrowserRouter><App server={server}/></BrowserRouter>, document.getElementById('root'));
 
 const init = () => {
+    console.log(document.body.clientHeight, document.body.clientWidth);
     server.kinect.socket.on(`broadcast`, body => {
+        console.log(body.joints[11].depthX);
         server.arduino.socket.on(`touch`, touch => handleTouch(touch, body));
     });
 }
@@ -27,7 +29,7 @@ const handleTouch = (touch, body) => {
         'y': rightHand.depthY
     }
 
-    console.log(document.elementFromPoint(position.x, position.y));
+    console.log(document.elementFromPoint(document.body.clientWidth * position.x, document.body.clientHeight * position.y));
     //  document.elementFromPoint(position.x, position.y).click();
 }
 

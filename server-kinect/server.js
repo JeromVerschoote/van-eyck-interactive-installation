@@ -27,9 +27,9 @@ if(kinect.open()){
             console.log(`Gesture detected: ${gesture}`);
             io.sockets.emit(`gesture`, gesture);
         });
-
+        
         socket.on(`broadcast`, body => {
-            console.log(`Broadcasting: ${body}`);
+            console.log(`Broadcasting: ${body.joints[11].depthX}`);
             io.sockets.emit(`broadcast`, body);
         });
  
