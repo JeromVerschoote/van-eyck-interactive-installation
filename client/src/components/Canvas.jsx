@@ -27,8 +27,8 @@ class Canvas extends Component {
 
     }else if(parent === 'creatieproces'){
 
-      if(this.currentLayer){
-        const {section, title, text, img, position, dimensions, options} = this.currentLayer;
+      if(this.currentView){
+        const {section, title, text, img, position, dimensions, options} = this.currentView;
         const image = document.getElementById(img.src);
         const background = document.getElementById(section.img);
         let lines, offset = 0;
@@ -37,8 +37,8 @@ class Canvas extends Component {
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawInfo(ctx, section, FONT, COLOR);
       }else{
-        this.currentLayer = details[0];
-        const {section, title, text, img, position, dimensions, options} = this.currentLayer;
+        this.currentView = details[0];
+        const {section, title, text, img, position, dimensions, options} = this.currentView;
         const image = document.getElementById(img.src);
         const background = document.getElementById(section.img);
         let lines, offset = 0;
@@ -62,7 +62,7 @@ class Canvas extends Component {
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, 1040);
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
-        this.drawText(ctx, year, 160, 300, COLOR.white, FONT.display, '72px', 0);
+        this.drawText(ctx, year, 1000, 990, COLOR.white, FONT.display, '72px', 0);
         })
 
       }else{
@@ -76,7 +76,7 @@ class Canvas extends Component {
         let lines, offset = 0;
         lines = wrapTextFromCanvasIntoLines(ctx, text, dimensions.width - (PADDING * 10.5));
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
-        this.drawText(ctx, year, 160, 300, COLOR.white, FONT.display, '72px', 0);
+        this.drawText(ctx, year, 1000, 990, COLOR.white, FONT.display, '72px', 0);
         })
       }
     }
@@ -183,20 +183,38 @@ class Canvas extends Component {
 
   drawTimeline(ctx){
     ctx.beginPath();
-    ctx.lineTo(150, 200);
-    ctx.lineTo(80, 200);
-    ctx.lineTo(80, 800);
-    ctx.lineTo(150, 800);
-    ctx.moveTo(80, 300);
-    ctx.lineTo(110, 300);
-    ctx.moveTo(80, 400);
-    ctx.lineTo(150, 400);
-    ctx.moveTo(80, 500);
-    ctx.lineTo(110, 500);
-    ctx.moveTo(80, 600);
-    ctx.lineTo(150, 600);
-    ctx.moveTo(80, 700);
-    ctx.lineTo(110, 700);
+    ctx.moveTo(200, 1000);
+    ctx.lineTo(200, 1050);
+    ctx.lineTo(1700, 1050);
+    ctx.lineTo(1700, 1025);
+    ctx.moveTo(300, 1025);
+    ctx.lineTo(300, 1050);
+    ctx.moveTo(400, 1000);
+    ctx.lineTo(400, 1050);
+    ctx.moveTo(500, 1025);
+    ctx.lineTo(500, 1050);
+    ctx.moveTo(600, 1000);
+    ctx.lineTo(600, 1050);
+    ctx.moveTo(700, 1025);
+    ctx.lineTo(700, 1050);
+    ctx.moveTo(800, 1000);
+    ctx.lineTo(800, 1050);
+    ctx.moveTo(900, 1025);
+    ctx.lineTo(900, 1050);
+    ctx.moveTo(1000, 1000);
+    ctx.lineTo(1000, 1050);
+    ctx.moveTo(1100, 1025);
+    ctx.lineTo(1100, 1050);
+    ctx.moveTo(1200, 1000);
+    ctx.lineTo(1200, 1050);
+    ctx.moveTo(1300, 1025);
+    ctx.lineTo(1300, 1050);
+    ctx.moveTo(1400, 1000);
+    ctx.lineTo(1400, 1050);
+    ctx.moveTo(1500, 1025);
+    ctx.lineTo(1500, 1050);
+    ctx.moveTo(1600, 1000);
+    ctx.lineTo(1600, 1050);
     ctx.strokeStyle = "#FFFFFF";
     ctx.lineWidth = 4;
     ctx.stroke();
@@ -209,8 +227,14 @@ class Canvas extends Component {
     switch(parent){
       case 'creatieproces':
         return(
+          <div>
           <div className='creatieproces-nav'>
           {details.map((detail, index) => (<button className={`creatieproces-nav-button creatieproces-nav-button--${index+1}`} onClick={e => this.handleClickCreatieprocesCard(e)} value={`${index}`} style={{backgroundImage: `url(${require(`../assets/img/${details[index].section.nav}`)})`}}></button>))}
+          </div>
+          <div className='levensloop-nav'>
+          <button className='levensloop-nav-button levensloop-nav-button--prev' onClick={e => this.handleClickLevensloopCard(e)} value='prev'></button>
+          <button className='levensloop-nav-button levensloop-nav-button--next' onClick={e => this.handleClickLevensloopCard(e)} value='next'></button>
+          </div>
           </div>
         )
 

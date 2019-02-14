@@ -113,12 +113,11 @@ body {
 .levensloop-nav {
   height: 12.5vh;
   display: flex;
-  flex-flow: column;
   justify-content: space-between;
   z-index: 5;
   position: absolute;
   left: 16rem;
-  top: 18.3rem;
+  bottom: 5rem;
 }
 
 .levensloop-nav-button {
@@ -131,10 +130,13 @@ body {
 
 .levensloop-nav-button--prev {
   transform: rotate(135deg);
+  transform: rotate(45deg);
 }
 
 .levensloop-nav-button--next {
   transform: rotate(-45deg);
+  transform: rotate(-135deg);
+  margin-left: 120rem;
 }
 
 .creatieproces-nav-button {

@@ -368,7 +368,8 @@
                     "url": ""
                 },
                 "details": [
-                    {
+                    {   
+                        "id": "1",
                         "section": {
                             "title": "Opbouw",
                             "laag": "EERSTE LAAG",
@@ -402,6 +403,7 @@
                         }
                     },
                     {
+                        "id": "2",
                         "section": {
                             "title": "Voorbereiding",
                             "laag": "TWEEDE LAAG",
@@ -435,6 +437,7 @@
                         }
                     },
                     {
+                        "id": "3",
                         "section": {
                             "title": "Origineel",
                             "laag": "DERDE LAAG",
@@ -468,6 +471,7 @@
                         }
                     },
                     {
+                        "id": "4",
                         "section": {
                             "title": "Overschildering",
                             "laag": "VIERDE LAAG",
@@ -518,6 +522,7 @@
                 },
                 "details": [
                     {
+                        "id": "1",
                         "section": {
                             "title": "Jan van Eyck",
                             "laag": "National Gallery London",
@@ -551,6 +556,7 @@
                         }
                     },
                     {
+                        "id": "2",
                         "section": {
                             "title": "Jan van Eyck",
                             "laag": "Kunsthistorisch Museum, Vienna",
@@ -584,6 +590,7 @@
                         }
                     },
                     {
+                        "id": "3",
                         "section": {
                             "title": "Antonella da Messina",
                             "laag": "Galleria Borghese, Rome",
@@ -617,6 +624,7 @@
                         }
                     },
                     {
+                        "id": "4",
                         "section": {
                             "title": "Antonella da Messina",
                             "laag": "Museo Civico d'Arte Antica",
@@ -773,12 +781,12 @@
                             "height": 240
                         },
                         "dimensions": {
-                            "width": 740,
-                            "height": 240
+                            "width": 240,
+                            "height": 440
                         },
                         "options": {
-                            "orientation": "horizontal",
-                            "flipped": true,
+                            "orientation": "vertical",
+                            "flipped": false,
                             "pointedTo": "lowerLeft"
                         }
                     }
@@ -819,14 +827,14 @@
                         "img": {
                             "src": "levensloopLamGods3",
                             "width": 420,
-                            "height": 240
+                            "height": 320
                         },
                         "dimensions": {
-                            "width": 590,
-                            "height": 240
+                            "width": 420,
+                            "height": 440
                         },
                         "options": {
-                            "orientation": "horizontal",
+                            "orientation": "vertical",
                             "flipped": false,
                             "pointedTo": "lowerLeft"
                         }
