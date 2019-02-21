@@ -27,8 +27,8 @@ class Canvas extends Component {
 
     }else if(parent === 'creatieproces'){
 
-      if(this.currentView){
-        const {section, title, text, img, position, dimensions, options} = this.currentView;
+      if(this.currentLayer){
+        const {section, title, text, img, position, dimensions, options} = this.currentLayer;
         const image = document.getElementById(img.src);
         const background = document.getElementById(section.img);
         let lines, offset = 0;
@@ -37,8 +37,8 @@ class Canvas extends Component {
         this.drawCard(ctx, title, lines, offset, img, image, position, dimensions, options);
         this.drawInfo(ctx, section, FONT, COLOR);
       }else{
-        this.currentView = details[0];
-        const {section, title, text, img, position, dimensions, options} = this.currentView;
+        this.currentLayer = details[0];
+        const {section, title, text, img, position, dimensions, options} = this.currentLayer;
         const image = document.getElementById(img.src);
         const background = document.getElementById(section.img);
         let lines, offset = 0;
@@ -231,10 +231,7 @@ class Canvas extends Component {
           <div className='creatieproces-nav'>
           {details.map((detail, index) => (<button className={`creatieproces-nav-button creatieproces-nav-button--${index+1}`} onClick={e => this.handleClickCreatieprocesCard(e)} value={`${index}`} style={{backgroundImage: `url(${require(`../assets/img/${details[index].section.nav}`)})`}}></button>))}
           </div>
-          <div className='levensloop-nav'>
-          <button className='levensloop-nav-button levensloop-nav-button--prev' onClick={e => this.handleClickLevensloopCard(e)} value='prev'></button>
-          <button className='levensloop-nav-button levensloop-nav-button--next' onClick={e => this.handleClickLevensloopCard(e)} value='next'></button>
-          </div>
+
           </div>
         )
 
